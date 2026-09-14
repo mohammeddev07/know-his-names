@@ -36,7 +36,7 @@ npm run dev        # http://localhost:3000
 - [x] Phase 0 — Repository foundation
 - [x] Phase 1 — Design system
 - [x] Phase 2 — Static UX
-- [ ] Phase 3 — Content layer
+- [x] Phase 3 — Content layer
 - [ ] Phase 4 — Local persistence
 - [ ] Phase 5 — Learning engine
 - [ ] Phase 6 — FSRS

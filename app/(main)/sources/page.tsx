@@ -2,7 +2,12 @@ import { ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Card, Page, PageHeader } from "@/components/ui/page";
-import { CONTENT_VERSION, NAMES, SOURCES } from "@/lib/content/names";
+import {
+  CONTENT_VERSION,
+  ENUMERATION_SOURCE,
+  NAMES,
+  SOURCES,
+} from "@/lib/content/names";
 import { REPOSITORY_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -69,10 +74,9 @@ export default function SourcesPage() {
       <div className="space-y-10">
         <Block title="The list this app follows">
           <p>
-            The app follows the widely known list of ninety-nine Names found in
-            the narration recorded in Jāmiʿ at-Tirmidhī (Hadith 3507), in that
-            order. Other lists exist; this one was chosen because it is the one
-            most learners encounter.
+            The app follows the widely known list of ninety-nine Names recorded
+            in {ENUMERATION_SOURCE.title}, in that order. Other lists exist;
+            this one was chosen because it is the one most learners encounter.
           </p>
         </Block>
 

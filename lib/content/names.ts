@@ -1,29 +1,10 @@
 import namesFile from "@/content/names/names.json";
 import sourcesFile from "@/content/sources/sources.json";
+import type { ContentSource, DivineName } from "./schema";
 
-export type VerificationStatus = "pending" | "reviewed" | "verified";
-
-export interface DivineName {
-  id: string;
-  order: number;
-  arabic: string;
-  transliteration: string;
-  shortMeaning: string;
-  explanation?: string;
-  audioUrl?: string;
-  sourceIds: string[];
-  verificationStatus: VerificationStatus;
-}
-
-export interface ContentSource {
-  id: string;
-  title: string;
-  kind: string;
-  citation: string;
-  url?: string;
-  usedFor: string;
-  verificationStatus: VerificationStatus;
-}
+// Content is validated against ./schema at build time (see validate.ts), so the
+// client can read it without shipping the validator.
+export type { ContentSource, DivineName, VerificationStatus } from "./schema";
 
 export const CONTENT_VERSION: string = namesFile.version;
 export const NAMES = namesFile.names as DivineName[];
@@ -31,6 +12,11 @@ export const SOURCES = sourcesFile.sources as ContentSource[];
 
 const byId = new Map(NAMES.map((name) => [name.id, name]));
 const sourcesById = new Map(SOURCES.map((source) => [source.id, source]));
+
+/** The source whose list and order the app follows. */
+export const ENUMERATION_SOURCE = sourcesById.get(
+  sourcesFile.enumerationSourceId,
+)!;
 
 export function getNameById(id: string): DivineName | undefined {
   return byId.get(id);

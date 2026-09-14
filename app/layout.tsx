@@ -1,8 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Hanken_Grotesk, Newsreader, Scheherazade_New } from "next/font/google";
 import { ProgressProvider } from "@/components/providers/progress-provider";
+import { assertValidContent } from "@/lib/content/validate";
 import { THEME_COLORS, themeInitScript } from "@/lib/theme";
 import "./globals.css";
+
+// Fails the build (and server start) if bundled religious content is malformed.
+assertValidContent();
 
 const sans = Hanken_Grotesk({
   subsets: ["latin", "latin-ext"],
