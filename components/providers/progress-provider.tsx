@@ -14,20 +14,13 @@ import {
   type ProgressStatus,
 } from "@/hooks/use-progress";
 import { getNameById } from "@/lib/content/names";
-import {
-  applyPlaceholderRating,
-  createPlaceholderSchedule,
-  previewPlaceholder,
-} from "@/lib/dev/placeholder-scheduling";
-import { createId } from "@/lib/id";
-import { createCard } from "@/lib/learning/cards";
 import { startOfLocalDay } from "@/lib/learning/dates";
 import {
   DEFAULT_PREFERENCES,
   type CardState,
-  type ReviewEvent,
   type UserPreferences,
 } from "@/lib/learning/types";
+import { FsrsReviewScheduler } from "@/lib/srs/scheduler";
 import type { ReviewRating, ReviewResult } from "@/lib/srs/types";
 import { IndexedDbProgressRepository } from "@/lib/storage/indexeddb-progress-repository";
 import type { ProgressRepository } from "@/lib/storage/progress-repository";
@@ -84,7 +77,8 @@ function requestPersistentStorage() {
 
 /**
  * Owns the learner's progress for the UI. Components read it through
- * useProgress() and never touch IndexedDB directly.
+ * useProgress(); persistence goes through the repository and scheduling
+ * through the ReviewScheduler, never directly from components.
  */
 export function ProgressProvider({
   children,
@@ -93,9 +87,10 @@ export function ProgressProvider({
   children: ReactNode;
   repository?: ProgressRepository;
 }) {
-  const [repo] = useState<ProgressRepository>(
-    () => repository ?? new IndexedDbProgressRepository(),
-  );
+  const [{ repo, scheduler }] = useState(() => {
+    const repo = repository ?? new IndexedDbProgressRepository();
+    return { repo, scheduler: new FsrsReviewScheduler(repo) };
+  });
   const [state, setState] = useState<State>(() => ({
     status: "loading",
     cards: new Map(),
@@ -146,9 +141,7 @@ export function ProgressProvider({
 
   const introduce = useCallback(
     async (nameId: string) => {
-      const now = new Date();
-      const card = createCard(nameId, createPlaceholderSchedule(now), now);
-      await repo.saveCardState(card);
+      const card = await scheduler.introduce(nameId, new Date());
       setState((prev) => ({
         ...prev,
         cards: new Map(prev.cards).set(nameId, card),
@@ -157,47 +150,40 @@ export function ProgressProvider({
       notifyOtherTabs();
       requestPersistentStorage();
     },
-    [repo, notifyOtherTabs],
+    [scheduler, notifyOtherTabs],
   );
 
   const review = useCallback(
     async (nameId: string, rating: ReviewRating): Promise<ReviewResult> => {
       const card = state.cards.get(nameId);
       if (!card) throw new Error(`No card for ${nameId}`);
-      const now = new Date();
-      const next = applyPlaceholderRating(card.schedule, rating, now);
-      const updated: CardState = { ...card, schedule: next };
-      const event: ReviewEvent = {
-        id: createId(),
-        cardId: card.id,
-        reviewedAt: now.toISOString(),
-        rating,
-        previousState: card.schedule,
-        resultingState: next,
-      };
-      await repo.saveReview(updated, event);
+      const result = await scheduler.recordReview(card.id, rating, new Date());
       setState((prev) => ({
         ...prev,
-        cards: new Map(prev.cards).set(nameId, updated),
+        cards: new Map(prev.cards).set(nameId, {
+          ...card,
+          schedule: result.next,
+        }),
         reviewsToday: prev.reviewsToday + 1,
-        lastActivityAt: event.reviewedAt,
+        lastActivityAt: result.reviewedAt,
       }));
       notifyOtherTabs();
-      return {
-        cardId: card.id,
-        rating,
-        reviewedAt: event.reviewedAt,
-        previous: card.schedule,
-        next,
-      };
+      return result;
     },
-    [repo, state.cards, notifyOtherTabs],
+    [scheduler, state.cards, notifyOtherTabs],
   );
 
   const preview = useCallback(
-    (nameId: string) =>
-      state.cards.has(nameId) ? previewPlaceholder(new Date()) : null,
-    [state.cards],
+    (nameId: string) => {
+      const card = state.cards.get(nameId);
+      if (!card) return null;
+      try {
+        return scheduler.preview(card, new Date());
+      } catch {
+        return null;
+      }
+    },
+    [scheduler, state.cards],
   );
 
   const updatePreferences = useCallback(

@@ -7,7 +7,7 @@
 > Keep this section current: tick items as they are completed and verified
 > (lint, typecheck, tests and build passing).
 
-**V1 phases:** `██████░░░░░░` **6 / 12 complete** (Phase 6 in progress)
+**V1 phases:** `███████░░░░░` **7 / 12 complete** (Phase 7 in progress)
 
 | Phase | Status |
 | ----- | ------ |
@@ -17,8 +17,8 @@
 | 3 --- Content layer | ✅ Complete |
 | 4 --- Local persistence | ✅ Complete |
 | 5 --- Learning engine | ✅ Complete |
-| 6 --- FSRS | 🔄 In progress |
-| 7 --- Backup / restore | ⬜ Not started |
+| 6 --- FSRS | ✅ Complete |
+| 7 --- Backup / restore | 🔄 In progress |
 | 8 --- PWA / offline | ⬜ Not started |
 | 9 --- UX polish | ⬜ Not started |
 | 10 --- Religious content verification | ⬜ Needs human scholarly review |
@@ -74,10 +74,10 @@
 
 **Phase 6 --- FSRS**
 
-- [ ] `ts-fsrs` wrapped behind `ReviewScheduler`
-- [ ] Again / Hard / Good / Easy mapped and persisted
-- [ ] Append-only review events
-- [ ] Scheduling unit tests
+- [x] `ts-fsrs` wrapped behind `ReviewScheduler`
+- [x] Again / Hard / Good / Easy mapped and persisted
+- [x] Append-only review events
+- [x] Scheduling unit tests
 
 **Phase 7 --- Backup / restore**
 

@@ -38,11 +38,16 @@ export interface ReviewResult {
 
 export type RatingPreview = Record<ReviewRating, Date>;
 
+/** Application-owned scheduling contract. UI code never calls FSRS directly. */
 export interface ReviewScheduler {
   getDueCards(now: Date): Promise<CardState[]>;
+  /** Creates (or returns) the card for a Name the learner has just met. */
+  introduce(nameId: string, now: Date): Promise<CardState>;
   recordReview(
     cardId: string,
     rating: ReviewRating,
     reviewedAt: Date,
   ): Promise<ReviewResult>;
+  /** When the card would next be due for each rating. */
+  preview(card: CardState, now: Date): RatingPreview;
 }

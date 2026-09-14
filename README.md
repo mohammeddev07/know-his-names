@@ -39,7 +39,7 @@ npm run dev        # http://localhost:3000
 - [x] Phase 3 — Content layer
 - [x] Phase 4 — Local persistence
 - [x] Phase 5 — Learning engine
-- [ ] Phase 6 — FSRS
+- [x] Phase 6 — FSRS
 - [ ] Phase 7 — Backup / restore
 - [ ] Phase 8 — PWA / offline
 - [ ] Phase 9 — UX polish
