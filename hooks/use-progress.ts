@@ -8,6 +8,7 @@ import type {
   ReviewRating,
   ReviewResult,
 } from "@/lib/srs/types";
+import type { ProgressSnapshot } from "@/lib/storage/progress-repository";
 
 export type ProgressStatus = "loading" | "ready" | "unavailable";
 
@@ -23,13 +24,19 @@ export interface ProgressContextValue {
   preview(nameId: string): RatingPreview | null;
   updatePreferences(patch: Partial<UserPreferences>): Promise<void>;
   loadHistory(): Promise<ReviewEvent[]>;
+  exportSnapshot(): Promise<ProgressSnapshot>;
+  /** Replaces all progress, keeping the previous progress for undo. */
+  replaceProgress(snapshot: ProgressSnapshot): Promise<void>;
+  getRollbackSavedAt(): Promise<string | null>;
+  restoreRollback(): Promise<void>;
 }
 
 export const ProgressContext = createContext<ProgressContextValue | null>(null);
 
 export function useProgress(): ProgressContextValue {
   const value = useContext(ProgressContext);
-  if (!value)
+  if (!value) {
     throw new Error("useProgress must be used inside ProgressProvider");
+  }
   return value;
 }

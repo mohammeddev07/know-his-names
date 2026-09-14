@@ -7,7 +7,7 @@
 > Keep this section current: tick items as they are completed and verified
 > (lint, typecheck, tests and build passing).
 
-**V1 phases:** `███████░░░░░` **7 / 12 complete** (Phase 7 in progress)
+**V1 phases:** `████████░░░░` **8 / 12 complete** (Phase 8 in progress)
 
 | Phase | Status |
 | ----- | ------ |
@@ -18,8 +18,8 @@
 | 4 --- Local persistence | ✅ Complete |
 | 5 --- Learning engine | ✅ Complete |
 | 6 --- FSRS | ✅ Complete |
-| 7 --- Backup / restore | 🔄 In progress |
-| 8 --- PWA / offline | ⬜ Not started |
+| 7 --- Backup / restore | ✅ Complete |
+| 8 --- PWA / offline | 🔄 In progress |
 | 9 --- UX polish | ⬜ Not started |
 | 10 --- Religious content verification | ⬜ Needs human scholarly review |
 | 11 --- Production launch | ⬜ Not started |
@@ -81,10 +81,10 @@
 
 **Phase 7 --- Backup / restore**
 
-- [ ] Export progress file
-- [ ] Import with schema/version validation and confirmation
-- [ ] Rollback of the replaced progress
-- [ ] E2E restoration test
+- [x] Export progress file
+- [x] Import with schema/version validation and confirmation
+- [x] Rollback of the replaced progress
+- [x] E2E restoration test
 
 **Phase 8 --- PWA / offline**
 

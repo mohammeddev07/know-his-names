@@ -23,7 +23,10 @@ import {
 import { FsrsReviewScheduler } from "@/lib/srs/scheduler";
 import type { ReviewRating, ReviewResult } from "@/lib/srs/types";
 import { IndexedDbProgressRepository } from "@/lib/storage/indexeddb-progress-repository";
-import type { ProgressRepository } from "@/lib/storage/progress-repository";
+import type {
+  ProgressRepository,
+  ProgressSnapshot,
+} from "@/lib/storage/progress-repository";
 import { applyTheme, readStoredTheme } from "@/lib/theme";
 
 const SYNC_CHANNEL = "khn-progress";
@@ -139,6 +142,14 @@ export function ProgressProvider({
     channel.current?.postMessage("changed");
   }, []);
 
+  /** Re-reads everything after a bulk change such as an import. */
+  const reload = useCallback(async () => {
+    const next = await readState(repo);
+    applyTheme(next.preferences.theme);
+    setState(next);
+    notifyOtherTabs();
+  }, [repo, notifyOtherTabs]);
+
   const introduce = useCallback(
     async (nameId: string) => {
       const card = await scheduler.introduce(nameId, new Date());
@@ -207,6 +218,24 @@ export function ProgressProvider({
   );
 
   const loadHistory = useCallback(() => repo.getReviewHistory(), [repo]);
+  const exportSnapshot = useCallback(() => repo.exportSnapshot(), [repo]);
+  const getRollbackSavedAt = useCallback(
+    () => repo.getRollbackSavedAt(),
+    [repo],
+  );
+
+  const replaceProgress = useCallback(
+    async (snapshot: ProgressSnapshot) => {
+      await repo.replaceAll(snapshot);
+      await reload();
+    },
+    [repo, reload],
+  );
+
+  const restoreRollback = useCallback(async () => {
+    await repo.restoreRollback();
+    await reload();
+  }, [repo, reload]);
 
   const value = useMemo<ProgressContextValue>(
     () => ({
@@ -216,8 +245,23 @@ export function ProgressProvider({
       preview,
       updatePreferences,
       loadHistory,
+      exportSnapshot,
+      replaceProgress,
+      getRollbackSavedAt,
+      restoreRollback,
     }),
-    [state, introduce, review, preview, updatePreferences, loadHistory],
+    [
+      state,
+      introduce,
+      review,
+      preview,
+      updatePreferences,
+      loadHistory,
+      exportSnapshot,
+      replaceProgress,
+      getRollbackSavedAt,
+      restoreRollback,
+    ],
   );
 
   return <ProgressContext value={value}>{children}</ProgressContext>;
