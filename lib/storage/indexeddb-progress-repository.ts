@@ -93,7 +93,9 @@ function keepValid<T>(
     if (result.success) valid.push(result.data as T);
   }
   if (valid.length < records.length) {
-    console.warn(`Skipped ${records.length - valid.length} unreadable ${label} record(s).`);
+    console.warn(
+      `Skipped ${records.length - valid.length} unreadable ${label} record(s).`,
+    );
   }
   return valid;
 }
@@ -103,7 +105,10 @@ const parseReview = (value: unknown) => reviewEventSchema.safeParse(value);
 
 function readPreferences(raw: unknown): UserPreferences {
   const stored = raw && typeof raw === "object" ? raw : {};
-  const result = preferencesSchema.safeParse({ ...DEFAULT_PREFERENCES, ...stored });
+  const result = preferencesSchema.safeParse({
+    ...DEFAULT_PREFERENCES,
+    ...stored,
+  });
   return result.success ? result.data : DEFAULT_PREFERENCES;
 }
 
@@ -112,7 +117,10 @@ function byReviewedAt(a: ReviewEvent, b: ReviewEvent) {
 }
 
 /** Validates a record before it is written, so bad data never reaches storage. */
-function assertValid<T>(schema: { parse(value: unknown): T }, value: unknown): T {
+function assertValid<T>(
+  schema: { parse(value: unknown): T },
+  value: unknown,
+): T {
   return schema.parse(value);
 }
 
@@ -187,13 +195,18 @@ export class IndexedDbProgressRepository implements ProgressRepository {
     });
   }
 
-  async getReviewHistory(query: ReviewHistoryQuery = {}): Promise<ReviewEvent[]> {
+  async getReviewHistory(
+    query: ReviewHistoryQuery = {},
+  ): Promise<ReviewEvent[]> {
     const raw = await this.run([REVIEWS], "readonly", (tx) => {
       const store = tx.objectStore(REVIEWS);
-      if (query.cardId) return request(store.index("cardId").getAll(query.cardId));
+      if (query.cardId)
+        return request(store.index("cardId").getAll(query.cardId));
       if (query.since) {
         return request(
-          store.index("reviewedAt").getAll(IDBKeyRange.lowerBound(query.since.toISOString())),
+          store
+            .index("reviewedAt")
+            .getAll(IDBKeyRange.lowerBound(query.since.toISOString())),
         );
       }
       return request(store.getAll());
@@ -235,7 +248,9 @@ export class IndexedDbProgressRepository implements ProgressRepository {
 
   async replaceAll(snapshot: ProgressSnapshot): Promise<void> {
     const cards = snapshot.cards.map((c) => assertValid(cardStateSchema, c));
-    const reviews = snapshot.reviews.map((r) => assertValid(reviewEventSchema, r));
+    const reviews = snapshot.reviews.map((r) =>
+      assertValid(reviewEventSchema, r),
+    );
     const preferences = assertValid(preferencesSchema, snapshot.preferences);
 
     await this.run([CARDS, REVIEWS, META], "readwrite", async (tx) => {
@@ -272,8 +287,7 @@ export class IndexedDbProgressRepository implements ProgressRepository {
     await this.run([CARDS, REVIEWS, META], "readwrite", async (tx) => {
       const metaStore = tx.objectStore(META);
       const record = (await request(metaStore.get(ROLLBACK_KEY))) as
-        | RollbackRecord
-        | undefined;
+        RollbackRecord | undefined;
       if (!record) throw new Error("There is no previous progress to restore.");
       await writeAll(tx, record.snapshot);
       await request(metaStore.delete(ROLLBACK_KEY));
@@ -293,7 +307,9 @@ async function writeAll(
     ...data.cards.map((card) => request(cardStore.put(card))),
     ...data.reviews.map((review) => request(reviewStore.add(review))),
     data.preferences
-      ? request(metaStore.put({ key: PREFERENCES_KEY, value: data.preferences }))
+      ? request(
+          metaStore.put({ key: PREFERENCES_KEY, value: data.preferences }),
+        )
       : request(metaStore.delete(PREFERENCES_KEY)),
   ]);
 }

@@ -25,7 +25,10 @@ const schedule = (overrides: Partial<ScheduleState> = {}): ScheduleState => ({
   ...overrides,
 });
 
-const card = (nameId: string, overrides: Partial<ScheduleState> = {}): CardState => ({
+const card = (
+  nameId: string,
+  overrides: Partial<ScheduleState> = {},
+): CardState => ({
   id: `${nameId}:meaning`,
   nameId,
   cardType: "meaning",
@@ -33,7 +36,11 @@ const card = (nameId: string, overrides: Partial<ScheduleState> = {}): CardState
   schedule: schedule(overrides),
 });
 
-const event = (id: string, cardId: string, reviewedAt: string): ReviewEvent => ({
+const event = (
+  id: string,
+  cardId: string,
+  reviewedAt: string,
+): ReviewEvent => ({
   id,
   cardId,
   reviewedAt,
@@ -55,7 +62,9 @@ describe("IndexedDbProgressRepository", () => {
   it("saves card state that survives a reload", async () => {
     await repo.saveCardState(card("ar-rahman"));
     const reopened = new IndexedDbProgressRepository(dbName);
-    expect(await reopened.getCardState("ar-rahman:meaning")).toEqual(card("ar-rahman"));
+    expect(await reopened.getCardState("ar-rahman:meaning")).toEqual(
+      card("ar-rahman"),
+    );
     expect(await reopened.getAllCardStates()).toHaveLength(1);
     expect(await reopened.getCardState("missing")).toBeNull();
   });
@@ -66,7 +75,9 @@ describe("IndexedDbProgressRepository", () => {
       card("ar-rahman", { reps: 1 }),
       event("e1", "ar-rahman:meaning", "2026-09-13T09:00:00.000Z"),
     );
-    expect((await repo.getCardState("ar-rahman:meaning"))?.schedule.reps).toBe(1);
+    expect((await repo.getCardState("ar-rahman:meaning"))?.schedule.reps).toBe(
+      1,
+    );
     expect(await repo.getReviewHistory()).toHaveLength(1);
   });
 
@@ -82,21 +93,37 @@ describe("IndexedDbProgressRepository", () => {
         event("e1", "ar-rahman:meaning", "2026-09-13T10:00:00.000Z"),
       ),
     ).rejects.toBeTruthy();
-    expect((await repo.getCardState("ar-rahman:meaning"))?.schedule.reps).toBe(1);
+    expect((await repo.getCardState("ar-rahman:meaning"))?.schedule.reps).toBe(
+      1,
+    );
     const history = await repo.getReviewHistory();
-    expect(history.map((e) => e.reviewedAt)).toEqual(["2026-09-13T09:00:00.000Z"]);
+    expect(history.map((e) => e.reviewedAt)).toEqual([
+      "2026-09-13T09:00:00.000Z",
+    ]);
   });
 
   it("filters review history by card and date, oldest first", async () => {
-    await repo.saveReview(card("a"), event("e3", "a:meaning", "2026-09-12T09:00:00.000Z"));
-    await repo.saveReview(card("b"), event("e2", "b:meaning", "2026-09-13T09:00:00.000Z"));
-    await repo.saveReview(card("a"), event("e1", "a:meaning", "2026-09-11T09:00:00.000Z"));
+    await repo.saveReview(
+      card("a"),
+      event("e3", "a:meaning", "2026-09-12T09:00:00.000Z"),
+    );
+    await repo.saveReview(
+      card("b"),
+      event("e2", "b:meaning", "2026-09-13T09:00:00.000Z"),
+    );
+    await repo.saveReview(
+      card("a"),
+      event("e1", "a:meaning", "2026-09-11T09:00:00.000Z"),
+    );
 
-    expect((await repo.getReviewHistory()).map((e) => e.id)).toEqual(["e1", "e3", "e2"]);
-    expect((await repo.getReviewHistory({ cardId: "a:meaning" })).map((e) => e.id)).toEqual([
+    expect((await repo.getReviewHistory()).map((e) => e.id)).toEqual([
       "e1",
       "e3",
+      "e2",
     ]);
+    expect(
+      (await repo.getReviewHistory({ cardId: "a:meaning" })).map((e) => e.id),
+    ).toEqual(["e1", "e3"]);
     const since = await repo.getReviewHistory({
       since: new Date("2026-09-12T00:00:00.000Z"),
     });
@@ -105,9 +132,15 @@ describe("IndexedDbProgressRepository", () => {
 
   it("returns default preferences until saved", async () => {
     expect(await repo.getPreferences()).toEqual(DEFAULT_PREFERENCES);
-    const saved = { newNamesPerDay: 5, theme: "dark", showTransliteration: false } as const;
+    const saved = {
+      newNamesPerDay: 5,
+      theme: "dark",
+      showTransliteration: false,
+    } as const;
     await repo.savePreferences(saved);
-    expect(await new IndexedDbProgressRepository(dbName).getPreferences()).toEqual(saved);
+    expect(
+      await new IndexedDbProgressRepository(dbName).getPreferences(),
+    ).toEqual(saved);
   });
 
   it("refuses to write invalid records", async () => {
@@ -124,19 +157,27 @@ describe("IndexedDbProgressRepository", () => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
     await repo.saveCardState(card("good"));
     await rawPut(dbName, "cards", { id: "broken:meaning", nameId: "broken" });
-    expect((await repo.getAllCardStates()).map((c) => c.nameId)).toEqual(["good"]);
+    expect((await repo.getAllCardStates()).map((c) => c.nameId)).toEqual([
+      "good",
+    ]);
     expect(await repo.getCardState("broken:meaning")).toBeNull();
     expect(console.warn).toHaveBeenCalled();
   });
 
   it("falls back to defaults when stored preferences are corrupt", async () => {
     await repo.getPreferences(); // creates the database and its stores
-    await rawPut(dbName, "meta", { key: "preferences", value: { newNamesPerDay: "lots" } });
+    await rawPut(dbName, "meta", {
+      key: "preferences",
+      value: { newNamesPerDay: "lots" },
+    });
     expect(await repo.getPreferences()).toEqual(DEFAULT_PREFERENCES);
   });
 
   it("replaces everything atomically and can roll back", async () => {
-    await repo.saveReview(card("old"), event("old-1", "old:meaning", "2026-09-10T09:00:00.000Z"));
+    await repo.saveReview(
+      card("old"),
+      event("old-1", "old:meaning", "2026-09-10T09:00:00.000Z"),
+    );
     await repo.savePreferences({ ...DEFAULT_PREFERENCES, newNamesPerDay: 7 });
     expect(await repo.getRollbackSavedAt()).toBeNull();
 
@@ -168,7 +209,9 @@ describe("IndexedDbProgressRepository", () => {
         preferences: DEFAULT_PREFERENCES,
       }),
     ).rejects.toBeTruthy();
-    expect((await repo.getAllCardStates()).map((c) => c.nameId)).toEqual(["keep"]);
+    expect((await repo.getAllCardStates()).map((c) => c.nameId)).toEqual([
+      "keep",
+    ]);
     expect(await repo.getRollbackSavedAt()).toBeNull();
   });
 
@@ -177,9 +220,9 @@ describe("IndexedDbProgressRepository", () => {
     // @ts-expect-error simulate a browser without IndexedDB
     delete globalThis.indexedDB;
     try {
-      await expect(new IndexedDbProgressRepository("x").getAllCardStates()).rejects.toBeInstanceOf(
-        StorageUnavailableError,
-      );
+      await expect(
+        new IndexedDbProgressRepository("x").getAllCardStates(),
+      ).rejects.toBeInstanceOf(StorageUnavailableError);
     } finally {
       globalThis.indexedDB = original;
     }

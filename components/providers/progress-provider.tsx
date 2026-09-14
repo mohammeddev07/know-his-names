@@ -20,9 +20,9 @@ import {
   previewPlaceholder,
 } from "@/lib/dev/placeholder-scheduling";
 import { createId } from "@/lib/id";
+import { createCard } from "@/lib/learning/cards";
 import { startOfLocalDay } from "@/lib/learning/dates";
 import {
-  cardIdFor,
   DEFAULT_PREFERENCES,
   type CardState,
   type ReviewEvent,
@@ -56,7 +56,9 @@ function latestActivity(cards: Iterable<CardState>): string | null {
 /** Cards for Names missing from the current content stay stored but are not shown. */
 function byName(cards: CardState[]): Map<string, CardState> {
   return new Map(
-    cards.filter((card) => getNameById(card.nameId)).map((card) => [card.nameId, card]),
+    cards
+      .filter((card) => getNameById(card.nameId))
+      .map((card) => [card.nameId, card]),
   );
 }
 
@@ -145,13 +147,7 @@ export function ProgressProvider({
   const introduce = useCallback(
     async (nameId: string) => {
       const now = new Date();
-      const card: CardState = {
-        id: cardIdFor(nameId),
-        nameId,
-        cardType: "meaning",
-        introducedAt: now.toISOString(),
-        schedule: createPlaceholderSchedule(now),
-      };
+      const card = createCard(nameId, createPlaceholderSchedule(now), now);
       await repo.saveCardState(card);
       setState((prev) => ({
         ...prev,
@@ -199,7 +195,8 @@ export function ProgressProvider({
   );
 
   const preview = useCallback(
-    (nameId: string) => (state.cards.has(nameId) ? previewPlaceholder(new Date()) : null),
+    (nameId: string) =>
+      state.cards.has(nameId) ? previewPlaceholder(new Date()) : null,
     [state.cards],
   );
 

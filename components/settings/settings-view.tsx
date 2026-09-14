@@ -44,7 +44,10 @@ export function SettingsView() {
           settings and backups are unavailable. The theme can still be changed.
         </p>
       )}
-      <p role="alert" className="empty:hidden mb-6 rounded-2xl bg-danger-soft px-4 py-3 text-sm text-danger">
+      <p
+        role="alert"
+        className="mb-6 rounded-2xl bg-danger-soft px-4 py-3 text-sm text-danger empty:hidden"
+      >
         {saveError}
       </p>
 
@@ -58,9 +61,7 @@ export function SettingsView() {
                 label: String(n),
               }))}
               value={preferences.newNamesPerDay}
-              onChange={(newNamesPerDay) =>
-                save({ newNamesPerDay })
-              }
+              onChange={(newNamesPerDay) => save({ newNamesPerDay })}
               disabled={disabled}
             />
             <p className="mt-2 text-sm text-ink-2">
@@ -72,9 +73,7 @@ export function SettingsView() {
             label="Show transliteration in reviews"
             description="Turn this off to practise reading the Arabic on its own."
             checked={preferences.showTransliteration}
-            onChange={(showTransliteration) =>
-              save({ showTransliteration })
-            }
+            onChange={(showTransliteration) => save({ showTransliteration })}
             disabled={disabled}
           />
         </Card>

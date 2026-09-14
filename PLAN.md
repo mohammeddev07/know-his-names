@@ -7,7 +7,7 @@
 > Keep this section current: tick items as they are completed and verified
 > (lint, typecheck, tests and build passing).
 
-**V1 phases:** `█████░░░░░░░` **5 / 12 complete** (Phase 5 in progress)
+**V1 phases:** `██████░░░░░░` **6 / 12 complete** (Phase 6 in progress)
 
 | Phase | Status |
 | ----- | ------ |
@@ -16,8 +16,8 @@
 | 2 --- Static UX | ✅ Complete |
 | 3 --- Content layer | ✅ Complete |
 | 4 --- Local persistence | ✅ Complete |
-| 5 --- Learning engine | 🔄 In progress |
-| 6 --- FSRS | ⬜ Not started |
+| 5 --- Learning engine | ✅ Complete |
+| 6 --- FSRS | 🔄 In progress |
 | 7 --- Backup / restore | ⬜ Not started |
 | 8 --- PWA / offline | ⬜ Not started |
 | 9 --- UX polish | ⬜ Not started |
@@ -67,10 +67,10 @@
 
 **Phase 5 --- Learning engine**
 
-- [ ] New Name selection and configurable daily limit
-- [ ] Learning sessions with interleaved recall
-- [ ] Due-review queue and session completion
-- [ ] Unit tests for session and progress logic
+- [x] New Name selection and configurable daily limit
+- [x] Learning sessions with interleaved recall
+- [x] Due-review queue and session completion
+- [x] Unit tests for session and progress logic
 
 **Phase 6 --- FSRS**
 
