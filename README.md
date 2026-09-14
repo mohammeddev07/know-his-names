@@ -34,8 +34,8 @@ npm run dev        # http://localhost:3000
 ## Implementation progress
 
 - [x] Phase 0 — Repository foundation
-- [ ] Phase 1 — Design system
-- [ ] Phase 2 — Static UX
+- [x] Phase 1 — Design system
+- [x] Phase 2 — Static UX
 - [ ] Phase 3 — Content layer
 - [ ] Phase 4 — Local persistence
 - [ ] Phase 5 — Learning engine
