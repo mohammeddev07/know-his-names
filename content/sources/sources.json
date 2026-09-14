@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "id": "tirmidhi-3507",
+      "title": "Jāmiʿ at-Tirmidhī, Hadith 3507",
+      "kind": "hadith",
+      "citation": "Jāmiʿ at-Tirmidhī, Book of Supplications (Kitāb ad-Daʿawāt), Hadith 3507 — the narration through al-Walīd ibn Muslim that enumerates ninety-nine Names.",
+      "url": "https://sunnah.com/tirmidhi:3507",
+      "usedFor": "Enumeration and ordering of the Names.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "wikipedia-names-of-god",
+      "title": "“Names of God in Islam” — al-Tirmidhi’s list",
+      "kind": "secondary",
+      "citation": "Wikipedia, “Names of God in Islam”, section “al-Tirmidhi’s list”. Used only as a development cross-check; it is not an authoritative religious source.",
+      "url": "https://en.wikipedia.org/wiki/Names_of_God_in_Islam",
+      "usedFor": "Cross-checking Arabic spelling, transliteration, and common English renderings during development.",
+      "verificationStatus": "pending"
+    }
+  ]
+}

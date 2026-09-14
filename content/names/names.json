@@ -1,0 +1,896 @@
+{
+  "version": "0.1.0-draft",
+  "names": [
+    {
+      "id": "ar-rahman",
+      "order": 1,
+      "arabic": "الرَّحْمَٰنُ",
+      "transliteration": "Ar-Raḥmān",
+      "shortMeaning": "The Most Compassionate",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ar-rahim",
+      "order": 2,
+      "arabic": "الرَّحِيمُ",
+      "transliteration": "Ar-Raḥīm",
+      "shortMeaning": "The Most Merciful",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-malik",
+      "order": 3,
+      "arabic": "الْمَلِكُ",
+      "transliteration": "Al-Malik",
+      "shortMeaning": "The King",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-quddus",
+      "order": 4,
+      "arabic": "الْقُدُّوسُ",
+      "transliteration": "Al-Quddūs",
+      "shortMeaning": "The Most Holy",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "as-salam",
+      "order": 5,
+      "arabic": "السَّلَامُ",
+      "transliteration": "As-Salām",
+      "shortMeaning": "The Source of Peace",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mumin",
+      "order": 6,
+      "arabic": "الْمُؤْمِنُ",
+      "transliteration": "Al-Muʾmin",
+      "shortMeaning": "The Granter of Security",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muhaymin",
+      "order": 7,
+      "arabic": "الْمُهَيْمِنُ",
+      "transliteration": "Al-Muhaymin",
+      "shortMeaning": "The Guardian Over All",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-aziz",
+      "order": 8,
+      "arabic": "الْعَزِيزُ",
+      "transliteration": "Al-ʿAzīz",
+      "shortMeaning": "The Almighty",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-jabbar",
+      "order": 9,
+      "arabic": "الْجَبَّارُ",
+      "transliteration": "Al-Jabbār",
+      "shortMeaning": "The Compeller",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mutakabbir",
+      "order": 10,
+      "arabic": "الْمُتَكَبِّرُ",
+      "transliteration": "Al-Mutakabbir",
+      "shortMeaning": "The Supreme in Greatness",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-khaliq",
+      "order": 11,
+      "arabic": "الْخَالِقُ",
+      "transliteration": "Al-Khāliq",
+      "shortMeaning": "The Creator",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-bari",
+      "order": 12,
+      "arabic": "الْبَارِئُ",
+      "transliteration": "Al-Bāriʾ",
+      "shortMeaning": "The Maker",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-musawwir",
+      "order": 13,
+      "arabic": "الْمُصَوِّرُ",
+      "transliteration": "Al-Muṣawwir",
+      "shortMeaning": "The Fashioner",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-ghaffar",
+      "order": 14,
+      "arabic": "الْغَفَّارُ",
+      "transliteration": "Al-Ghaffār",
+      "shortMeaning": "The Repeatedly Forgiving",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-qahhar",
+      "order": 15,
+      "arabic": "الْقَهَّارُ",
+      "transliteration": "Al-Qahhār",
+      "shortMeaning": "The Subduer",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wahhab",
+      "order": 16,
+      "arabic": "الْوَهَّابُ",
+      "transliteration": "Al-Wahhāb",
+      "shortMeaning": "The Bestower",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ar-razzaq",
+      "order": 17,
+      "arabic": "الرَّزَّاقُ",
+      "transliteration": "Ar-Razzāq",
+      "shortMeaning": "The Provider",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-fattah",
+      "order": 18,
+      "arabic": "الْفَتَّاحُ",
+      "transliteration": "Al-Fattāḥ",
+      "shortMeaning": "The Opener",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-alim",
+      "order": 19,
+      "arabic": "الْعَلِيمُ",
+      "transliteration": "Al-ʿAlīm",
+      "shortMeaning": "The All-Knowing",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-qabid",
+      "order": 20,
+      "arabic": "الْقَابِضُ",
+      "transliteration": "Al-Qābiḍ",
+      "shortMeaning": "The Withholder",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-basit",
+      "order": 21,
+      "arabic": "الْبَاسِطُ",
+      "transliteration": "Al-Bāsiṭ",
+      "shortMeaning": "The Extender",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-khafid",
+      "order": 22,
+      "arabic": "الْخَافِضُ",
+      "transliteration": "Al-Khāfiḍ",
+      "shortMeaning": "The Abaser",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ar-rafi",
+      "order": 23,
+      "arabic": "الرَّافِعُ",
+      "transliteration": "Ar-Rāfiʿ",
+      "shortMeaning": "The Exalter",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muizz",
+      "order": 24,
+      "arabic": "الْمُعِزُّ",
+      "transliteration": "Al-Muʿizz",
+      "shortMeaning": "The Giver of Honor",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mudhill",
+      "order": 25,
+      "arabic": "الْمُذِلُّ",
+      "transliteration": "Al-Mudhill",
+      "shortMeaning": "The Giver of Dishonor",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "as-sami",
+      "order": 26,
+      "arabic": "السَّمِيعُ",
+      "transliteration": "As-Samīʿ",
+      "shortMeaning": "The All-Hearing",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-basir",
+      "order": 27,
+      "arabic": "الْبَصِيرُ",
+      "transliteration": "Al-Baṣīr",
+      "shortMeaning": "The All-Seeing",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hakam",
+      "order": 28,
+      "arabic": "الْحَكَمُ",
+      "transliteration": "Al-Ḥakam",
+      "shortMeaning": "The Judge",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-adl",
+      "order": 29,
+      "arabic": "الْعَدْلُ",
+      "transliteration": "Al-ʿAdl",
+      "shortMeaning": "The Just",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-latif",
+      "order": 30,
+      "arabic": "اللَّطِيفُ",
+      "transliteration": "Al-Laṭīf",
+      "shortMeaning": "The Subtly Kind",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-khabir",
+      "order": 31,
+      "arabic": "الْخَبِيرُ",
+      "transliteration": "Al-Khabīr",
+      "shortMeaning": "The All-Aware",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-halim",
+      "order": 32,
+      "arabic": "الْحَلِيمُ",
+      "transliteration": "Al-Ḥalīm",
+      "shortMeaning": "The Forbearing",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-azim",
+      "order": 33,
+      "arabic": "الْعَظِيمُ",
+      "transliteration": "Al-ʿAẓīm",
+      "shortMeaning": "The Magnificent",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-ghafur",
+      "order": 34,
+      "arabic": "الْغَفُورُ",
+      "transliteration": "Al-Ghafūr",
+      "shortMeaning": "The Ever-Forgiving",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ash-shakur",
+      "order": 35,
+      "arabic": "الشَّكُورُ",
+      "transliteration": "Ash-Shakūr",
+      "shortMeaning": "The Most Appreciative",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-ali",
+      "order": 36,
+      "arabic": "الْعَلِيُّ",
+      "transliteration": "Al-ʿAliyy",
+      "shortMeaning": "The Most High",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-kabir",
+      "order": 37,
+      "arabic": "الْكَبِيرُ",
+      "transliteration": "Al-Kabīr",
+      "shortMeaning": "The Most Great",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hafiz",
+      "order": 38,
+      "arabic": "الْحَفِيظُ",
+      "transliteration": "Al-Ḥafīẓ",
+      "shortMeaning": "The Preserver",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muqit",
+      "order": 39,
+      "arabic": "الْمُقِيتُ",
+      "transliteration": "Al-Muqīt",
+      "shortMeaning": "The Nourisher",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hasib",
+      "order": 40,
+      "arabic": "الْحَسِيبُ",
+      "transliteration": "Al-Ḥasīb",
+      "shortMeaning": "The Reckoner",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-jalil",
+      "order": 41,
+      "arabic": "الْجَلِيلُ",
+      "transliteration": "Al-Jalīl",
+      "shortMeaning": "The Majestic",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-karim",
+      "order": 42,
+      "arabic": "الْكَرِيمُ",
+      "transliteration": "Al-Karīm",
+      "shortMeaning": "The Most Generous",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ar-raqib",
+      "order": 43,
+      "arabic": "الرَّقِيبُ",
+      "transliteration": "Ar-Raqīb",
+      "shortMeaning": "The Watchful",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mujib",
+      "order": 44,
+      "arabic": "الْمُجِيبُ",
+      "transliteration": "Al-Mujīb",
+      "shortMeaning": "The Responsive",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wasi",
+      "order": 45,
+      "arabic": "الْوَاسِعُ",
+      "transliteration": "Al-Wāsiʿ",
+      "shortMeaning": "The All-Encompassing",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hakim",
+      "order": 46,
+      "arabic": "الْحَكِيمُ",
+      "transliteration": "Al-Ḥakīm",
+      "shortMeaning": "The All-Wise",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wadud",
+      "order": 47,
+      "arabic": "الْوَدُودُ",
+      "transliteration": "Al-Wadūd",
+      "shortMeaning": "The Loving",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-majid",
+      "order": 48,
+      "arabic": "الْمَجِيدُ",
+      "transliteration": "Al-Majīd",
+      "shortMeaning": "The All-Glorious",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-baith",
+      "order": 49,
+      "arabic": "الْبَاعِثُ",
+      "transliteration": "Al-Bāʿith",
+      "shortMeaning": "The Resurrector",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ash-shahid",
+      "order": 50,
+      "arabic": "الشَّهِيدُ",
+      "transliteration": "Ash-Shahīd",
+      "shortMeaning": "The Witness",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-haqq",
+      "order": 51,
+      "arabic": "الْحَقُّ",
+      "transliteration": "Al-Ḥaqq",
+      "shortMeaning": "The Truth",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wakil",
+      "order": 52,
+      "arabic": "الْوَكِيلُ",
+      "transliteration": "Al-Wakīl",
+      "shortMeaning": "The Trustee",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-qawi",
+      "order": 53,
+      "arabic": "الْقَوِيُّ",
+      "transliteration": "Al-Qawiyy",
+      "shortMeaning": "The Strong",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-matin",
+      "order": 54,
+      "arabic": "الْمَتِينُ",
+      "transliteration": "Al-Matīn",
+      "shortMeaning": "The Firm",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wali",
+      "order": 55,
+      "arabic": "الْوَلِيُّ",
+      "transliteration": "Al-Waliyy",
+      "shortMeaning": "The Protecting Friend",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hamid",
+      "order": 56,
+      "arabic": "الْحَمِيدُ",
+      "transliteration": "Al-Ḥamīd",
+      "shortMeaning": "The Praiseworthy",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muhsi",
+      "order": 57,
+      "arabic": "الْمُحْصِي",
+      "transliteration": "Al-Muḥṣī",
+      "shortMeaning": "The Accounter of All",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mubdi",
+      "order": 58,
+      "arabic": "الْمُبْدِئُ",
+      "transliteration": "Al-Mubdiʾ",
+      "shortMeaning": "The Originator",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muid",
+      "order": 59,
+      "arabic": "الْمُعِيدُ",
+      "transliteration": "Al-Muʿīd",
+      "shortMeaning": "The Restorer",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muhyi",
+      "order": 60,
+      "arabic": "الْمُحْيِي",
+      "transliteration": "Al-Muḥyī",
+      "shortMeaning": "The Giver of Life",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mumit",
+      "order": 61,
+      "arabic": "الْمُمِيتُ",
+      "transliteration": "Al-Mumīt",
+      "shortMeaning": "The Bringer of Death",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hayy",
+      "order": 62,
+      "arabic": "الْحَيُّ",
+      "transliteration": "Al-Ḥayy",
+      "shortMeaning": "The Ever-Living",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-qayyum",
+      "order": 63,
+      "arabic": "الْقَيُّومُ",
+      "transliteration": "Al-Qayyūm",
+      "shortMeaning": "The Self-Subsisting",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wajid",
+      "order": 64,
+      "arabic": "الْوَاجِدُ",
+      "transliteration": "Al-Wājid",
+      "shortMeaning": "The Perceiver",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-maajid",
+      "order": 65,
+      "arabic": "الْمَاجِدُ",
+      "transliteration": "Al-Mājid",
+      "shortMeaning": "The Illustrious",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-wahid",
+      "order": 66,
+      "arabic": "الْوَاحِدُ",
+      "transliteration": "Al-Wāḥid",
+      "shortMeaning": "The Unique",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-ahad",
+      "order": 67,
+      "arabic": "الْأَحَدُ",
+      "transliteration": "Al-Aḥad",
+      "shortMeaning": "The One",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "as-samad",
+      "order": 68,
+      "arabic": "الصَّمَدُ",
+      "transliteration": "Aṣ-Ṣamad",
+      "shortMeaning": "The Eternal Refuge",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-qadir",
+      "order": 69,
+      "arabic": "الْقَادِرُ",
+      "transliteration": "Al-Qādir",
+      "shortMeaning": "The All-Powerful",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muqtadir",
+      "order": 70,
+      "arabic": "الْمُقْتَدِرُ",
+      "transliteration": "Al-Muqtadir",
+      "shortMeaning": "The Determiner",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muqaddim",
+      "order": 71,
+      "arabic": "الْمُقَدِّمُ",
+      "transliteration": "Al-Muqaddim",
+      "shortMeaning": "The Expediter",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muakhkhir",
+      "order": 72,
+      "arabic": "الْمُؤَخِّرُ",
+      "transliteration": "Al-Muʾakhkhir",
+      "shortMeaning": "The Delayer",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-awwal",
+      "order": 73,
+      "arabic": "الْأَوَّلُ",
+      "transliteration": "Al-Awwal",
+      "shortMeaning": "The First",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-akhir",
+      "order": 74,
+      "arabic": "الْآخِرُ",
+      "transliteration": "Al-Ākhir",
+      "shortMeaning": "The Last",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "az-zahir",
+      "order": 75,
+      "arabic": "الظَّاهِرُ",
+      "transliteration": "Aẓ-Ẓāhir",
+      "shortMeaning": "The Manifest",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-batin",
+      "order": 76,
+      "arabic": "الْبَاطِنُ",
+      "transliteration": "Al-Bāṭin",
+      "shortMeaning": "The Hidden",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-waali",
+      "order": 77,
+      "arabic": "الْوَالِي",
+      "transliteration": "Al-Wālī",
+      "shortMeaning": "The Patron",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mutaali",
+      "order": 78,
+      "arabic": "الْمُتَعَالِي",
+      "transliteration": "Al-Mutaʿālī",
+      "shortMeaning": "The Supremely Exalted",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-barr",
+      "order": 79,
+      "arabic": "الْبَرُّ",
+      "transliteration": "Al-Barr",
+      "shortMeaning": "The Beneficent",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "at-tawwab",
+      "order": 80,
+      "arabic": "التَّوَّابُ",
+      "transliteration": "At-Tawwāb",
+      "shortMeaning": "The Acceptor of Repentance",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muntaqim",
+      "order": 81,
+      "arabic": "الْمُنْتَقِمُ",
+      "transliteration": "Al-Muntaqim",
+      "shortMeaning": "The Avenger",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-afuw",
+      "order": 82,
+      "arabic": "الْعَفُوُّ",
+      "transliteration": "Al-ʿAfuww",
+      "shortMeaning": "The Pardoner",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ar-rauf",
+      "order": 83,
+      "arabic": "الرَّؤُوفُ",
+      "transliteration": "Ar-Raʾūf",
+      "shortMeaning": "The Most Kind",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "malik-al-mulk",
+      "order": 84,
+      "arabic": "مَالِكُ الْمُلْكِ",
+      "transliteration": "Mālik al-Mulk",
+      "shortMeaning": "The Owner of All Sovereignty",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "dhul-jalali-wal-ikram",
+      "order": 85,
+      "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+      "transliteration": "Dhul-Jalāli wal-Ikrām",
+      "shortMeaning": "Lord of Majesty and Honor",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-muqsit",
+      "order": 86,
+      "arabic": "الْمُقْسِطُ",
+      "transliteration": "Al-Muqsiṭ",
+      "shortMeaning": "The Equitable",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-jami",
+      "order": 87,
+      "arabic": "الْجَامِعُ",
+      "transliteration": "Al-Jāmiʿ",
+      "shortMeaning": "The Gatherer",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-ghani",
+      "order": 88,
+      "arabic": "الْغَنِيُّ",
+      "transliteration": "Al-Ghaniyy",
+      "shortMeaning": "The Self-Sufficient",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mughni",
+      "order": 89,
+      "arabic": "الْمُغْنِي",
+      "transliteration": "Al-Mughnī",
+      "shortMeaning": "The Enricher",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-mani",
+      "order": 90,
+      "arabic": "الْمَانِعُ",
+      "transliteration": "Al-Māniʿ",
+      "shortMeaning": "The Preventer",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ad-darr",
+      "order": 91,
+      "arabic": "الضَّارُّ",
+      "transliteration": "Aḍ-Ḍārr",
+      "shortMeaning": "The Distresser",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "an-nafi",
+      "order": 92,
+      "arabic": "النَّافِعُ",
+      "transliteration": "An-Nāfiʿ",
+      "shortMeaning": "The Benefactor",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "an-nur",
+      "order": 93,
+      "arabic": "النُّورُ",
+      "transliteration": "An-Nūr",
+      "shortMeaning": "The Light",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-hadi",
+      "order": 94,
+      "arabic": "الْهَادِي",
+      "transliteration": "Al-Hādī",
+      "shortMeaning": "The Guide",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-badi",
+      "order": 95,
+      "arabic": "الْبَدِيعُ",
+      "transliteration": "Al-Badīʿ",
+      "shortMeaning": "The Incomparable Originator",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-baqi",
+      "order": 96,
+      "arabic": "الْبَاقِي",
+      "transliteration": "Al-Bāqī",
+      "shortMeaning": "The Everlasting",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "al-warith",
+      "order": 97,
+      "arabic": "الْوَارِثُ",
+      "transliteration": "Al-Wārith",
+      "shortMeaning": "The Inheritor of All",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ar-rashid",
+      "order": 98,
+      "arabic": "الرَّشِيدُ",
+      "transliteration": "Ar-Rashīd",
+      "shortMeaning": "The Guide to the Right Path",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "as-sabur",
+      "order": 99,
+      "arabic": "الصَّبُورُ",
+      "transliteration": "Aṣ-Ṣabūr",
+      "shortMeaning": "The Most Patient",
+      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
+      "verificationStatus": "pending"
+    }
+  ]
+}
