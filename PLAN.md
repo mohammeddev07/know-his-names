@@ -2,6 +2,117 @@
 
 > **Learn. Remember. Reflect.**
 
+## Implementation Progress
+
+> Keep this section current: tick items as they are completed and verified
+> (lint, typecheck, tests and build passing).
+
+**V1 phases:** `█████░░░░░░░` **5 / 12 complete** (Phase 5 in progress)
+
+| Phase | Status |
+| ----- | ------ |
+| 0 --- Repository foundation | ✅ Complete |
+| 1 --- Design system | ✅ Complete |
+| 2 --- Static UX | ✅ Complete |
+| 3 --- Content layer | ✅ Complete |
+| 4 --- Local persistence | ✅ Complete |
+| 5 --- Learning engine | 🔄 In progress |
+| 6 --- FSRS | ⬜ Not started |
+| 7 --- Backup / restore | ⬜ Not started |
+| 8 --- PWA / offline | ⬜ Not started |
+| 9 --- UX polish | ⬜ Not started |
+| 10 --- Religious content verification | ⬜ Needs human scholarly review |
+| 11 --- Production launch | ⬜ Not started |
+
+### Detailed checklist
+
+**Phase 0 --- Repository foundation**
+
+- [x] Next.js + TypeScript project
+- [x] ESLint and Prettier
+- [x] Vitest (unit/component) and Playwright (E2E) configured
+- [x] Folder boundaries established
+- [x] PLAN.md and README.md
+- [x] Production build verified and committed
+
+**Phase 1 --- Design system**
+
+- [x] Theme tokens, light and dark modes (no flash on load)
+- [x] Arabic (Scheherazade New), serif (Newsreader) and UI (Hanken Grotesk) typography
+- [x] Buttons, cards, inputs, segmented control, switch, dialog, progress bar
+- [x] Mobile bottom navigation and desktop header navigation
+- [x] Layout primitives, focus states, reduced-motion support
+- [x] Checked at 320, 375, 390, 430, 768 and 1280 px
+
+**Phase 2 --- Static UX**
+
+- [x] Home, Learn, Review, Explore, Name Detail, Progress, Settings, Sources
+- [x] Clickable primary journey with clearly marked sample data
+
+**Phase 3 --- Content layer**
+
+- [x] Zod schemas for Names and sources
+- [x] Content loader and accessors
+- [x] Build-time validation (duplicate ids/orders, missing fields, invalid status, unknown sources)
+- [x] Source model with enumeration source
+- [x] No religious content hard-coded in components
+
+**Phase 4 --- Local persistence**
+
+- [x] `ProgressRepository` interface
+- [x] IndexedDB implementation (cards, append-only review history, preferences)
+- [x] Atomic review writes, corrupt-record handling, unavailable-storage handling
+- [x] Repository unit tests
+- [x] UI wired to IndexedDB and verified across reloads
+
+**Phase 5 --- Learning engine**
+
+- [ ] New Name selection and configurable daily limit
+- [ ] Learning sessions with interleaved recall
+- [ ] Due-review queue and session completion
+- [ ] Unit tests for session and progress logic
+
+**Phase 6 --- FSRS**
+
+- [ ] `ts-fsrs` wrapped behind `ReviewScheduler`
+- [ ] Again / Hard / Good / Easy mapped and persisted
+- [ ] Append-only review events
+- [ ] Scheduling unit tests
+
+**Phase 7 --- Backup / restore**
+
+- [ ] Export progress file
+- [ ] Import with schema/version validation and confirmation
+- [ ] Rollback of the replaced progress
+- [ ] E2E restoration test
+
+**Phase 8 --- PWA / offline**
+
+- [ ] Manifest, production icons, standalone display
+- [ ] Service worker: offline shell and bundled content
+- [ ] Safe-area handling verified
+
+**Phase 9 --- UX polish**
+
+- [ ] Transitions, loading, empty and failure states reviewed
+- [ ] Accessibility refinements
+- [ ] Lighthouse run and significant findings fixed
+
+**Phase 10 --- Religious content verification**
+
+- [ ] Arabic, ordering, transliteration and translation reviewed by a qualified reviewer
+- [ ] Explanations written and reviewed
+- [ ] Pronunciation audio recorded and reviewed
+- [ ] Content version recorded as verified
+
+**Phase 11 --- Production launch**
+
+- [ ] Metadata, Open Graph, favicon and PWA icons
+- [ ] Privacy information
+- [ ] Deployed with HTTPS and smoke-tested from the public URL
+
+------------------------------------------------------------------------
+
 ## 1. Product Identity
 
 **Product name:** Know His Names\

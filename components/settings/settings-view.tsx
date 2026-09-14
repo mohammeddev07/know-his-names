@@ -2,12 +2,16 @@
 
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { Card, Page, PageHeader, Section } from "@/components/ui/page";
 import { SegmentedControl } from "@/components/ui/segmented-control";
 import { Switch } from "@/components/ui/switch";
 import { useProgress } from "@/hooks/use-progress";
 import { CONTENT_VERSION } from "@/lib/content/names";
-import { NEW_NAMES_PER_DAY_OPTIONS } from "@/lib/learning/types";
+import {
+  NEW_NAMES_PER_DAY_OPTIONS,
+  type UserPreferences,
+} from "@/lib/learning/types";
 import { APP_VERSION } from "@/lib/site";
 import type { ThemePreference } from "@/lib/theme";
 import { BackupSection } from "./backup-section";
@@ -20,11 +24,29 @@ const THEME_OPTIONS: { value: ThemePreference; label: string }[] = [
 
 export function SettingsView() {
   const { preferences, updatePreferences, status } = useProgress();
+  const [saveError, setSaveError] = useState<string | null>(null);
   const disabled = status !== "ready";
+
+  const save = (patch: Partial<UserPreferences>) => {
+    setSaveError(null);
+    updatePreferences(patch).catch(() =>
+      setSaveError("That change wasn't saved. Please try again."),
+    );
+  };
 
   return (
     <Page>
       <PageHeader title="Settings" />
+
+      {status === "unavailable" && (
+        <p className="mb-6 rounded-2xl bg-gold-soft px-4 py-3 text-sm text-gold-ink">
+          This browser isn&apos;t allowing the app to store data, so learning
+          settings and backups are unavailable. The theme can still be changed.
+        </p>
+      )}
+      <p role="alert" className="empty:hidden mb-6 rounded-2xl bg-danger-soft px-4 py-3 text-sm text-danger">
+        {saveError}
+      </p>
 
       <Section title="Learning" className="mt-0">
         <Card className="space-y-7 p-5 sm:p-6">
@@ -37,7 +59,7 @@ export function SettingsView() {
               }))}
               value={preferences.newNamesPerDay}
               onChange={(newNamesPerDay) =>
-                void updatePreferences({ newNamesPerDay })
+                save({ newNamesPerDay })
               }
               disabled={disabled}
             />
@@ -51,7 +73,7 @@ export function SettingsView() {
             description="Turn this off to practise reading the Arabic on its own."
             checked={preferences.showTransliteration}
             onChange={(showTransliteration) =>
-              void updatePreferences({ showTransliteration })
+              save({ showTransliteration })
             }
             disabled={disabled}
           />
@@ -64,8 +86,8 @@ export function SettingsView() {
             legend="Theme"
             options={THEME_OPTIONS}
             value={preferences.theme}
-            onChange={(theme) => void updatePreferences({ theme })}
-            disabled={disabled}
+            onChange={(theme) => save({ theme })}
+            disabled={status === "loading"}
           />
         </Card>
       </Section>
