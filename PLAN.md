@@ -7,7 +7,7 @@
 > Keep this section current: tick items as they are completed and verified
 > (lint, typecheck, tests and build passing).
 
-**V1 phases:** `████████░░░░` **8 / 12 complete** (Phase 8 in progress)
+**V1 phases:** `█████████░░░` **9 / 12 complete** (Phase 9 in progress)
 
 | Phase | Status |
 | ----- | ------ |
@@ -19,8 +19,8 @@
 | 5 --- Learning engine | ✅ Complete |
 | 6 --- FSRS | ✅ Complete |
 | 7 --- Backup / restore | ✅ Complete |
-| 8 --- PWA / offline | 🔄 In progress |
-| 9 --- UX polish | ⬜ Not started |
+| 8 --- PWA / offline | ✅ Complete |
+| 9 --- UX polish | 🔄 In progress |
 | 10 --- Religious content verification | ⬜ Needs human scholarly review |
 | 11 --- Production launch | ⬜ Not started |
 
@@ -88,9 +88,9 @@
 
 **Phase 8 --- PWA / offline**
 
-- [ ] Manifest, production icons, standalone display
-- [ ] Service worker: offline shell and bundled content
-- [ ] Safe-area handling verified
+- [x] Manifest, production icons, standalone display
+- [x] Service worker: offline shell and bundled content
+- [x] Safe-area handling verified
 
 **Phase 9 --- UX polish**
 

@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Hanken_Grotesk, Newsreader, Scheherazade_New } from "next/font/google";
 import { ProgressProvider } from "@/components/providers/progress-provider";
+import { OfflineNotice } from "@/components/pwa/offline-notice";
+import { ServiceWorkerRegistration } from "@/components/pwa/service-worker-registration";
 import { assertValidContent } from "@/lib/content/validate";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import { THEME_COLORS, themeInitScript } from "@/lib/theme";
 import "./globals.css";
 
@@ -30,12 +33,19 @@ const arabic = Scheherazade_New({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Know His Names",
-    template: "%s — Know His Names",
+    default: SITE_NAME,
+    template: `%s — ${SITE_NAME}`,
   },
-  description: "Learn and remember the 99 Names of Allah.",
-  applicationName: "Know His Names",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  appleWebApp: {
+    capable: true,
+    title: SITE_NAME,
+    statusBarStyle: "default",
+  },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
@@ -61,6 +71,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body>
         <ProgressProvider>{children}</ProgressProvider>
+        <OfflineNotice />
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );
