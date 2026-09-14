@@ -7,7 +7,7 @@
 > Keep this section current: tick items as they are completed and verified
 > (lint, typecheck, tests and build passing).
 
-**V1 phases:** `█████████░░░` **9 / 12 complete** (Phase 9 in progress)
+**V1 phases:** `██████████░░` **10 / 12 complete** (Phase 11 in progress; Phase 10 needs a qualified human reviewer)
 
 | Phase | Status |
 | ----- | ------ |
@@ -20,9 +20,9 @@
 | 6 --- FSRS | ✅ Complete |
 | 7 --- Backup / restore | ✅ Complete |
 | 8 --- PWA / offline | ✅ Complete |
-| 9 --- UX polish | 🔄 In progress |
+| 9 --- UX polish | ✅ Complete |
 | 10 --- Religious content verification | ⬜ Needs human scholarly review |
-| 11 --- Production launch | ⬜ Not started |
+| 11 --- Production launch | 🔄 In progress |
 
 ### Detailed checklist
 
@@ -94,9 +94,9 @@
 
 **Phase 9 --- UX polish**
 
-- [ ] Transitions, loading, empty and failure states reviewed
-- [ ] Accessibility refinements
-- [ ] Lighthouse run and significant findings fixed
+- [x] Transitions, loading, empty and failure states reviewed
+- [x] Accessibility refinements
+- [x] Lighthouse run and significant findings fixed
 
 **Phase 10 --- Religious content verification**
 

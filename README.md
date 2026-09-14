@@ -42,7 +42,7 @@ npm run dev        # http://localhost:3000
 - [x] Phase 6 — FSRS
 - [x] Phase 7 — Backup / restore
 - [x] Phase 8 — PWA / offline
-- [ ] Phase 9 — UX polish
+- [x] Phase 9 — UX polish
 - [ ] Phase 10 — Religious content verification
 - [ ] Phase 11 — Production launch
 

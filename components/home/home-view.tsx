@@ -21,6 +21,12 @@ import { getStatus } from "@/lib/learning/status";
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
 const namesLabel = (n: number) => `${n} ${n === 1 ? "Name" : "Names"}`;
 
+/** Shown while progress loads, so the greeting paints immediately. */
+const DEFAULT_SUBLINE = "Begin learning the Names of Allah, a few at a time.";
+
+const HOME_GRID =
+  "grid gap-x-12 gap-y-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]";
+
 export function HomeView() {
   const progress = useProgress();
   const now = useNow();
@@ -44,8 +50,9 @@ export function HomeView() {
   const unavailable = progress.status === "unavailable";
 
   let subline: string;
-  if (firstVisit)
-    subline = "Begin learning the Names of Allah, a few at a time.";
+  if (unavailable)
+    subline = "Explore the 99 Names. Progress can't be saved in this browser.";
+  else if (firstVisit) subline = DEFAULT_SUBLINE;
   else if (due > 0)
     subline = `${returning ? "Welcome back. " : ""}You have ${namesLabel(due)} ready to review.`;
   else if (newAvailable > 0)
@@ -66,18 +73,9 @@ export function HomeView() {
 
   return (
     <Page width="wide">
-      <div className="grid gap-x-12 gap-y-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+      <div className={HOME_GRID}>
         <div className="mb-4 lg:col-start-1 lg:row-start-1 lg:mb-0">
-          <header className="mb-7">
-            <h1 className="font-serif text-[2.375rem] leading-[1.05] tracking-[-0.015em] text-ink sm:text-[2.875rem]">
-              Assalamu alaikum
-            </h1>
-            <p className="mt-2.5 text-[1.0625rem] leading-relaxed text-ink-2">
-              {unavailable
-                ? "Explore the 99 Names. Progress can't be saved in this browser."
-                : subline}
-            </p>
-          </header>
+          <HomeHeader subline={subline} />
 
           {!unavailable && (
             <NextStep
@@ -143,6 +141,19 @@ export function HomeView() {
         </div>
       </div>
     </Page>
+  );
+}
+
+function HomeHeader({ subline }: { subline: string }) {
+  return (
+    <header className="mb-7">
+      <h1 className="font-serif text-[2.375rem] leading-[1.05] tracking-[-0.015em] text-ink sm:text-[2.875rem]">
+        Assalamu alaikum
+      </h1>
+      <p className="mt-2.5 text-[1.0625rem] leading-relaxed text-ink-2">
+        {subline}
+      </p>
+    </header>
   );
 }
 
@@ -309,22 +320,19 @@ function NameOfTheDay({ name }: { name: DivineName }) {
   );
 }
 
+/** The greeting renders at once; only the progress-dependent parts wait. */
 function HomeSkeleton() {
   return (
     <Page width="wide">
-      <div
-        aria-busy="true"
-        className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-12"
-      >
+      <div aria-busy="true" className={HOME_GRID}>
         <span className="sr-only" role="status">
           Loading your progress
         </span>
-        <div>
-          <div className="h-12 w-64 max-w-full rounded-xl bg-surface-2" />
-          <div className="mt-4 h-5 w-72 max-w-full rounded-lg bg-surface-2" />
-          <div className="mt-8 h-64 animate-pulse rounded-[1.75rem] bg-surface-2" />
+        <div className="mb-4 lg:col-start-1 lg:row-start-1 lg:mb-0">
+          <HomeHeader subline={DEFAULT_SUBLINE} />
+          <div className="h-64 animate-pulse rounded-[1.75rem] bg-surface-2" />
         </div>
-        <div className="h-80 animate-pulse rounded-3xl bg-surface-2" />
+        <div className="h-80 animate-pulse rounded-3xl bg-surface-2 lg:col-start-2 lg:row-span-2 lg:row-start-1" />
       </div>
     </Page>
   );

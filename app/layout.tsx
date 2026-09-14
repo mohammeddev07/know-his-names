@@ -17,17 +17,20 @@ const sans = Hanken_Grotesk({
   display: "swap",
 });
 
+// Fonts are the heaviest part of a first visit, so only the UI and Arabic
+// faces are preloaded, and each family ships just the weights in use.
 const serif = Newsreader({
   subsets: ["latin", "latin-ext"],
+  weight: "400",
   style: ["normal", "italic"],
-  axes: ["opsz"],
   variable: "--font-newsreader",
   display: "swap",
+  preload: false,
 });
 
 const arabic = Scheherazade_New({
   subsets: ["arabic"],
-  weight: ["400", "700"],
+  weight: "400",
   variable: "--font-scheherazade",
   display: "swap",
 });
