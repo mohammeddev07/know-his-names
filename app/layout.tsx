@@ -1,15 +1,91 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Hanken_Grotesk, Newsreader, Scheherazade_New } from "next/font/google";
+import { ProgressProvider } from "@/components/providers/progress-provider";
+import { OfflineNotice } from "@/components/pwa/offline-notice";
+import { ServiceWorkerRegistration } from "@/components/pwa/service-worker-registration";
+import { assertValidContent } from "@/lib/content/validate";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { THEME_COLORS, themeInitScript } from "@/lib/theme";
 import "./globals.css";
 
+// Fails the build (and server start) if bundled religious content is malformed.
+assertValidContent();
+
+const sans = Hanken_Grotesk({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-ui",
+  display: "swap",
+});
+
+// Fonts are the heaviest part of a first visit, so only the UI and Arabic
+// faces are preloaded, and each family ships just the weights in use.
+const serif = Newsreader({
+  subsets: ["latin", "latin-ext"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
+  display: "swap",
+  preload: false,
+});
+
+const arabic = Scheherazade_New({
+  subsets: ["arabic"],
+  weight: "400",
+  variable: "--font-scheherazade",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Know His Names",
-  description: "Learn and remember the 99 Names of Allah.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_NAME,
+    template: `%s — ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  appleWebApp: {
+    capable: true,
+    title: SITE_NAME,
+    statusBarStyle: "default",
+  },
+  formatDetection: { telephone: false },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    locale: "en",
+  },
+  // Title and description come from each page's Open Graph tags.
+  twitter: { card: "summary_large_image" },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: THEME_COLORS.light },
+    { media: "(prefers-color-scheme: dark)", color: THEME_COLORS.dark },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html
+      lang="en"
+      dir="ltr"
+      className={`${sans.variable} ${serif.variable} ${arabic.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body>
+        <ProgressProvider>{children}</ProgressProvider>
+        <OfflineNotice />
+        <ServiceWorkerRegistration />
+      </body>
     </html>
   );
 }

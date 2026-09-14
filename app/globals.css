@@ -1,1 +1,220 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Design tokens. Components use the Tailwind utilities generated from
+ * @theme below (bg-surface, text-ink-2, ...) rather than raw values.
+ */
+:root {
+  color-scheme: light;
+  --bg: #f6f3eb;
+  --surface: #fffdf8;
+  --surface-2: #f0ece2;
+  --surface-3: #e7e1d3;
+  --line: #e3ddcf;
+  --line-strong: #cdc5b2;
+  --ink: #1d2320;
+  --ink-2: #525b55;
+  --ink-3: #697169;
+  --primary: #0e5a44;
+  --primary-hover: #0a4736;
+  --primary-ink: #f8f4e9;
+  --primary-soft: #e1ebe3;
+  --primary-soft-ink: #0b4a38;
+  --gold: #b08a44;
+  --gold-ink: #7a5d25;
+  --gold-soft: #f2e9d4;
+  --danger: #a3473b;
+  --danger-soft: #f6e5e0;
+  --focus: #0e5a44;
+  --header-bg: rgb(246 243 235 / 0.84);
+  --hero: #0e5a44;
+  --hero-ink: #f8f4e9;
+  --hero-ink-2: rgb(248 244 233 / 0.8);
+  --hero-button: #f8f4e9;
+  --hero-button-ink: #0b4a38;
+  --hero-motif: #e3c98d;
+  --shadow-card:
+    0 1px 0 rgb(29 35 32 / 0.03), 0 1px 2px rgb(29 35 32 / 0.04),
+    0 16px 40px -24px rgb(29 35 32 / 0.22);
+  --shadow-raised:
+    0 1px 0 rgb(255 255 255 / 0.14) inset, 0 1px 2px rgb(10 50 38 / 0.18),
+    0 10px 24px -14px rgb(10 50 38 / 0.5);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e1512;
+  --surface: #151e1a;
+  --surface-2: #1a2520;
+  --surface-3: #223029;
+  --line: #25322c;
+  --line-strong: #34443c;
+  --ink: #ede8dd;
+  --ink-2: #b1b8b0;
+  --ink-3: #939c94;
+  --primary: #69bf9c;
+  --primary-hover: #83cfaf;
+  --primary-ink: #08140f;
+  --primary-soft: #183028;
+  --primary-soft-ink: #9ddcc0;
+  --gold: #c9a964;
+  --gold-ink: #d8bd82;
+  --gold-soft: #2b2718;
+  --danger: #e59487;
+  --danger-soft: #3a211d;
+  --focus: #8ad6b5;
+  --header-bg: rgb(14 21 18 / 0.82);
+  --hero: #163b30;
+  --hero-ink: #ede8dd;
+  --hero-ink-2: rgb(237 232 221 / 0.74);
+  --hero-button: #69bf9c;
+  --hero-button-ink: #08140f;
+  --hero-motif: #c9a964;
+  --shadow-card: 0 1px 0 rgb(255 255 255 / 0.02) inset;
+  --shadow-raised: 0 1px 0 rgb(255 255 255 / 0.18) inset;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-ink: var(--primary-ink);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-soft-ink: var(--primary-soft-ink);
+  --color-gold: var(--gold);
+  --color-gold-ink: var(--gold-ink);
+  --color-gold-soft: var(--gold-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-hero: var(--hero);
+  --color-hero-ink: var(--hero-ink);
+  --color-hero-ink-2: var(--hero-ink-2);
+  --color-hero-button: var(--hero-button);
+  --color-hero-button-ink: var(--hero-button-ink);
+  --color-hero-motif: var(--hero-motif);
+  --shadow-card: var(--shadow-card);
+  --shadow-raised: var(--shadow-raised);
+}
+
+@theme {
+  --font-sans:
+    var(--font-ui), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  --font-arabic:
+    var(--font-scheherazade), "Noto Naskh Arabic", "Geeza Pro",
+    "Traditional Arabic", serif;
+
+  --text-arabic-hero: clamp(3.5rem, 2.4rem + 6vw, 6rem);
+  --text-arabic-hero--line-height: 1.55;
+  --text-arabic-lg: 2.75rem;
+  --text-arabic-lg--line-height: 1.55;
+  --text-arabic-md: 2rem;
+  --text-arabic-md--line-height: 1.55;
+  --text-arabic-sm: 1.5rem;
+  --text-arabic-sm--line-height: 1.5;
+
+  --ease-calm: cubic-bezier(0.22, 0.7, 0.2, 1);
+
+  --animate-rise: rise 220ms var(--ease-calm) both;
+  --animate-fade: fade 200ms var(--ease-calm) both;
+  --animate-reveal: reveal 240ms var(--ease-calm) both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(4px) scale(0.99);
+      filter: blur(2px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+      filter: none;
+    }
+  }
+}
+
+@layer base {
+  html {
+    background-color: var(--bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :lang(ar) {
+    font-family: var(--font-arabic);
+    font-feature-settings: normal;
+    letter-spacing: 0;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: var(--gold-soft);
+    color: var(--ink);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary {
+    cursor: pointer;
+  }
+
+  dialog::backdrop {
+    background: rgb(12 18 15 / 0.45);
+    backdrop-filter: blur(2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+}

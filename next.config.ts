@@ -7,8 +7,10 @@ const buildId =
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  devIndicators: false,
   env: {
     NEXT_PUBLIC_BUILD_ID: buildId,
+    NEXT_PUBLIC_APP_VERSION: process.env.npm_package_version ?? "dev",
   },
   async headers() {
     return [
