@@ -30,6 +30,11 @@ export async function generateMetadata({
     title: `${name.transliteration} (${name.arabic}): ${name.shortMeaning}`,
     description: `${name.transliteration}, ${name.arabic}, is one of the 99 Names of Allah, often rendered as “${name.shortMeaning}”. Learn and remember its meaning.`,
     alternates: { canonical: `/names/${name.id}` },
+    openGraph: {
+      title: `${name.transliteration}: ${name.shortMeaning}`,
+      description: `One of the 99 Names of Allah. Learn and remember it with Know His Names.`,
+      url: `/names/${name.id}`,
+    },
   };
 }
 

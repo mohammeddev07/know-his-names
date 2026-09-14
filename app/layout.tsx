@@ -49,6 +49,15 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
   },
   formatDetection: { telephone: false },
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    locale: "en",
+  },
+  // Title and description come from each page's Open Graph tags.
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {

@@ -22,7 +22,7 @@
 | 8 --- PWA / offline | ✅ Complete |
 | 9 --- UX polish | ✅ Complete |
 | 10 --- Religious content verification | ⬜ Needs human scholarly review |
-| 11 --- Production launch | 🔄 In progress |
+| 11 --- Production launch | 🔄 Ready to deploy (needs hosting account) |
 
 ### Detailed checklist
 
@@ -107,8 +107,8 @@
 
 **Phase 11 --- Production launch**
 
-- [ ] Metadata, Open Graph, favicon and PWA icons
-- [ ] Privacy information
+- [x] Metadata, Open Graph, favicon and PWA icons
+- [x] Privacy information
 - [ ] Deployed with HTTPS and smoke-tested from the public URL
 
 ------------------------------------------------------------------------
