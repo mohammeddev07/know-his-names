@@ -5,6 +5,9 @@ import { SITE_NAME } from "@/lib/site";
 export const alt = `${SITE_NAME}: learn and remember the 99 Names of Allah`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+// Required for `output: "export"` (GitHub Pages review builds); this image
+// has no dynamic input, so it's already effectively static on Vercel too.
+export const dynamic = "force-static";
 
 const STAR = starPoints(240, 12);
 

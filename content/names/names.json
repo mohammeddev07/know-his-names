@@ -1,5 +1,6 @@
 {
-  "version": "0.1.0-draft",
+  "version": "0.2.0-draft",
+  "updated": "2026-09-13",
   "names": [
     {
       "id": "ar-rahman",
@@ -7,8 +8,12 @@
       "arabic": "الرَّحْمَٰنُ",
       "transliteration": "Ar-Raḥmān",
       "shortMeaning": "The Most Compassionate",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:22 (ٱلرَّحْمَٰنُ)", "Qur'an 1:3 (ٱلرَّحْمَٰنِ)"]
+      }
     },
     {
       "id": "ar-rahim",
@@ -16,8 +21,12 @@
       "arabic": "الرَّحِيمُ",
       "transliteration": "Ar-Raḥīm",
       "shortMeaning": "The Most Merciful",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:22 (ٱلرَّحِيمُ)", "Qur'an 1:3 (ٱلرَّحِيمِ)"]
+      }
     },
     {
       "id": "al-malik",
@@ -25,8 +34,12 @@
       "arabic": "الْمَلِكُ",
       "transliteration": "Al-Malik",
       "shortMeaning": "The King",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلْمَلِكُ)", "Qur'an 20:114 (ٱلْمَلِكُ)"]
+      }
     },
     {
       "id": "al-quddus",
@@ -34,8 +47,12 @@
       "arabic": "الْقُدُّوسُ",
       "transliteration": "Al-Quddūs",
       "shortMeaning": "The Most Holy",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلْقُدُّوسُ)", "Qur'an 62:1 (ٱلْقُدُّوسِ)"]
+      }
     },
     {
       "id": "as-salam",
@@ -43,8 +60,13 @@
       "arabic": "السَّلَامُ",
       "transliteration": "As-Salām",
       "shortMeaning": "The Source of Peace",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلسَّلَٰمُ)"],
+        "notes": "Al-Khaṭṭābī explains as-Salām as the One free from every defect, or the One whose creation is safe from any injustice from Him; al-Ṭabarī on 59:23 gives the second meaning. “The Source of Peace” is a common but interpretive rendering."
+      }
     },
     {
       "id": "al-mumin",
@@ -52,8 +74,12 @@
       "arabic": "الْمُؤْمِنُ",
       "transliteration": "Al-Muʾmin",
       "shortMeaning": "The Granter of Security",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلْمُؤْمِنُ)"]
+      }
     },
     {
       "id": "al-muhaymin",
@@ -61,8 +87,12 @@
       "arabic": "الْمُهَيْمِنُ",
       "transliteration": "Al-Muhaymin",
       "shortMeaning": "The Guardian Over All",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلْمُهَيْمِنُ)"]
+      }
     },
     {
       "id": "al-aziz",
@@ -70,8 +100,12 @@
       "arabic": "الْعَزِيزُ",
       "transliteration": "Al-ʿAzīz",
       "shortMeaning": "The Almighty",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلْعَزِيزُ)"]
+      }
     },
     {
       "id": "al-jabbar",
@@ -79,8 +113,18 @@
       "arabic": "الْجَبَّارُ",
       "transliteration": "Al-Jabbār",
       "shortMeaning": "The Compeller",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tafsir-al-tabari"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": ["Qur'an 59:23 (ٱلْجَبَّارُ)"],
+        "notes": "Attested in 59:23. Classical explanations give several meanings: the One who compels His creation to what He wills (Qatāda, cited by al-Ṭabarī and Ibn Kathīr on 59:23); the One who sets right the affairs of His creation (al-Ṭabarī); the One who mends the broken and enriches the poor (al-Saʿdī); the One exalted beyond reach (al-Khaṭṭābī). In modern English “Compeller” can suggest coercion or tyranny and carries only the first meaning. Reviewer to decide whether to keep “The Compeller” or use a rendering that also carries the restoring sense."
+      }
     },
     {
       "id": "al-mutakabbir",
@@ -88,8 +132,18 @@
       "arabic": "الْمُتَكَبِّرُ",
       "transliteration": "Al-Mutakabbir",
       "shortMeaning": "The Supreme in Greatness",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tafsir-al-tabari"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:23 (ٱلْمُتَكَبِّرُ)"],
+        "notes": "“The Supreme in Greatness” deliberately avoids “The Proud”. Al-Khaṭṭābī: the tāʾ marks that greatness belongs to Him alone, not affected pride, which is blameworthy only in creatures. Qatāda (in al-Ṭabarī): exalted above every evil."
+      }
     },
     {
       "id": "al-khaliq",
@@ -97,8 +151,12 @@
       "arabic": "الْخَالِقُ",
       "transliteration": "Al-Khāliq",
       "shortMeaning": "The Creator",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:24 (ٱلْخَٰلِقُ)", "Qur'an 13:16 (خَٰلِقُ)"]
+      }
     },
     {
       "id": "al-bari",
@@ -106,8 +164,12 @@
       "arabic": "الْبَارِئُ",
       "transliteration": "Al-Bāriʾ",
       "shortMeaning": "The Maker",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:24 (ٱلْبَارِئُ)"]
+      }
     },
     {
       "id": "al-musawwir",
@@ -115,8 +177,12 @@
       "arabic": "الْمُصَوِّرُ",
       "transliteration": "Al-Muṣawwir",
       "shortMeaning": "The Fashioner",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:24 (ٱلْمُصَوِّرُ)"]
+      }
     },
     {
       "id": "al-ghaffar",
@@ -124,8 +190,12 @@
       "arabic": "الْغَفَّارُ",
       "transliteration": "Al-Ghaffār",
       "shortMeaning": "The Repeatedly Forgiving",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 38:66 (ٱلْغَفَّٰرُ)", "Qur'an 39:5 (ٱلْغَفَّٰرُ)"]
+      }
     },
     {
       "id": "al-qahhar",
@@ -133,8 +203,12 @@
       "arabic": "الْقَهَّارُ",
       "transliteration": "Al-Qahhār",
       "shortMeaning": "The Subduer",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 13:16 (ٱلْقَهَّٰرُ)", "Qur'an 40:16 (ٱلْقَهَّارِ)"]
+      }
     },
     {
       "id": "al-wahhab",
@@ -142,8 +216,12 @@
       "arabic": "الْوَهَّابُ",
       "transliteration": "Al-Wahhāb",
       "shortMeaning": "The Bestower",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 3:8 (ٱلْوَهَّابُ)", "Qur'an 38:35 (ٱلْوَهَّابُ)"]
+      }
     },
     {
       "id": "ar-razzaq",
@@ -151,8 +229,20 @@
       "arabic": "الرَّزَّاقُ",
       "transliteration": "Ar-Razzāq",
       "shortMeaning": "The Provider",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tirmidhi-1314"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 51:58 (ٱلرَّزَّاقُ)",
+          "Jāmiʿ at-Tirmidhī 1314 (الرَّزَّاقُ)"
+        ]
+      }
     },
     {
       "id": "al-fattah",
@@ -160,8 +250,13 @@
       "arabic": "الْفَتَّاحُ",
       "transliteration": "Al-Fattāḥ",
       "shortMeaning": "The Opener",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 34:26 (ٱلْفَتَّاحُ)"],
+        "notes": "In 34:26 the Name follows “then He will judge between us in truth” (yaftaḥu baynanā bil-ḥaqq), so it also carries the meaning “the Judge”."
+      }
     },
     {
       "id": "al-alim",
@@ -169,8 +264,12 @@
       "arabic": "الْعَلِيمُ",
       "transliteration": "Al-ʿAlīm",
       "shortMeaning": "The All-Knowing",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:32 (ٱلْعَلِيمُ)"]
+      }
     },
     {
       "id": "al-qabid",
@@ -178,8 +277,21 @@
       "arabic": "الْقَابِضُ",
       "transliteration": "Al-Qābiḍ",
       "shortMeaning": "The Withholder",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tirmidhi-1314"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 1314 (الْقَابِضُ)",
+          "Qur'an 2:245 (يَقْبِضُ), verb only"
+        ],
+        "notes": "Named with al-Bāsiṭ in an authentic hadith. Best mentioned as a pair."
+      }
     },
     {
       "id": "al-basit",
@@ -187,8 +299,21 @@
       "arabic": "الْبَاسِطُ",
       "transliteration": "Al-Bāsiṭ",
       "shortMeaning": "The Extender",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tirmidhi-1314"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 1314 (الْبَاسِطُ)",
+          "Qur'an 2:245 (وَيَبْصُۜطُ), verb only"
+        ],
+        "notes": "Named with al-Qābiḍ in an authentic hadith. Best mentioned as a pair."
+      }
     },
     {
       "id": "al-khafid",
@@ -196,8 +321,21 @@
       "arabic": "الْخَافِضُ",
       "transliteration": "Al-Khāfiḍ",
       "shortMeaning": "The Abaser",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 56:3 (خَافِضَةٌ), describes the Hour, not Allah"
+        ],
+        "notes": "No verse or authentic hadith checked in this audit uses al-Khāfiḍ as a Name. Its place rests on the Tirmidhī list, which hadith scholars regard as a narrator's compilation (Ibn Ḥajar, Fatḥ al-Bārī 11:219). Al-Khaṭṭābī explains it together with ar-Rāfiʿ; if kept, present the two together."
+      }
     },
     {
       "id": "ar-rafi",
@@ -205,8 +343,22 @@
       "arabic": "الرَّافِعُ",
       "transliteration": "Ar-Rāfiʿ",
       "shortMeaning": "The Exalter",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 3:55 (وَرَافِعُكَ), said of raising ʿĪsā",
+          "Qur'an 40:15 (رَفِيعُ), a different word"
+        ],
+        "notes": "Same basis as al-Khāfiḍ. In 3:55 Allah tells ʿĪsā “I will raise you to Myself”, a participle tied to that event; 40:15 uses rafīʿ (Exalted in degrees), a different word. Ibn Ḥajar notes that Ibn Ḥibbān's version of the same chain has ar-Rāfiʿ where others have al-Māniʿ."
+      }
     },
     {
       "id": "al-muizz",
@@ -214,8 +366,21 @@
       "arabic": "الْمُعِزُّ",
       "transliteration": "Al-Muʿizz",
       "shortMeaning": "The Giver of Honor",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 3:26 (وَتُعِزُّ), verb only"
+        ],
+        "notes": "The Qur'an states the act (“You honour whom You will”) but does not use al-Muʿizz as a Name. Al-Khaṭṭābī explains al-Muʿizz and al-Mudhill together, like al-Qābiḍ and al-Bāsiṭ."
+      }
     },
     {
       "id": "al-mudhill",
@@ -223,8 +388,22 @@
       "arabic": "الْمُذِلُّ",
       "transliteration": "Al-Mudhill",
       "shortMeaning": "The Giver of Dishonor",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410",
+        "ibn-al-qayyim-badai"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 3:26 (وَتُذِلُّ), verb only"
+        ],
+        "notes": "Same basis as al-Muʿizz (“You humble whom You will”). “The Giver of Dishonor” is accurate but reads harshly on its own. Classical explanations present it only with al-Muʿizz, and the fuller quotation of Ibn al-Qayyim's rule (Islamweb fatwa 464491) lists al-Muʿizz al-Mudhill among paired Names. Reviewer to decide how the pair is presented."
+      }
     },
     {
       "id": "as-sami",
@@ -232,8 +411,12 @@
       "arabic": "السَّمِيعُ",
       "transliteration": "As-Samīʿ",
       "shortMeaning": "The All-Hearing",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 42:11 (ٱلسَّمِيعُ)", "Qur'an 2:127 (ٱلسَّمِيعُ)"]
+      }
     },
     {
       "id": "al-basir",
@@ -241,8 +424,12 @@
       "arabic": "الْبَصِيرُ",
       "transliteration": "Al-Baṣīr",
       "shortMeaning": "The All-Seeing",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 42:11 (ٱلْبَصِيرُ)", "Qur'an 17:1 (ٱلْبَصِيرُ)"]
+      }
     },
     {
       "id": "al-hakam",
@@ -250,8 +437,20 @@
       "arabic": "الْحَكَمُ",
       "transliteration": "Al-Ḥakam",
       "shortMeaning": "The Judge",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "abudawud-4955"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Sunan Abī Dāwūd 4955 (هُوَ الْحَكَمُ)",
+          "Qur'an 6:114 (حَكَمًا)"
+        ]
+      }
     },
     {
       "id": "al-adl",
@@ -259,8 +458,19 @@
       "arabic": "الْعَدْلُ",
       "transliteration": "Al-ʿAdl",
       "shortMeaning": "The Just",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
+        ],
+        "notes": "Allah's perfect justice is not in question; the question is whether al-ʿAdl is a transmitted Name. No verse applies it to Allah (ʿadl occurs as “justice”), and Ibn Ḥajar notes that the Ibn Mājah version of the list has al-ʿĀdil instead."
+      }
     },
     {
       "id": "al-latif",
@@ -268,8 +478,12 @@
       "arabic": "اللَّطِيفُ",
       "transliteration": "Al-Laṭīf",
       "shortMeaning": "The Subtly Kind",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 6:103 (ٱللَّطِيفُ)", "Qur'an 67:14 (ٱللَّطِيفُ)"]
+      }
     },
     {
       "id": "al-khabir",
@@ -277,8 +491,12 @@
       "arabic": "الْخَبِيرُ",
       "transliteration": "Al-Khabīr",
       "shortMeaning": "The All-Aware",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 6:18 (ٱلْخَبِيرُ)", "Qur'an 67:14 (ٱلْخَبِيرُ)"]
+      }
     },
     {
       "id": "al-halim",
@@ -286,8 +504,12 @@
       "arabic": "الْحَلِيمُ",
       "transliteration": "Al-Ḥalīm",
       "shortMeaning": "The Forbearing",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:225 (حَلِيمٌ)", "Qur'an 64:17 (حَلِيمٌ)"]
+      }
     },
     {
       "id": "al-azim",
@@ -295,8 +517,12 @@
       "arabic": "الْعَظِيمُ",
       "transliteration": "Al-ʿAẓīm",
       "shortMeaning": "The Magnificent",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:255 (ٱلْعَظِيمُ)"]
+      }
     },
     {
       "id": "al-ghafur",
@@ -304,8 +530,12 @@
       "arabic": "الْغَفُورُ",
       "transliteration": "Al-Ghafūr",
       "shortMeaning": "The Ever-Forgiving",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 10:107 (ٱلْغَفُورُ)", "Qur'an 85:14 (ٱلْغَفُورُ)"]
+      }
     },
     {
       "id": "ash-shakur",
@@ -313,8 +543,12 @@
       "arabic": "الشَّكُورُ",
       "transliteration": "Ash-Shakūr",
       "shortMeaning": "The Most Appreciative",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 35:30 (شَكُورٌ)", "Qur'an 64:17 (شَكُورٌ)"]
+      }
     },
     {
       "id": "al-ali",
@@ -322,8 +556,12 @@
       "arabic": "الْعَلِيُّ",
       "transliteration": "Al-ʿAliyy",
       "shortMeaning": "The Most High",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:255 (ٱلْعَلِىُّ)", "Qur'an 22:62 (ٱلْعَلِىُّ)"]
+      }
     },
     {
       "id": "al-kabir",
@@ -331,8 +569,12 @@
       "arabic": "الْكَبِيرُ",
       "transliteration": "Al-Kabīr",
       "shortMeaning": "The Most Great",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 13:9 (ٱلْكَبِيرُ)", "Qur'an 22:62 (ٱلْكَبِيرُ)"]
+      }
     },
     {
       "id": "al-hafiz",
@@ -340,8 +582,12 @@
       "arabic": "الْحَفِيظُ",
       "transliteration": "Al-Ḥafīẓ",
       "shortMeaning": "The Preserver",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 11:57 (حَفِيظٌ)", "Qur'an 34:21 (حَفِيظٌ)"]
+      }
     },
     {
       "id": "al-muqit",
@@ -349,8 +595,13 @@
       "arabic": "الْمُقِيتُ",
       "transliteration": "Al-Muqīt",
       "shortMeaning": "The Nourisher",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 4:85 (مُّقِيتًا)"],
+        "notes": "Al-Khaṭṭābī: al-Muqīt is the All-Able (Ibn ʿAbbās on 4:85: “muqtadiran”), and also the Giver of sustenance. “The Nourisher” carries only the second meaning. Ibn Ḥajar reports al-Mughīth in place of al-Muqīt in one version."
+      }
     },
     {
       "id": "al-hasib",
@@ -358,8 +609,13 @@
       "arabic": "الْحَسِيبُ",
       "transliteration": "Al-Ḥasīb",
       "shortMeaning": "The Reckoner",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 4:6 (حَسِيبًا)", "Qur'an 33:39 (حَسِيبًا)"],
+        "notes": "Al-Khaṭṭābī first explains al-Ḥasīb as the One who suffices (from aḥsabanī, “he gave me enough”). “The Reckoner” is the other common meaning."
+      }
     },
     {
       "id": "al-jalil",
@@ -367,8 +623,21 @@
       "arabic": "الْجَلِيلُ",
       "transliteration": "Al-Jalīl",
       "shortMeaning": "The Majestic",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 55:27 (ذُو ٱلْجَلَٰلِ), majesty as an attribute"
+        ],
+        "notes": "The Qur'an ascribes majesty to Allah (Dhū al-Jalāl) but does not use al-Jalīl as a Name. Ibn Ḥajar notes it is absent from the Ibn Mājah version."
+      }
     },
     {
       "id": "al-karim",
@@ -376,8 +645,12 @@
       "arabic": "الْكَرِيمُ",
       "transliteration": "Al-Karīm",
       "shortMeaning": "The Most Generous",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 82:6 (ٱلْكَرِيمِ)", "Qur'an 27:40 (كَرِيمٌ)"]
+      }
     },
     {
       "id": "ar-raqib",
@@ -385,8 +658,12 @@
       "arabic": "الرَّقِيبُ",
       "transliteration": "Ar-Raqīb",
       "shortMeaning": "The Watchful",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 5:117 (ٱلرَّقِيبَ)", "Qur'an 4:1 (رَقِيبًا)"]
+      }
     },
     {
       "id": "al-mujib",
@@ -394,8 +671,12 @@
       "arabic": "الْمُجِيبُ",
       "transliteration": "Al-Mujīb",
       "shortMeaning": "The Responsive",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 11:61 (مُّجِيبٌ)"]
+      }
     },
     {
       "id": "al-wasi",
@@ -403,8 +684,12 @@
       "arabic": "الْوَاسِعُ",
       "transliteration": "Al-Wāsiʿ",
       "shortMeaning": "The All-Encompassing",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:115 (وَٰسِعٌ)", "Qur'an 2:268 (وَٰسِعٌ)"]
+      }
     },
     {
       "id": "al-hakim",
@@ -412,8 +697,12 @@
       "arabic": "الْحَكِيمُ",
       "transliteration": "Al-Ḥakīm",
       "shortMeaning": "The All-Wise",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 59:24 (ٱلْحَكِيمُ)", "Qur'an 2:32 (ٱلْحَكِيمُ)"]
+      }
     },
     {
       "id": "al-wadud",
@@ -421,8 +710,12 @@
       "arabic": "الْوَدُودُ",
       "transliteration": "Al-Wadūd",
       "shortMeaning": "The Loving",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 85:14 (ٱلْوَدُودُ)", "Qur'an 11:90 (وَدُودٌ)"]
+      }
     },
     {
       "id": "al-majid",
@@ -430,8 +723,12 @@
       "arabic": "الْمَجِيدُ",
       "transliteration": "Al-Majīd",
       "shortMeaning": "The All-Glorious",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 11:73 (مَّجِيدٌ)"]
+      }
     },
     {
       "id": "al-baith",
@@ -439,8 +736,21 @@
       "arabic": "الْبَاعِثُ",
       "transliteration": "Al-Bāʿith",
       "shortMeaning": "The Resurrector",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 22:7 (يَبْعَثُ), verb only"
+        ],
+        "notes": "The Qur'an states the act of resurrection, not the Name."
+      }
     },
     {
       "id": "ash-shahid",
@@ -448,8 +758,12 @@
       "arabic": "الشَّهِيدُ",
       "transliteration": "Ash-Shahīd",
       "shortMeaning": "The Witness",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 5:117 (شَهِيدٌ)", "Qur'an 22:17 (شَهِيدٌ)"]
+      }
     },
     {
       "id": "al-haqq",
@@ -457,8 +771,12 @@
       "arabic": "الْحَقُّ",
       "transliteration": "Al-Ḥaqq",
       "shortMeaning": "The Truth",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 22:6 (ٱلْحَقُّ)", "Qur'an 24:25 (ٱلْحَقُّ)"]
+      }
     },
     {
       "id": "al-wakil",
@@ -466,8 +784,12 @@
       "arabic": "الْوَكِيلُ",
       "transliteration": "Al-Wakīl",
       "shortMeaning": "The Trustee",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 3:173 (ٱلْوَكِيلُ)", "Qur'an 6:102 (وَكِيلٌ)"]
+      }
     },
     {
       "id": "al-qawi",
@@ -475,8 +797,12 @@
       "arabic": "الْقَوِيُّ",
       "transliteration": "Al-Qawiyy",
       "shortMeaning": "The Strong",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 42:19 (ٱلْقَوِىُّ)", "Qur'an 11:66 (ٱلْقَوِىُّ)"]
+      }
     },
     {
       "id": "al-matin",
@@ -484,8 +810,12 @@
       "arabic": "الْمَتِينُ",
       "transliteration": "Al-Matīn",
       "shortMeaning": "The Firm",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 51:58 (ٱلْمَتِينُ)"]
+      }
     },
     {
       "id": "al-wali",
@@ -493,8 +823,12 @@
       "arabic": "الْوَلِيُّ",
       "transliteration": "Al-Waliyy",
       "shortMeaning": "The Protecting Friend",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 42:9 (ٱلْوَلِىُّ)", "Qur'an 42:28 (ٱلْوَلِىُّ)"]
+      }
     },
     {
       "id": "al-hamid",
@@ -502,8 +836,12 @@
       "arabic": "الْحَمِيدُ",
       "transliteration": "Al-Ḥamīd",
       "shortMeaning": "The Praiseworthy",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 22:64 (ٱلْحَمِيدُ)", "Qur'an 35:15 (ٱلْحَمِيدُ)"]
+      }
     },
     {
       "id": "al-muhsi",
@@ -511,8 +849,22 @@
       "arabic": "الْمُحْصِي",
       "transliteration": "Al-Muḥṣī",
       "shortMeaning": "The Accounter of All",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 72:28 (وَأَحْصَىٰ), verb only",
+          "Qur'an 19:94 (أَحْصَىٰهُمْ), verb only"
+        ],
+        "notes": "The Qur'an states the act (“He has enumerated everything in number”), not the Name."
+      }
     },
     {
       "id": "al-mubdi",
@@ -520,8 +872,21 @@
       "arabic": "الْمُبْدِئُ",
       "transliteration": "Al-Mubdiʾ",
       "shortMeaning": "The Originator",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 85:13 (يُبْدِئُ), verb only"
+        ],
+        "notes": "The Qur'an states the act together with its counterpart (85:13), not the Name. Best presented with al-Muʿīd."
+      }
     },
     {
       "id": "al-muid",
@@ -529,8 +894,21 @@
       "arabic": "الْمُعِيدُ",
       "transliteration": "Al-Muʿīd",
       "shortMeaning": "The Restorer",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 85:13 (وَيُعِيدُ), verb only"
+        ],
+        "notes": "The Qur'an states the act together with its counterpart (85:13), not the Name. Best presented with al-Mubdiʾ."
+      }
     },
     {
       "id": "al-muhyi",
@@ -538,8 +916,16 @@
       "arabic": "الْمُحْيِي",
       "transliteration": "Al-Muḥyī",
       "shortMeaning": "The Giver of Life",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 30:50 (لَمُحْىِ ٱلْمَوْتَىٰ), construct form",
+          "Qur'an 41:39 (لَمُحْىِ ٱلْمَوْتَىٰٓ), construct form"
+        ],
+        "notes": "Occurs in construct form: “the Giver of life to the dead”. Ibn Ḥajar reports that Ibn Ḥazm counted only Names that occur in absolute form, so not every scholar counts construct forms."
+      }
     },
     {
       "id": "al-mumit",
@@ -547,8 +933,22 @@
       "arabic": "الْمُمِيتُ",
       "transliteration": "Al-Mumīt",
       "shortMeaning": "The Bringer of Death",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 57:2 (وَيُمِيتُ), verb only",
+          "Qur'an 15:23 (وَنُمِيتُ), verb only"
+        ],
+        "notes": "Only the verb occurs, always with its counterpart “gives life”. Best presented with al-Muḥyī."
+      }
     },
     {
       "id": "al-hayy",
@@ -556,8 +956,12 @@
       "arabic": "الْحَيُّ",
       "transliteration": "Al-Ḥayy",
       "shortMeaning": "The Ever-Living",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:255 (ٱلْحَىُّ)", "Qur'an 40:65 (ٱلْحَىُّ)"]
+      }
     },
     {
       "id": "al-qayyum",
@@ -565,17 +969,35 @@
       "arabic": "الْقَيُّومُ",
       "transliteration": "Al-Qayyūm",
       "shortMeaning": "The Self-Subsisting",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:255 (ٱلْقَيُّومُ)", "Qur'an 3:2 (ٱلْقَيُّومُ)"]
+      }
     },
     {
       "id": "al-wajid",
       "order": 64,
       "arabic": "الْوَاجِدُ",
       "transliteration": "Al-Wājid",
-      "shortMeaning": "The Perceiver",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "shortMeaning": "The One Who Lacks Nothing",
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
+        ],
+        "corrections": [
+          "shortMeaning: The Perceiver → The One Who Lacks Nothing"
+        ],
+        "notes": "Corrected meaning: “The Perceiver” is not supported by the classical explanation. Al-Khaṭṭābī: al-Wājid is the Rich who is never in need (wajd and jida mean wealth), and secondarily the One whom nothing He seeks can escape. The Name itself is list-based."
+      }
     },
     {
       "id": "al-maajid",
@@ -583,8 +1005,19 @@
       "arabic": "الْمَاجِدُ",
       "transliteration": "Al-Mājid",
       "shortMeaning": "The Illustrious",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
+        ],
+        "notes": "List-based. Al-Khaṭṭābī: the same root and meaning as al-Majīd (glory and abundance), perhaps repeated to pair with al-Wājid."
+      }
     },
     {
       "id": "al-wahid",
@@ -592,8 +1025,12 @@
       "arabic": "الْوَاحِدُ",
       "transliteration": "Al-Wāḥid",
       "shortMeaning": "The Unique",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 13:16 (ٱلْوَٰحِدُ)", "Qur'an 14:48 (ٱلْوَٰحِدِ)"]
+      }
     },
     {
       "id": "al-ahad",
@@ -601,8 +1038,22 @@
       "arabic": "الْأَحَدُ",
       "transliteration": "Al-Aḥad",
       "shortMeaning": "The One",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tirmidhi-3475",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Qur'an 112:1 (أَحَدٌ)",
+          "Jāmiʿ at-Tirmidhī 3475 (الأَحَدُ الصَّمَدُ)"
+        ],
+        "notes": "The Name is firmly established; the open question is only its place in this enumeration. The sunnah.com text of Tirmidhī 3507 goes directly from al-Wāḥid to aṣ-Ṣamad, so that text reaches ninety-nine only by counting “Allah” as the first Name. Al-Khaṭṭābī's text of the same list includes al-Aḥad (his no. 68, counting “Allah” as no. 1), and Ibn Ḥajar reports al-Aḥad in Ibn Khuzayma's version in place of al-Mughnī. Reviewer to confirm which edition the app cites for its ninety-nine."
+      }
     },
     {
       "id": "as-samad",
@@ -610,8 +1061,20 @@
       "arabic": "الصَّمَدُ",
       "transliteration": "Aṣ-Ṣamad",
       "shortMeaning": "The Eternal Refuge",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tirmidhi-3475"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 112:2 (ٱلصَّمَدُ)",
+          "Jāmiʿ at-Tirmidhī 3475 (الصَّمَدُ)"
+        ]
+      }
     },
     {
       "id": "al-qadir",
@@ -619,17 +1082,36 @@
       "arabic": "الْقَادِرُ",
       "transliteration": "Al-Qādir",
       "shortMeaning": "The All-Powerful",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 6:65 (ٱلْقَادِرُ)", "Qur'an 36:81 (بِقَٰدِرٍ)"]
+      }
     },
     {
       "id": "al-muqtadir",
       "order": 70,
       "arabic": "الْمُقْتَدِرُ",
       "transliteration": "Al-Muqtadir",
-      "shortMeaning": "The Determiner",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "shortMeaning": "The Perfect in Power",
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "tafsir-al-tabari"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "corrected",
+        "evidence": [
+          "Qur'an 54:42 (مُّقْتَدِرٍ)",
+          "Qur'an 54:55 (مُّقْتَدِرٍۭ)",
+          "Qur'an 18:45 (مُّقْتَدِرًا)"
+        ],
+        "corrections": ["shortMeaning: The Determiner → The Perfect in Power"],
+        "notes": "“The Determiner” suggests divine decree (qadar) rather than power. Muqtadir means perfectly able: al-Ṭabarī on 54:42: “able to do what He wills, neither incapable nor weak”."
+      }
     },
     {
       "id": "al-muqaddim",
@@ -637,8 +1119,13 @@
       "arabic": "الْمُقَدِّمُ",
       "transliteration": "Al-Muqaddim",
       "shortMeaning": "The Expediter",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "bukhari-1120"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Ṣaḥīḥ al-Bukhārī 1120 (الْمُقَدِّمُ)"],
+        "notes": "Named in the Prophet's supplication (also in Ṣaḥīḥ Muslim 771a). Best mentioned with al-Muʾakhkhir."
+      }
     },
     {
       "id": "al-muakhkhir",
@@ -646,8 +1133,13 @@
       "arabic": "الْمُؤَخِّرُ",
       "transliteration": "Al-Muʾakhkhir",
       "shortMeaning": "The Delayer",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "bukhari-1120"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Ṣaḥīḥ al-Bukhārī 1120 (الْمُؤَخِّرُ)"],
+        "notes": "Named in the Prophet's supplication (also in Ṣaḥīḥ Muslim 771a). Best mentioned with al-Muqaddim."
+      }
     },
     {
       "id": "al-awwal",
@@ -655,8 +1147,12 @@
       "arabic": "الْأَوَّلُ",
       "transliteration": "Al-Awwal",
       "shortMeaning": "The First",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 57:3 (ٱلْأَوَّلُ)"]
+      }
     },
     {
       "id": "al-akhir",
@@ -664,8 +1160,12 @@
       "arabic": "الْآخِرُ",
       "transliteration": "Al-Ākhir",
       "shortMeaning": "The Last",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 57:3 (وَٱلْـَٔاخِرُ)"]
+      }
     },
     {
       "id": "az-zahir",
@@ -673,8 +1173,12 @@
       "arabic": "الظَّاهِرُ",
       "transliteration": "Aẓ-Ẓāhir",
       "shortMeaning": "The Manifest",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 57:3 (وَٱلظَّٰهِرُ)"]
+      }
     },
     {
       "id": "al-batin",
@@ -682,8 +1186,12 @@
       "arabic": "الْبَاطِنُ",
       "transliteration": "Al-Bāṭin",
       "shortMeaning": "The Hidden",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 57:3 (وَٱلْبَاطِنُ)"]
+      }
     },
     {
       "id": "al-waali",
@@ -691,8 +1199,21 @@
       "arabic": "الْوَالِي",
       "transliteration": "Al-Wālī",
       "shortMeaning": "The Patron",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 13:11 (وَالٍ), “they have no protector besides Him”"
+        ],
+        "notes": "13:11 implies the meaning but does not apply the Name to Allah directly. Ibn Ḥajar notes al-Mawlā in its place in Ibn Khuzayma's version. Al-Khaṭṭābī: the Owner and Governor of all things, who manages them as He wills. “The Patron” is loose; “The Governor of All Things” may be closer."
+      }
     },
     {
       "id": "al-mutaali",
@@ -700,8 +1221,13 @@
       "arabic": "الْمُتَعَالِي",
       "transliteration": "Al-Mutaʿālī",
       "shortMeaning": "The Supremely Exalted",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 13:9 (ٱلْمُتَعَالِ)"],
+        "notes": "The Qur'an writes ٱلْمُتَعَالِ (without the final yāʾ); the hadith text has الْمُتَعَالِي. Both are correct."
+      }
     },
     {
       "id": "al-barr",
@@ -709,8 +1235,12 @@
       "arabic": "الْبَرُّ",
       "transliteration": "Al-Barr",
       "shortMeaning": "The Beneficent",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 52:28 (ٱلْبَرُّ)"]
+      }
     },
     {
       "id": "at-tawwab",
@@ -718,8 +1248,12 @@
       "arabic": "التَّوَّابُ",
       "transliteration": "At-Tawwāb",
       "shortMeaning": "The Acceptor of Repentance",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:37 (ٱلتَّوَّابُ)", "Qur'an 9:118 (ٱلتَّوَّابُ)"]
+      }
     },
     {
       "id": "al-muntaqim",
@@ -727,8 +1261,24 @@
       "arabic": "الْمُنْتَقِمُ",
       "transliteration": "Al-Muntaqim",
       "shortMeaning": "The Avenger",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410",
+        "ibn-al-qayyim-badai"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 3:4 (ذُو ٱنتِقَامٍ)",
+          "Qur'an 32:22 (مُنتَقِمُونَ)",
+          "Qur'an 43:55 (ٱنتَقَمْنَا), verb only"
+        ],
+        "notes": "The Qur'an speaks of Allah's retribution only in restricted forms: “Owner of Retribution” (3:4, 14:47, 39:37), “We will take retribution from the criminals” (32:22, 43:41, 44:16) and “We took retribution from them” (43:25, 43:55). Ibn al-Qayyim (Badāʾiʿ al-Fawāʾid): mention it only with its counterpart, al-ʿAfuww. Ibn ʿUthaymīn, commenting on that passage, adds that Ibn Taymiyya rejected naming Allah al-Muntaqim because it occurs only in restricted form. Translation: “The Avenger” can suggest personal vengeance; the Qur'anic sense is just retribution against wrongdoers. Reviewer to decide on inclusion and wording."
+      }
     },
     {
       "id": "al-afuw",
@@ -736,8 +1286,12 @@
       "arabic": "الْعَفُوُّ",
       "transliteration": "Al-ʿAfuww",
       "shortMeaning": "The Pardoner",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 4:43 (عَفُوًّا)", "Qur'an 22:60 (لَعَفُوٌّ)"]
+      }
     },
     {
       "id": "ar-rauf",
@@ -745,8 +1299,13 @@
       "arabic": "الرَّؤُوفُ",
       "transliteration": "Ar-Raʾūf",
       "shortMeaning": "The Most Kind",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 2:143 (لَرَءُوفٌ)", "Qur'an 24:20 (رَءُوفٌ)"],
+        "notes": "The Qur'an and the hadith text write رَءُوف; the app uses the modern spelling الرَّؤُوف. Both are correct; the reviewer may prefer the Qur'anic spelling."
+      }
     },
     {
       "id": "malik-al-mulk",
@@ -754,17 +1313,32 @@
       "arabic": "مَالِكُ الْمُلْكِ",
       "transliteration": "Mālik al-Mulk",
       "shortMeaning": "The Owner of All Sovereignty",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 3:26 (مَٰلِكَ ٱلْمُلْكِ)"]
+      }
     },
     {
       "id": "dhul-jalali-wal-ikram",
       "order": 85,
       "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
       "transliteration": "Dhul-Jalāli wal-Ikrām",
-      "shortMeaning": "Lord of Majesty and Honor",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "shortMeaning": "Possessor of Majesty and Honor",
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "corrected",
+        "evidence": [
+          "Qur'an 55:27 (ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ)",
+          "Qur'an 55:78 (ذِى ٱلْجَلَٰلِ وَٱلْإِكْرَامِ)"
+        ],
+        "corrections": [
+          "shortMeaning: Lord of Majesty and Honor → Possessor of Majesty and Honor"
+        ],
+        "notes": "“Lord of” translates rabb, a different word. Dhū means “Possessor of”."
+      }
     },
     {
       "id": "al-muqsit",
@@ -772,8 +1346,22 @@
       "arabic": "الْمُقْسِطُ",
       "transliteration": "Al-Muqsiṭ",
       "shortMeaning": "The Equitable",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 3:18 (بِٱلْقِسْطِ), upholding justice",
+          "Qur'an 49:9 (ٱلْمُقْسِطِينَ), said of people"
+        ],
+        "notes": "The Qur'an describes Allah as upholding justice (3:18); al-muqsiṭīn in 49:9 are people whom Allah loves. The Name itself is list-based."
+      }
     },
     {
       "id": "al-jami",
@@ -781,8 +1369,16 @@
       "arabic": "الْجَامِعُ",
       "transliteration": "Al-Jāmiʿ",
       "shortMeaning": "The Gatherer",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 3:9 (جَامِعُ ٱلنَّاسِ), construct form",
+          "Qur'an 4:140 (جَامِعُ), construct form"
+        ],
+        "notes": "Occurs in construct form (“Gatherer of mankind”)."
+      }
     },
     {
       "id": "al-ghani",
@@ -790,8 +1386,12 @@
       "arabic": "الْغَنِيُّ",
       "transliteration": "Al-Ghaniyy",
       "shortMeaning": "The Self-Sufficient",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 35:15 (ٱلْغَنِىُّ)", "Qur'an 22:64 (ٱلْغَنِىُّ)"]
+      }
     },
     {
       "id": "al-mughni",
@@ -799,8 +1399,22 @@
       "arabic": "الْمُغْنِي",
       "transliteration": "Al-Mughnī",
       "shortMeaning": "The Enricher",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 9:28 (يُغْنِيكُمُ), verb only",
+          "Qur'an 53:48 (أَغْنَىٰ), verb only"
+        ],
+        "notes": "Only the verb occurs. Ibn Ḥajar reports al-Aḥad in its place in Ibn Khuzayma's version."
+      }
     },
     {
       "id": "al-mani",
@@ -808,8 +1422,20 @@
       "arabic": "الْمَانِعُ",
       "transliteration": "Al-Māniʿ",
       "shortMeaning": "The Preventer",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "fath-al-bari-6410",
+        "ibn-al-qayyim-badai"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
+        ],
+        "notes": "Ibn al-Qayyim: mention it only with its counterpart al-Muʿṭī (the Giver), which is not in this list. Al-Khaṭṭābī gives two meanings: the One who protects His allies, and the One who withholds from those who do not deserve. Ibn Ḥajar notes ar-Rāfiʿ in its place in Ibn Ḥibbān's version."
+      }
     },
     {
       "id": "ad-darr",
@@ -817,8 +1443,25 @@
       "arabic": "الضَّارُّ",
       "transliteration": "Aḍ-Ḍārr",
       "shortMeaning": "The Distresser",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410",
+        "ibn-al-qayyim-badai",
+        "tirmidhi-2516"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 48:11 (ضَرًّا), harm only by His will",
+          "Qur'an 6:17 (بِضُرٍّ)",
+          "Jāmiʿ at-Tirmidhī 2516 (يَضُرُّوكَ)"
+        ],
+        "notes": "The Qur'an affirms that harm and benefit happen only by Allah's will, and so does Tirmidhī 2516. Ibn al-Qayyim: never mention it alone, only as aḍ-Ḍārr an-Nāfiʿ, because the praise lies in the pair: He alone controls benefit and harm. Al-Khaṭṭābī also explains the two together. Islamweb fatwa 464491 states that no clear text of the Qur'an or authentic Sunnah establishes aḍ-Ḍārr as a Name. Translation: “The Distresser” is an unusual word and, shown alone on a flashcard, can mislead. Reviewer to decide the wording and whether the pair is always shown together."
+      }
     },
     {
       "id": "an-nafi",
@@ -826,8 +1469,24 @@
       "arabic": "النَّافِعُ",
       "transliteration": "An-Nāfiʿ",
       "shortMeaning": "The Benefactor",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410",
+        "ibn-al-qayyim-badai",
+        "tirmidhi-2516"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 48:11 (نَفْعًۢا)",
+          "Jāmiʿ at-Tirmidhī 2516 (يَنْفَعُوكَ)"
+        ],
+        "notes": "Same basis and pairing as aḍ-Ḍārr."
+      }
     },
     {
       "id": "an-nur",
@@ -835,8 +1494,21 @@
       "arabic": "النُّورُ",
       "transliteration": "An-Nūr",
       "shortMeaning": "The Light",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "bukhari-1120"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 24:35 (نُورُ ٱلسَّمَٰوَٰتِ), construct form",
+          "Ṣaḥīḥ al-Bukhārī 1120 (نُورُ السَّمَوَاتِ)"
+        ],
+        "notes": "Occurs in construct form (“the Light of the heavens and the earth”)."
+      }
     },
     {
       "id": "al-hadi",
@@ -844,8 +1516,12 @@
       "arabic": "الْهَادِي",
       "transliteration": "Al-Hādī",
       "shortMeaning": "The Guide",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": ["Qur'an 22:54 (لَهَادِ)", "Qur'an 25:31 (هَادِيًا)"]
+      }
     },
     {
       "id": "al-badi",
@@ -853,8 +1529,16 @@
       "arabic": "الْبَدِيعُ",
       "transliteration": "Al-Badīʿ",
       "shortMeaning": "The Incomparable Originator",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 2:117 (بَدِيعُ), construct form",
+          "Qur'an 6:101 (بَدِيعُ), construct form"
+        ],
+        "notes": "Occurs in construct form (“Originator of the heavens and the earth”). Ibn Ḥajar reports that Ibn Ḥazm did not count construct forms."
+      }
     },
     {
       "id": "al-baqi",
@@ -862,8 +1546,21 @@
       "arabic": "الْبَاقِي",
       "transliteration": "Al-Bāqī",
       "shortMeaning": "The Everlasting",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 55:27 (وَيَبْقَىٰ), verb only"
+        ],
+        "notes": "Only the verb occurs (“the Face of your Lord remains”). Ibn Ḥajar cites this as the reason Ibn Ḥazm excluded al-Bāqī."
+      }
     },
     {
       "id": "al-warith",
@@ -871,8 +1568,16 @@
       "arabic": "الْوَارِثُ",
       "transliteration": "Al-Wārith",
       "shortMeaning": "The Inheritor of All",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "passed",
+        "evidence": [
+          "Qur'an 15:23 (ٱلْوَٰرِثُونَ)",
+          "Qur'an 21:89 (خَيْرُ ٱلْوَٰرِثِينَ)"
+        ],
+        "notes": "Occurs in plural and construct forms."
+      }
     },
     {
       "id": "ar-rashid",
@@ -880,8 +1585,21 @@
       "arabic": "الرَّشِيدُ",
       "transliteration": "Ar-Rashīd",
       "shortMeaning": "The Guide to the Right Path",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "quran",
+        "fath-al-bari-6410"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Qur'an 11:87 (ٱلرَّشِيدُ), said of Shuʿayb, not Allah"
+        ],
+        "notes": "In 11:87 his people say ar-rashīd of Shuʿayb; no verse applies it to Allah. Al-Khaṭṭābī: the One who guides creation to what benefits them, and whose management is always right."
+      }
     },
     {
       "id": "as-sabur",
@@ -889,8 +1607,21 @@
       "arabic": "الصَّبُورُ",
       "transliteration": "Aṣ-Ṣabūr",
       "shortMeaning": "The Most Patient",
-      "sourceIds": ["tirmidhi-3507", "wikipedia-names-of-god"],
-      "verificationStatus": "pending"
+      "sourceIds": [
+        "tirmidhi-3507",
+        "khattabi-shan-al-dua",
+        "fath-al-bari-6410",
+        "bukhari-7378"
+      ],
+      "verificationStatus": "pending",
+      "audit": {
+        "result": "needs-review",
+        "evidence": [
+          "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
+          "Ṣaḥīḥ al-Bukhārī 7378 (أَصْبَرُ), the attribute"
+        ],
+        "notes": "The attribute is established in an authentic hadith, but the Name aṣ-Ṣabūr is not in the Qur'an. Islamweb fatwa 464491 notes scholarly disagreement over it as a Name. Al-Khaṭṭābī: the One who does not hasten to punish the disobedient but gives them respite."
+      }
     }
   ]
 }

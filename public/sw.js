@@ -15,6 +15,10 @@
 const VERSION = new URL(self.location.href).searchParams.get("v") || "dev";
 const PAGES = `khn-pages-${VERSION}`;
 const ASSETS = `khn-assets-${VERSION}`;
+// Works both at the domain root (Vercel) and under a sub-path (a GitHub
+// Pages project site), since the worker's own URL already carries it.
+const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
+const SW_PATH = `${BASE_PATH}/sw.js`;
 const CORE_ROUTES = [
   "/",
   "/learn",
@@ -23,10 +27,13 @@ const CORE_ROUTES = [
   "/progress",
   "/settings",
   "/sources",
-];
-const STATIC_ASSET = /\/_next\/static\/[^"'\s)\\]+/g;
+].map((path) => (path === "/" ? `${BASE_PATH}/` : `${BASE_PATH}${path}`));
+const STATIC_ASSET = new RegExp(
+  `${BASE_PATH.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}/_next/static/[^"'\\s)\\\\]+`,
+  "g",
+);
 
-const OFFLINE_PAGE = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline — Know His Names</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f6f3eb;color:#1d2320;font:16px/1.5 system-ui,sans-serif;text-align:center;padding:24px}@media(prefers-color-scheme:dark){body{background:#0e1512;color:#ede8dd}a{color:#69bf9c}}h1{font:400 28px Georgia,serif;margin:0 0 8px}a{color:#0e5a44;font-weight:600}</style></head><body><main><h1>You're offline</h1><p>This page hasn't been saved for offline use yet.</p><p><a href="/">Go to home</a></p></main></body></html>`;
+const OFFLINE_PAGE = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline — Know His Names</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f6f3eb;color:#1d2320;font:16px/1.5 system-ui,sans-serif;text-align:center;padding:24px}@media(prefers-color-scheme:dark){body{background:#0e1512;color:#ede8dd}a{color:#69bf9c}}h1{font:400 28px Georgia,serif;margin:0 0 8px}a{color:#0e5a44;font-weight:600}</style></head><body><main><h1>You're offline</h1><p>This page hasn't been saved for offline use yet.</p><p><a href="${BASE_PATH}/">Go to home</a></p></main></body></html>`;
 
 /** Caches the static assets a page or stylesheet refers to. */
 async function cacheAssetsIn(text, seen) {
@@ -58,8 +65,14 @@ async function savePages(paths, { stopOnFailure }) {
     try {
       const response = await fetch(path, { cache: "reload" });
       if (!response.ok) throw new Error(`${path}: ${response.status}`);
+      // A trailing-slash redirect (GitHub Pages builds export every route as
+      // `<route>/index.html`) is followed transparently by fetch(); cache
+      // under the URL it actually resolved to, so it's found by pathname at
+      // navigation time even when that differs from the requested path.
+      const key = new URL(response.url).pathname;
+      if (key !== path && (await pages.match(key))) continue;
       await cacheAssetsIn(await response.clone().text(), seen);
-      await pages.put(path, response);
+      await pages.put(key, response);
     } catch (error) {
       if (stopOnFailure) throw error;
       return;
@@ -152,11 +165,12 @@ self.addEventListener("fetch", (event) => {
   if (request.headers.get("RSC") === "1" || url.searchParams.has("_rsc"))
     return;
 
+  const nextPath = `${BASE_PATH}/_next/`;
   if (request.mode === "navigate") {
     event.respondWith(networkFirstPage(request));
-  } else if (url.pathname.startsWith("/_next/static/")) {
+  } else if (url.pathname.startsWith(`${nextPath}static/`)) {
     event.respondWith(cacheFirst(request));
-  } else if (!url.pathname.startsWith("/_next/") && url.pathname !== "/sw.js") {
+  } else if (!url.pathname.startsWith(nextPath) && url.pathname !== SW_PATH) {
     event.respondWith(staleWhileRevalidate(event));
   }
 });

@@ -19,6 +19,20 @@ export const verificationStatusSchema = z.enum([
   "verified",
 ]);
 
+/**
+ * A documented check of one entry against its sources. It records evidence
+ * and open issues for the reviewer. It is not a review, so it never changes
+ * verificationStatus.
+ */
+export const contentAuditSchema = z.strictObject({
+  result: z.enum(["passed", "corrected", "needs-review"]),
+  /** Where the Name or its attribute is attested, e.g. "Qur'an 59:23 (ٱلْجَبَّارُ)". */
+  evidence: z.array(text).min(1),
+  /** Each change made, e.g. "shortMeaning: The Determiner → The Perfect in Power". */
+  corrections: z.array(text).optional(),
+  notes: text.optional(),
+});
+
 export const divineNameSchema = z.strictObject({
   id: slug,
   order: z.number().int().min(1),
@@ -36,10 +50,13 @@ export const divineNameSchema = z.strictObject({
     .optional(),
   sourceIds: z.array(slug).min(1, "needs at least one source"),
   verificationStatus: verificationStatusSchema,
+  audit: contentAuditSchema.optional(),
 });
 
 export const namesFileSchema = z.strictObject({
   version: text,
+  /** Date of the last content change. */
+  updated: z.iso.date(),
   names: z.array(divineNameSchema).min(1),
 });
 
