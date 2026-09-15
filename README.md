@@ -8,7 +8,18 @@ Know His Names is a local-first learning companion. There is no account and no s
 
 `PLAN.md` is the product and architecture contract, and its top section tracks implementation progress. Read it before changing anything.
 
-> **Content status:** the religious content is a **draft (`0.1.0-draft`) awaiting scholarly review**. Every Name is marked `pending`, and there are no explanations or audio yet. Don't launch publicly until the review in [docs/content-review.md](docs/content-review.md) is complete.
+> **Content status:** the religious content is a **draft (`0.2.0-draft`) awaiting scholarly review**. It has been audited against primary sources, but every Name is still marked `pending`, several need a qualified reviewer's decision, and there are no explanations or audio yet. Don't launch publicly until the review in [docs/content-review.md](docs/content-review.md) is complete.
+
+## Scholar review deployment
+
+A temporary GitHub Pages build lets qualified reviewers open the app and use
+the learning experience while reviewing the Phase 10 content above — it is
+**not** the public launch. See [docs/deployment.md](docs/deployment.md#scholar-review-deployment-github-pages)
+for how it's deployed, and report any correction through the project's
+repository (see the in-app Sources page). The Vercel instructions in that
+same document are unchanged and remain the plan for the eventual Phase 11
+public launch, which happens only after reviewer corrections are applied and
+Phase 10 is formally complete.
 
 ## What it does
 
@@ -49,7 +60,7 @@ The service worker is only registered in production builds (`npm run build && np
 
 - [docs/architecture.md](docs/architecture.md): module boundaries, data model and testing
 - [docs/content-review.md](docs/content-review.md): how religious content is reviewed and versioned
-- [docs/deployment.md](docs/deployment.md): environment variables, deploying and smoke tests
+- [docs/deployment.md](docs/deployment.md): environment variables, deploying (Vercel and the temporary GitHub Pages scholar review build) and smoke tests
 
 ## Stack
 

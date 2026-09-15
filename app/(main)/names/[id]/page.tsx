@@ -13,6 +13,7 @@ import {
   getSourcesFor,
   NAMES,
 } from "@/lib/content/names";
+import { absoluteUrl } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -29,11 +30,11 @@ export async function generateMetadata({
   return {
     title: `${name.transliteration} (${name.arabic}): ${name.shortMeaning}`,
     description: `${name.transliteration}, ${name.arabic}, is one of the 99 Names of Allah, often rendered as “${name.shortMeaning}”. Learn and remember its meaning.`,
-    alternates: { canonical: `/names/${name.id}` },
+    alternates: { canonical: absoluteUrl(`/names/${name.id}`) },
     openGraph: {
       title: `${name.transliteration}: ${name.shortMeaning}`,
       description: `One of the 99 Names of Allah. Learn and remember it with Know His Names.`,
-      url: `/names/${name.id}`,
+      url: absoluteUrl(`/names/${name.id}`),
     },
   };
 }

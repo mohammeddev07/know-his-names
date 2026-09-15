@@ -56,3 +56,6 @@ desktop.ini
 *.pem
 *.key
 *.crt
+
+# Local planning doc, not published
+/PLAN.md

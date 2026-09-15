@@ -1,9 +1,12 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
+
+// Required for `output: "export"` (GitHub Pages review builds).
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: new URL("/sitemap.xml", SITE_URL).toString(),
+    sitemap: absoluteUrl("/sitemap.xml"),
   };
 }

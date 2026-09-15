@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { NAMES } from "@/lib/content/names";
+import { BASE_PATH } from "@/lib/site";
 
 /** Runs a task when the browser is idle (Safari lacks requestIdleCallback). */
 function whenIdle(task: () => void): () => void {
@@ -29,7 +30,10 @@ export function ServiceWorkerRegistration() {
     let unmounted = false;
 
     navigator.serviceWorker
-      .register(`/sw.js?v=${version}`, { scope: "/", updateViaCache: "none" })
+      .register(`${BASE_PATH}/sw.js?v=${version}`, {
+        scope: `${BASE_PATH}/`,
+        updateViaCache: "none",
+      })
       .then(() => navigator.serviceWorker.ready)
       .then((registration) => {
         if (unmounted) return;
@@ -37,7 +41,7 @@ export function ServiceWorkerRegistration() {
         cancelIdle = whenIdle(() =>
           registration.active?.postMessage({
             type: "save-pages",
-            paths: NAMES.map((name) => `/names/${name.id}`),
+            paths: NAMES.map((name) => `${BASE_PATH}/names/${name.id}`),
           }),
         );
       })

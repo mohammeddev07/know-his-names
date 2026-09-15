@@ -5,18 +5,126 @@
       "id": "tirmidhi-3507",
       "title": "Jāmiʿ at-Tirmidhī, Hadith 3507",
       "kind": "hadith",
-      "citation": "Jāmiʿ at-Tirmidhī, Book of Supplications (Kitāb ad-Daʿawāt), Hadith 3507 — the narration through al-Walīd ibn Muslim that enumerates ninety-nine Names.",
+      "citation": "Jāmiʿ at-Tirmidhī, Chapters on Supplication, Hadith 3507, through al-Walīd ibn Muslim from Shuʿayb ibn Abī Ḥamza. At-Tirmidhī calls it gharīb and Darussalam grades it daʿīf. Hadith scholars consider the list of Names most likely a narrator's compilation rather than the Prophet's own words (Ibn Ḥajar, Fatḥ al-Bārī). The sunnah.com text lists ninety-eight Names after “Allah” and does not include al-Aḥad; this app's ninety-nine include al-Aḥad, as in al-Khaṭṭābī's commentary on the same list.",
       "url": "https://sunnah.com/tirmidhi:3507",
-      "usedFor": "Enumeration and ordering of the Names.",
+      "usedFor": "The list and order of the Names.",
       "verificationStatus": "pending"
     },
     {
-      "id": "wikipedia-names-of-god",
-      "title": "“Names of God in Islam” — al-Tirmidhi’s list",
-      "kind": "secondary",
-      "citation": "Wikipedia, “Names of God in Islam”, section “al-Tirmidhi’s list”. Used only as a development cross-check; it is not an authoritative religious source.",
-      "url": "https://en.wikipedia.org/wiki/Names_of_God_in_Islam",
-      "usedFor": "Cross-checking Arabic spelling, transliteration, and common English renderings during development.",
+      "id": "bukhari-6410",
+      "title": "Ṣaḥīḥ al-Bukhārī, Hadith 6410",
+      "kind": "hadith",
+      "citation": "Ṣaḥīḥ al-Bukhārī, Book of Invocations, Hadith 6410: “Allah has ninety-nine Names, one hundred less one…”. The narration does not list the Names.",
+      "url": "https://sunnah.com/bukhari:6410",
+      "usedFor": "The authentic statement that Allah has ninety-nine Names.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "muslim-2677",
+      "title": "Ṣaḥīḥ Muslim, Hadith 2677a",
+      "kind": "hadith",
+      "citation": "Ṣaḥīḥ Muslim, Book of Remembrance and Supplication, Hadith 2677a: “There are ninety-nine Names of Allah; whoever preserves them will enter Paradise.” The narration does not list the Names.",
+      "url": "https://sunnah.com/muslim:2677a",
+      "usedFor": "The authentic statement that Allah has ninety-nine Names.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "quran",
+      "title": "The Qurʾān",
+      "kind": "quran",
+      "citation": "Arabic text as published by the Tanzil project (Uthmani script, the reading of Ḥafṣ from ʿĀṣim). The verses for each Name are recorded in the content audit.",
+      "url": "https://quran.com",
+      "usedFor": "Where the Name, or the attribute it names, occurs in the Qurʾān.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "khattabi-shan-al-dua",
+      "title": "al-Khaṭṭābī, Shaʾn al-Duʿāʾ",
+      "kind": "scholarly",
+      "citation": "Abū Sulaymān Ḥamd ibn Muḥammad al-Khaṭṭābī (d. 388 AH), Shaʾn al-Duʿāʾ, which explains each Name of this list in order. Consulted in the al-Maktaba al-Shāmila edition.",
+      "url": "https://shamela.ws/book/95700",
+      "usedFor": "Cross-checking the list and its order, and the classical meaning of each Name.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "fath-al-bari-6410",
+      "title": "Ibn Ḥajar, Fatḥ al-Bārī",
+      "kind": "scholarly",
+      "citation": "Ibn Ḥajar al-ʿAsqalānī, Fatḥ al-Bārī, commentary on Ṣaḥīḥ al-Bukhārī 6410, vol. 11, pp. 219–221 (Islamweb edition): the authenticity of the listed Names and the differences between their narrations.",
+      "url": "https://www.islamweb.net/ar/library/content/52/11731/",
+      "usedFor": "The scholarly assessment of the list and of Names whose inclusion is disputed.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "ibn-al-qayyim-badai",
+      "title": "Ibn al-Qayyim, Badāʾiʿ al-Fawāʾid",
+      "kind": "scholarly",
+      "citation": "Ibn al-Qayyim, Badāʾiʿ al-Fawāʾid, on Names that are only mentioned together with their counterpart, as excerpted by Ibn ʿUthaymīn in al-Muntaqā min Farāʾid al-Fawāʾid.",
+      "url": "https://shamela.ws/book/21802/11",
+      "usedFor": "Names that should be mentioned together with their counterpart.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "tafsir-al-tabari",
+      "title": "al-Ṭabarī, Jāmiʿ al-Bayān",
+      "kind": "scholarly",
+      "citation": "Ibn Jarīr al-Ṭabarī, Jāmiʿ al-Bayān (Tafsīr al-Ṭabarī), consulted on quran.com for al-Ḥashr 59:23 and al-Qamar 54:42.",
+      "url": "https://quran.com/59:23/tafsirs/ar-tafsir-al-tabari",
+      "usedFor": "The classical meaning of Names whose English rendering needs care.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "tirmidhi-1314",
+      "title": "Jāmiʿ at-Tirmidhī, Hadith 1314",
+      "kind": "hadith",
+      "citation": "Jāmiʿ at-Tirmidhī, Hadith 1314: “Indeed Allah is al-Musaʿʿir, al-Qābiḍ, al-Bāsiṭ, ar-Razzāq.” At-Tirmidhī: ḥasan ṣaḥīḥ. Darussalam: ṣaḥīḥ.",
+      "url": "https://sunnah.com/tirmidhi:1314",
+      "usedFor": "Al-Qābiḍ, al-Bāsiṭ and ar-Razzāq named in an authentic hadith.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "abudawud-4955",
+      "title": "Sunan Abī Dāwūd, Hadith 4955",
+      "kind": "hadith",
+      "citation": "Sunan Abī Dāwūd, Hadith 4955: “Allah is al-Ḥakam, and to Him belongs judgment.” Al-Albānī: ṣaḥīḥ.",
+      "url": "https://sunnah.com/abudawud:4955",
+      "usedFor": "Al-Ḥakam named in an authentic hadith.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "bukhari-1120",
+      "title": "Ṣaḥīḥ al-Bukhārī, Hadith 1120",
+      "kind": "hadith",
+      "citation": "Ṣaḥīḥ al-Bukhārī, Hadith 1120, the Prophet's night prayer supplication: “You are the Light of the heavens and the earth… You are al-Muqaddim and You are al-Muʾakhkhir.”",
+      "url": "https://sunnah.com/bukhari:1120",
+      "usedFor": "Al-Muqaddim, al-Muʾakhkhir and an-Nūr in an authentic supplication.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "tirmidhi-3475",
+      "title": "Jāmiʿ at-Tirmidhī, Hadith 3475",
+      "kind": "hadith",
+      "citation": "Jāmiʿ at-Tirmidhī, Hadith 3475: “O Allah, I ask You… You are Allah, there is no god but You, al-Aḥad, aṣ-Ṣamad.” Darussalam: ṣaḥīḥ.",
+      "url": "https://sunnah.com/tirmidhi:3475",
+      "usedFor": "Al-Aḥad and aṣ-Ṣamad in an authentic supplication.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "bukhari-7378",
+      "title": "Ṣaḥīḥ al-Bukhārī, Hadith 7378",
+      "kind": "hadith",
+      "citation": "Ṣaḥīḥ al-Bukhārī, Hadith 7378: “No one is more patient with hurtful words He hears than Allah.”",
+      "url": "https://sunnah.com/bukhari:7378",
+      "usedFor": "Allah's patience established in an authentic hadith.",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": "tirmidhi-2516",
+      "title": "Jāmiʿ at-Tirmidhī, Hadith 2516",
+      "kind": "hadith",
+      "citation": "Jāmiʿ at-Tirmidhī, Hadith 2516: if all people gathered to benefit or harm you, they could do so only with what Allah has written. At-Tirmidhī: ḥasan ṣaḥīḥ.",
+      "url": "https://sunnah.com/tirmidhi:2516",
+      "usedFor": "That benefit and harm come only by Allah's decree.",
       "verificationStatus": "pending"
     }
   ]
