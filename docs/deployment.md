@@ -62,10 +62,11 @@ npm run build:gh-pages
 
 ### Reporting corrections
 
-Reviewers should report corrections the same way as any other content issue:
-through the project's public repository (see the Sources page's Corrections
-section, and [content-review.md](content-review.md) for how a review gets
-recorded). Do not edit `content/names/names.json` or `content/sources/sources.json`
+Reviewers should report corrections to **cntc.mak@gmail.com** with the Name
+and a source or reference to check (also shown in-app on the Sources page's
+Corrections section), or through the project's public repository. See
+[content-review.md](content-review.md) for how a review gets recorded. Do
+not edit `content/names/names.json` or `content/sources/sources.json`
 directly from feedback without going through that review process.
 
 ### Known limitation
