@@ -7,12 +7,17 @@ afterwards.
 
 ## Current state
 
-- Content version `0.2.0-draft`, last updated 2026-09-13.
-- All 99 Names are still `"verificationStatus": "pending"`. The source audit
-  below was prepared with AI assistance and checked mechanically against
-  primary texts. It is **not** the qualified scholarly review that PLAN.md
-  requires, so it does not change any status.
+- Content version `0.3.0-draft`, last updated 2026-09-21 (audit refined; see
+  "Second audit pass" below). The list, Arabic, transliterations, English
+  meanings and enumeration are otherwise unchanged from the 2026-09-13 pass.
+- All 99 Names are still `"verificationStatus": "pending"`. Both audit passes
+  were prepared with AI assistance and checked against primary texts. Neither
+  is the qualified scholarly review that PLAN.md requires, so neither changes
+  any status.
 - Audit result: 72 passed without changes, 3 corrected, 25 need qualified review.
+- Every entry also now carries an `audit.evidenceCategory` (Q/QH/H/M-Q/M-QH/E,
+  see "Second audit pass") — a stricter, separate classification of how
+  directly the Name itself is attested. It does not override `audit.result`.
 - There are no explanations and no pronunciation audio. None were written or
   generated. Add them only after review.
 
@@ -65,8 +70,9 @@ not shown in the app.
 1. **The number is authentic; the list is not.** Ṣaḥīḥ al-Bukhārī 6410 and
    Ṣaḥīḥ Muslim 2677 state that Allah has ninety-nine Names but do not list
    them. The list appears only in Tirmidhī 3507 (through al-Walīd ibn
-   Muslim) and Ibn Mājah 3861 (through Zuhayr ibn Muḥammad), and the two
-   differ in more than twenty Names. At-Tirmidhī calls his narration
+   Muslim) and Ibn Mājah 3861 (through Zuhayr ibn Muḥammad); Ibn Ḥajar
+   (Fatḥ al-Bārī 11:219–221) counts 23 differing Names between the two.
+   At-Tirmidhī calls his narration
    _gharīb_. Sunnah.com shows both as daʿīf (Darussalam).
 2. **Scholarly assessment.** Ibn Ḥajar (_Fatḥ al-Bārī_ 11:219–221) reports
    that scholars differ on whether the list is the Prophet's words or was
@@ -295,16 +301,97 @@ not shown in the app.
 - Islamweb fatwas 222880 and 464491. These are secondary and were used only
   to locate and quote classical statements.
 
+## Second audit pass (2026-09-21)
+
+A second AI-assisted research pass reconciled the 2026-09-13 audit above
+against a more detailed scholarly source review. Like the first pass, this is
+**not** qualified human review and does not change any `verificationStatus`.
+Two kinds of finding came out of it, applied differently:
+
+### Evidence categories (applied)
+
+Every entry now has `audit.evidenceCategory`, a stricter classification of
+how directly the Name itself — not just a related act, verb or attribute —
+is attested, under the rule that a restricted Qur'anic verb or construct
+form does not by itself establish the unrestricted Name (Ibn al-Qayyim's
+distinction between the Divine Names and the wider set of permissible
+statements about Allah; Ibn Ḥajar records a comparably strict historical
+method associated with Ibn Ḥazm):
+
+| Code   | Meaning                                                       | Count |
+| ------ | ------------------------------------------------------------- | ----- |
+| `Q`    | Direct Qur'anic nominal Name/predicate                        | 60    |
+| `QH`   | Direct Qur'an and independently verified authentic hadith     | 7     |
+| `H`    | Accepted/authentic-hadith nominal Name                        | 4     |
+| `M-Q`  | Qur'anic evidence only in construct/plural/restricted form    | 4     |
+| `M-QH` | Same as `M-Q`, with hadith evidence too                       | 1     |
+| `E`    | Exact standalone form rests on the disputed enumeration alone | 23    |
+
+This is a separate axis from `audit.result`: a Name can be `passed` (its
+current Arabic/transliteration/meaning agree with the sources) while its
+`evidenceCategory` is `E` (its exact form is enumeration-dependent) — for
+example Al-Muḥyī (`passed`, `M-Q`) or Al-Aḥad (`needs-review` because of its
+placement in this enumeration, but `QH` because the Name itself is
+firmly established in Qur'an 112:1 and Tirmidhī 3475). The `E` entries are:
+Al-Khāfiḍ, Ar-Rāfiʿ, Al-Muʿizz, Al-Mudhill, Al-ʿAdl, Al-Jalīl, Al-Bāʿith,
+Al-Muḥṣī, Al-Mubdiʾ, Al-Muʿīd, Al-Mumīt, Al-Wājid, Al-Mājid, Al-Wālī,
+Al-Muntaqim, Al-Muqsiṭ, Al-Mughnī, Al-Māniʿ, Aḍ-Ḍārr, An-Nāfiʿ, Al-Bāqī,
+Ar-Rashīd and Aṣ-Ṣabūr — the common denominator is not that their meanings
+are denied, but that this audit could not establish their exact,
+unrestricted Name-form independently of the disputed enumerating tradition.
+
+### Recommended wording, not applied
+
+The second pass also proposed fuller English renderings for 12 entries where
+al-Khaṭṭābī's classical explanation carries more than the current
+`shortMeaning` captures (for example Al-Jabbār: "Compeller" alone omits the
+restoring/mending sense al-Khaṭṭābī and al-Ṭabarī also give it). These are
+**recommendations, not corrections**: unlike the three 2026-09-13 corrections
+(which fixed a meaning the classical sources do not support at all), each of
+these 12 is a choice among renderings the sources do support, which
+`docs/content-review.md`'s own prior notes already flagged as interpretive.
+Per this project's rule against silently resolving a documented
+disagreement, `shortMeaning` was **not changed** for these; the proposal is
+recorded in each entry's `audit.notes` for the qualified reviewer to accept,
+adjust or decline:
+
+| #   | Name        | Current               | Proposed                         |
+| --- | ----------- | --------------------- | -------------------------------- |
+| 5   | As-Salām    | The Source of Peace   | The Flawless, Giver of Peace     |
+| 9   | Al-Jabbār   | The Compeller         | The Compeller and Restorer       |
+| 21  | Al-Bāsiṭ    | The Extender          | The Expander                     |
+| 22  | Al-Khāfiḍ   | The Abaser            | The One Who Lowers               |
+| 23  | Ar-Rāfiʿ    | The Exalter           | The One Who Raises               |
+| 25  | Al-Mudhill  | The Giver of Dishonor | The One Who Humbles              |
+| 39  | Al-Muqīt    | The Nourisher         | The Sustainer / All-Able Keeper  |
+| 40  | Al-Ḥasīb    | The Reckoner          | The One Who Suffices and Reckons |
+| 77  | Al-Wālī     | The Patron            | The Sovereign Governor           |
+| 81  | Al-Muntaqim | The Avenger           | The One Who Justly Requites      |
+| 91  | Aḍ-Ḍārr     | The Distresser        | The One in Whose Decree Is Harm  |
+| 92  | An-Nāfiʿ    | The Benefactor        | The Granter of Benefit           |
+
+### Other findings folded in
+
+- Ibn Ḥajar's count of the Tirmidhī/Ibn Mājah divergence is 23 Names, not an
+  approximate "more than twenty" (corrected above, under "Findings about the
+  list itself").
+- The pairing question (Al-Qābiḍ/Al-Bāsiṭ, Aḍ-Ḍārr/An-Nāfiʿ, and the others
+  listed under "Open issues for the reviewer") remains an open product and
+  content decision, not something this pass could settle.
+- A statement attributed to Ibn Taymiyya (_Majmūʿ al-Fatāwā_ 6:379) on the
+  enumeration is widely quoted but was not directly inspected against a
+  printed edition in either audit pass; treat it as indirectly verified only.
+
 ## Launch readiness
 
 Phase 10 is **not** safe to mark complete. The Arabic, order and
 transliterations agree with the primary sources, and every citation has been
-checked. But:
+checked, across two audit passes. But:
 
 - no qualified scholar has reviewed the content, and PLAN.md forbids
   launching AI-prepared theological content without that review;
 - 25 Names have open questions that only a qualified reviewer can
-  settle;
+  settle, including the 12 proposed wording changes above;
 - the enumeration edition (al-Aḥad) must be confirmed;
 - explanations and audio have not been written or recorded.
 
@@ -346,6 +433,16 @@ Validation catches duplicate ids or orders, gaps in the order, missing
 Arabic, transliteration or meaning, invalid statuses or dates, unknown
 sources, audit records without evidence, and remote audio URLs. It cannot
 judge correctness. That is what the review is for.
+
+## Corrections / scholarly feedback
+
+Scholars, Arabic specialists, students of knowledge, or any user who
+identifies a possible error can write to **cntc.mak@gmail.com** with the
+Name and a source or reference we can check. This channel is for
+evidence-based corrections, not general theological debate. It is also
+shown in-app on the Sources page and in Settings → About. Every report is
+reviewed before any content changes; see "Recording the review" below for
+how an accepted correction is entered.
 
 ## Ids are permanent
 

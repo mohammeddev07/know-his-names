@@ -15,11 +15,18 @@ Know His Names is a local-first learning companion. There is no account and no s
 A temporary GitHub Pages build lets qualified reviewers open the app and use
 the learning experience while reviewing the Phase 10 content above — it is
 **not** the public launch. See [docs/deployment.md](docs/deployment.md#scholar-review-deployment-github-pages)
-for how it's deployed, and report any correction through the project's
-repository (see the in-app Sources page). The Vercel instructions in that
-same document are unchanged and remain the plan for the eventual Phase 11
-public launch, which happens only after reviewer corrections are applied and
-Phase 10 is formally complete.
+for how it's deployed. The Vercel instructions in that same document are
+unchanged and remain the plan for the eventual Phase 11 public launch, which
+happens only after reviewer corrections are applied and Phase 10 is formally
+complete.
+
+### Corrections / scholarly feedback
+
+Scholars, Arabic specialists, students of knowledge, or anyone who spots a
+possible error can write to **cntc.mak@gmail.com** with the Name and a
+source or reference to check (also shown in-app on the Sources page). See
+[docs/content-review.md](docs/content-review.md) for how a correction gets
+recorded.
 
 ## What it does
 

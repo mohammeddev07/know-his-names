@@ -127,6 +127,23 @@ export function SettingsView() {
               className="size-4 shrink-0 text-ink-3"
             />
           </Link>
+          <Link
+            href="/sources#corrections"
+            className="flex min-h-14 items-center justify-between gap-4 px-5 py-3 text-ink transition-colors duration-200 hover:bg-surface-2 sm:px-6"
+          >
+            <span>
+              <span className="block font-medium">
+                Corrections &amp; scholarly feedback
+              </span>
+              <span className="block text-sm text-ink-2">
+                Spotted a mistake? Tell us, with a source.
+              </span>
+            </span>
+            <ChevronRight
+              aria-hidden="true"
+              className="size-4 shrink-0 text-ink-3"
+            />
+          </Link>
           <p className="px-5 py-4 text-sm text-ink-3 sm:px-6">
             Version {APP_VERSION}, content {CONTENT_VERSION}
           </p>

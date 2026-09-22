@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0-draft",
-  "updated": "2026-09-13",
+  "version": "0.3.0-draft",
+  "updated": "2026-09-21",
   "names": [
     {
       "id": "ar-rahman",
@@ -12,6 +12,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:22 (ٱلرَّحْمَٰنُ)", "Qur'an 1:3 (ٱلرَّحْمَٰنِ)"]
       }
     },
@@ -25,6 +26,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:22 (ٱلرَّحِيمُ)", "Qur'an 1:3 (ٱلرَّحِيمِ)"]
       }
     },
@@ -38,6 +40,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمَلِكُ)", "Qur'an 20:114 (ٱلْمَلِكُ)"]
       }
     },
@@ -51,6 +54,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْقُدُّوسُ)", "Qur'an 62:1 (ٱلْقُدُّوسِ)"]
       }
     },
@@ -64,8 +68,9 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "QH",
         "evidence": ["Qur'an 59:23 (ٱلسَّلَٰمُ)"],
-        "notes": "Al-Khaṭṭābī explains as-Salām as the One free from every defect, or the One whose creation is safe from any injustice from Him; al-Ṭabarī on 59:23 gives the second meaning. “The Source of Peace” is a common but interpretive rendering."
+        "notes": "Al-Khaṭṭābī explains as-Salām as the One free from every defect, or the One whose creation is safe from any injustice from Him; al-Ṭabarī on 59:23 gives the second meaning. “The Source of Peace” is a common but interpretive rendering. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Flawless, Giver of Peace” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -78,6 +83,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمُؤْمِنُ)"]
       }
     },
@@ -91,6 +97,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمُهَيْمِنُ)"]
       }
     },
@@ -104,6 +111,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْعَزِيزُ)"]
       }
     },
@@ -122,8 +130,9 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْجَبَّارُ)"],
-        "notes": "Attested in 59:23. Classical explanations give several meanings: the One who compels His creation to what He wills (Qatāda, cited by al-Ṭabarī and Ibn Kathīr on 59:23); the One who sets right the affairs of His creation (al-Ṭabarī); the One who mends the broken and enriches the poor (al-Saʿdī); the One exalted beyond reach (al-Khaṭṭābī). In modern English “Compeller” can suggest coercion or tyranny and carries only the first meaning. Reviewer to decide whether to keep “The Compeller” or use a rendering that also carries the restoring sense."
+        "notes": "Attested in 59:23. Classical explanations give several meanings: the One who compels His creation to what He wills (Qatāda, cited by al-Ṭabarī and Ibn Kathīr on 59:23); the One who sets right the affairs of His creation (al-Ṭabarī); the One who mends the broken and enriches the poor (al-Saʿdī); the One exalted beyond reach (al-Khaṭṭābī). In modern English “Compeller” can suggest coercion or tyranny and carries only the first meaning. Reviewer to decide whether to keep “The Compeller” or use a rendering that also carries the restoring sense. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Compeller and Restorer” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -141,6 +150,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمُتَكَبِّرُ)"],
         "notes": "“The Supreme in Greatness” deliberately avoids “The Proud”. Al-Khaṭṭābī: the tāʾ marks that greatness belongs to Him alone, not affected pride, which is blameworthy only in creatures. Qatāda (in al-Ṭabarī): exalted above every evil."
       }
@@ -155,6 +165,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْخَٰلِقُ)", "Qur'an 13:16 (خَٰلِقُ)"]
       }
     },
@@ -168,6 +179,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْبَارِئُ)"]
       }
     },
@@ -181,6 +193,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْمُصَوِّرُ)"]
       }
     },
@@ -194,6 +207,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 38:66 (ٱلْغَفَّٰرُ)", "Qur'an 39:5 (ٱلْغَفَّٰرُ)"]
       }
     },
@@ -207,6 +221,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:16 (ٱلْقَهَّٰرُ)", "Qur'an 40:16 (ٱلْقَهَّارِ)"]
       }
     },
@@ -220,6 +235,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 3:8 (ٱلْوَهَّابُ)", "Qur'an 38:35 (ٱلْوَهَّابُ)"]
       }
     },
@@ -238,6 +254,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "QH",
         "evidence": [
           "Qur'an 51:58 (ٱلرَّزَّاقُ)",
           "Jāmiʿ at-Tirmidhī 1314 (الرَّزَّاقُ)"
@@ -254,6 +271,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 34:26 (ٱلْفَتَّاحُ)"],
         "notes": "In 34:26 the Name follows “then He will judge between us in truth” (yaftaḥu baynanā bil-ḥaqq), so it also carries the meaning “the Judge”."
       }
@@ -268,6 +286,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:32 (ٱلْعَلِيمُ)"]
       }
     },
@@ -286,6 +305,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "H",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 1314 (الْقَابِضُ)",
           "Qur'an 2:245 (يَقْبِضُ), verb only"
@@ -308,11 +328,12 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "H",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 1314 (الْبَاسِطُ)",
           "Qur'an 2:245 (وَيَبْصُۜطُ), verb only"
         ],
-        "notes": "Named with al-Qābiḍ in an authentic hadith. Best mentioned as a pair."
+        "notes": "Named with al-Qābiḍ in an authentic hadith. Best mentioned as a pair. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Expander” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -330,11 +351,12 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 56:3 (خَافِضَةٌ), describes the Hour, not Allah"
         ],
-        "notes": "No verse or authentic hadith checked in this audit uses al-Khāfiḍ as a Name. Its place rests on the Tirmidhī list, which hadith scholars regard as a narrator's compilation (Ibn Ḥajar, Fatḥ al-Bārī 11:219). Al-Khaṭṭābī explains it together with ar-Rāfiʿ; if kept, present the two together."
+        "notes": "No verse or authentic hadith checked in this audit uses al-Khāfiḍ as a Name. Its place rests on the Tirmidhī list, which hadith scholars regard as a narrator's compilation (Ibn Ḥajar, Fatḥ al-Bārī 11:219). Al-Khaṭṭābī explains it together with ar-Rāfiʿ; if kept, present the two together. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Lowers” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -352,12 +374,13 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 3:55 (وَرَافِعُكَ), said of raising ʿĪsā",
           "Qur'an 40:15 (رَفِيعُ), a different word"
         ],
-        "notes": "Same basis as al-Khāfiḍ. In 3:55 Allah tells ʿĪsā “I will raise you to Myself”, a participle tied to that event; 40:15 uses rafīʿ (Exalted in degrees), a different word. Ibn Ḥajar notes that Ibn Ḥibbān's version of the same chain has ar-Rāfiʿ where others have al-Māniʿ."
+        "notes": "Same basis as al-Khāfiḍ. In 3:55 Allah tells ʿĪsā “I will raise you to Myself”, a participle tied to that event; 40:15 uses rafīʿ (Exalted in degrees), a different word. Ibn Ḥajar notes that Ibn Ḥibbān's version of the same chain has ar-Rāfiʿ where others have al-Māniʿ. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Raises” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -375,6 +398,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 3:26 (وَتُعِزُّ), verb only"
@@ -398,11 +422,12 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 3:26 (وَتُذِلُّ), verb only"
         ],
-        "notes": "Same basis as al-Muʿizz (“You humble whom You will”). “The Giver of Dishonor” is accurate but reads harshly on its own. Classical explanations present it only with al-Muʿizz, and the fuller quotation of Ibn al-Qayyim's rule (Islamweb fatwa 464491) lists al-Muʿizz al-Mudhill among paired Names. Reviewer to decide how the pair is presented."
+        "notes": "Same basis as al-Muʿizz (“You humble whom You will”). “The Giver of Dishonor” is accurate but reads harshly on its own. Classical explanations present it only with al-Muʿizz, and the fuller quotation of Ibn al-Qayyim's rule (Islamweb fatwa 464491) lists al-Muʿizz al-Mudhill among paired Names. Reviewer to decide how the pair is presented. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Humbles” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -415,6 +440,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:11 (ٱلسَّمِيعُ)", "Qur'an 2:127 (ٱلسَّمِيعُ)"]
       }
     },
@@ -428,6 +454,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:11 (ٱلْبَصِيرُ)", "Qur'an 17:1 (ٱلْبَصِيرُ)"]
       }
     },
@@ -446,6 +473,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "QH",
         "evidence": [
           "Sunan Abī Dāwūd 4955 (هُوَ الْحَكَمُ)",
           "Qur'an 6:114 (حَكَمًا)"
@@ -466,6 +494,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
@@ -482,6 +511,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 6:103 (ٱللَّطِيفُ)", "Qur'an 67:14 (ٱللَّطِيفُ)"]
       }
     },
@@ -495,6 +525,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 6:18 (ٱلْخَبِيرُ)", "Qur'an 67:14 (ٱلْخَبِيرُ)"]
       }
     },
@@ -508,6 +539,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:225 (حَلِيمٌ)", "Qur'an 64:17 (حَلِيمٌ)"]
       }
     },
@@ -521,6 +553,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْعَظِيمُ)"]
       }
     },
@@ -534,6 +567,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 10:107 (ٱلْغَفُورُ)", "Qur'an 85:14 (ٱلْغَفُورُ)"]
       }
     },
@@ -547,6 +581,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 35:30 (شَكُورٌ)", "Qur'an 64:17 (شَكُورٌ)"]
       }
     },
@@ -560,6 +595,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْعَلِىُّ)", "Qur'an 22:62 (ٱلْعَلِىُّ)"]
       }
     },
@@ -573,6 +609,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:9 (ٱلْكَبِيرُ)", "Qur'an 22:62 (ٱلْكَبِيرُ)"]
       }
     },
@@ -586,6 +623,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 11:57 (حَفِيظٌ)", "Qur'an 34:21 (حَفِيظٌ)"]
       }
     },
@@ -599,8 +637,9 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 4:85 (مُّقِيتًا)"],
-        "notes": "Al-Khaṭṭābī: al-Muqīt is the All-Able (Ibn ʿAbbās on 4:85: “muqtadiran”), and also the Giver of sustenance. “The Nourisher” carries only the second meaning. Ibn Ḥajar reports al-Mughīth in place of al-Muqīt in one version."
+        "notes": "Al-Khaṭṭābī: al-Muqīt is the All-Able (Ibn ʿAbbās on 4:85: “muqtadiran”), and also the Giver of sustenance. “The Nourisher” carries only the second meaning. Ibn Ḥajar reports al-Mughīth in place of al-Muqīt in one version. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Sustainer / All-Able Keeper” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -613,8 +652,9 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 4:6 (حَسِيبًا)", "Qur'an 33:39 (حَسِيبًا)"],
-        "notes": "Al-Khaṭṭābī first explains al-Ḥasīb as the One who suffices (from aḥsabanī, “he gave me enough”). “The Reckoner” is the other common meaning."
+        "notes": "Al-Khaṭṭābī first explains al-Ḥasīb as the One who suffices (from aḥsabanī, “he gave me enough”). “The Reckoner” is the other common meaning. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Suffices and Reckons” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -632,6 +672,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 55:27 (ذُو ٱلْجَلَٰلِ), majesty as an attribute"
@@ -649,6 +690,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 82:6 (ٱلْكَرِيمِ)", "Qur'an 27:40 (كَرِيمٌ)"]
       }
     },
@@ -662,6 +704,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 5:117 (ٱلرَّقِيبَ)", "Qur'an 4:1 (رَقِيبًا)"]
       }
     },
@@ -675,6 +718,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 11:61 (مُّجِيبٌ)"]
       }
     },
@@ -688,6 +732,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:115 (وَٰسِعٌ)", "Qur'an 2:268 (وَٰسِعٌ)"]
       }
     },
@@ -701,6 +746,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْحَكِيمُ)", "Qur'an 2:32 (ٱلْحَكِيمُ)"]
       }
     },
@@ -714,6 +760,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 85:14 (ٱلْوَدُودُ)", "Qur'an 11:90 (وَدُودٌ)"]
       }
     },
@@ -727,6 +774,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 11:73 (مَّجِيدٌ)"]
       }
     },
@@ -745,6 +793,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 22:7 (يَبْعَثُ), verb only"
@@ -762,6 +811,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 5:117 (شَهِيدٌ)", "Qur'an 22:17 (شَهِيدٌ)"]
       }
     },
@@ -775,6 +825,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "QH",
         "evidence": ["Qur'an 22:6 (ٱلْحَقُّ)", "Qur'an 24:25 (ٱلْحَقُّ)"]
       }
     },
@@ -788,6 +839,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 3:173 (ٱلْوَكِيلُ)", "Qur'an 6:102 (وَكِيلٌ)"]
       }
     },
@@ -801,6 +853,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:19 (ٱلْقَوِىُّ)", "Qur'an 11:66 (ٱلْقَوِىُّ)"]
       }
     },
@@ -814,6 +867,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 51:58 (ٱلْمَتِينُ)"]
       }
     },
@@ -827,6 +881,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:9 (ٱلْوَلِىُّ)", "Qur'an 42:28 (ٱلْوَلِىُّ)"]
       }
     },
@@ -840,6 +895,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 22:64 (ٱلْحَمِيدُ)", "Qur'an 35:15 (ٱلْحَمِيدُ)"]
       }
     },
@@ -858,6 +914,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 72:28 (وَأَحْصَىٰ), verb only",
@@ -881,6 +938,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 85:13 (يُبْدِئُ), verb only"
@@ -903,6 +961,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 85:13 (وَيُعِيدُ), verb only"
@@ -920,6 +979,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "M-Q",
         "evidence": [
           "Qur'an 30:50 (لَمُحْىِ ٱلْمَوْتَىٰ), construct form",
           "Qur'an 41:39 (لَمُحْىِ ٱلْمَوْتَىٰٓ), construct form"
@@ -942,6 +1002,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 57:2 (وَيُمِيتُ), verb only",
@@ -960,6 +1021,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْحَىُّ)", "Qur'an 40:65 (ٱلْحَىُّ)"]
       }
     },
@@ -973,6 +1035,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْقَيُّومُ)", "Qur'an 3:2 (ٱلْقَيُّومُ)"]
       }
     },
@@ -990,6 +1053,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
@@ -1013,6 +1077,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
@@ -1029,6 +1094,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:16 (ٱلْوَٰحِدُ)", "Qur'an 14:48 (ٱلْوَٰحِدِ)"]
       }
     },
@@ -1048,6 +1114,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "QH",
         "evidence": [
           "Qur'an 112:1 (أَحَدٌ)",
           "Jāmiʿ at-Tirmidhī 3475 (الأَحَدُ الصَّمَدُ)"
@@ -1070,6 +1137,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "QH",
         "evidence": [
           "Qur'an 112:2 (ٱلصَّمَدُ)",
           "Jāmiʿ at-Tirmidhī 3475 (الصَّمَدُ)"
@@ -1086,6 +1154,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 6:65 (ٱلْقَادِرُ)", "Qur'an 36:81 (بِقَٰدِرٍ)"]
       }
     },
@@ -1104,6 +1173,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "corrected",
+        "evidenceCategory": "Q",
         "evidence": [
           "Qur'an 54:42 (مُّقْتَدِرٍ)",
           "Qur'an 54:55 (مُّقْتَدِرٍۭ)",
@@ -1123,6 +1193,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "H",
         "evidence": ["Ṣaḥīḥ al-Bukhārī 1120 (الْمُقَدِّمُ)"],
         "notes": "Named in the Prophet's supplication (also in Ṣaḥīḥ Muslim 771a). Best mentioned with al-Muʾakhkhir."
       }
@@ -1137,6 +1208,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "H",
         "evidence": ["Ṣaḥīḥ al-Bukhārī 1120 (الْمُؤَخِّرُ)"],
         "notes": "Named in the Prophet's supplication (also in Ṣaḥīḥ Muslim 771a). Best mentioned with al-Muqaddim."
       }
@@ -1151,6 +1223,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (ٱلْأَوَّلُ)"]
       }
     },
@@ -1164,6 +1237,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (وَٱلْـَٔاخِرُ)"]
       }
     },
@@ -1177,6 +1251,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (وَٱلظَّٰهِرُ)"]
       }
     },
@@ -1190,6 +1265,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (وَٱلْبَاطِنُ)"]
       }
     },
@@ -1208,11 +1284,12 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 13:11 (وَالٍ), “they have no protector besides Him”"
         ],
-        "notes": "13:11 implies the meaning but does not apply the Name to Allah directly. Ibn Ḥajar notes al-Mawlā in its place in Ibn Khuzayma's version. Al-Khaṭṭābī: the Owner and Governor of all things, who manages them as He wills. “The Patron” is loose; “The Governor of All Things” may be closer."
+        "notes": "13:11 implies the meaning but does not apply the Name to Allah directly. Ibn Ḥajar notes al-Mawlā in its place in Ibn Khuzayma's version. Al-Khaṭṭābī: the Owner and Governor of all things, who manages them as He wills. “The Patron” is loose; “The Governor of All Things” may be closer. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Sovereign Governor” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -1225,6 +1302,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:9 (ٱلْمُتَعَالِ)"],
         "notes": "The Qur'an writes ٱلْمُتَعَالِ (without the final yāʾ); the hadith text has الْمُتَعَالِي. Both are correct."
       }
@@ -1239,6 +1317,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 52:28 (ٱلْبَرُّ)"]
       }
     },
@@ -1252,6 +1331,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:37 (ٱلتَّوَّابُ)", "Qur'an 9:118 (ٱلتَّوَّابُ)"]
       }
     },
@@ -1271,13 +1351,14 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 3:4 (ذُو ٱنتِقَامٍ)",
           "Qur'an 32:22 (مُنتَقِمُونَ)",
           "Qur'an 43:55 (ٱنتَقَمْنَا), verb only"
         ],
-        "notes": "The Qur'an speaks of Allah's retribution only in restricted forms: “Owner of Retribution” (3:4, 14:47, 39:37), “We will take retribution from the criminals” (32:22, 43:41, 44:16) and “We took retribution from them” (43:25, 43:55). Ibn al-Qayyim (Badāʾiʿ al-Fawāʾid): mention it only with its counterpart, al-ʿAfuww. Ibn ʿUthaymīn, commenting on that passage, adds that Ibn Taymiyya rejected naming Allah al-Muntaqim because it occurs only in restricted form. Translation: “The Avenger” can suggest personal vengeance; the Qur'anic sense is just retribution against wrongdoers. Reviewer to decide on inclusion and wording."
+        "notes": "The Qur'an speaks of Allah's retribution only in restricted forms: “Owner of Retribution” (3:4, 14:47, 39:37), “We will take retribution from the criminals” (32:22, 43:41, 44:16) and “We took retribution from them” (43:25, 43:55). Ibn al-Qayyim (Badāʾiʿ al-Fawāʾid): mention it only with its counterpart, al-ʿAfuww. Ibn ʿUthaymīn, commenting on that passage, adds that Ibn Taymiyya rejected naming Allah al-Muntaqim because it occurs only in restricted form. Translation: “The Avenger” can suggest personal vengeance; the Qur'anic sense is just retribution against wrongdoers. Reviewer to decide on inclusion and wording. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Justly Requites” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -1290,6 +1371,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 4:43 (عَفُوًّا)", "Qur'an 22:60 (لَعَفُوٌّ)"]
       }
     },
@@ -1303,6 +1385,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:143 (لَرَءُوفٌ)", "Qur'an 24:20 (رَءُوفٌ)"],
         "notes": "The Qur'an and the hadith text write رَءُوف; the app uses the modern spelling الرَّؤُوف. Both are correct; the reviewer may prefer the Qur'anic spelling."
       }
@@ -1317,6 +1400,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 3:26 (مَٰلِكَ ٱلْمُلْكِ)"]
       }
     },
@@ -1330,6 +1414,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "corrected",
+        "evidenceCategory": "QH",
         "evidence": [
           "Qur'an 55:27 (ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ)",
           "Qur'an 55:78 (ذِى ٱلْجَلَٰلِ وَٱلْإِكْرَامِ)"
@@ -1355,6 +1440,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 3:18 (بِٱلْقِسْطِ), upholding justice",
@@ -1373,6 +1459,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "M-Q",
         "evidence": [
           "Qur'an 3:9 (جَامِعُ ٱلنَّاسِ), construct form",
           "Qur'an 4:140 (جَامِعُ), construct form"
@@ -1390,6 +1477,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 35:15 (ٱلْغَنِىُّ)", "Qur'an 22:64 (ٱلْغَنِىُّ)"]
       }
     },
@@ -1408,6 +1496,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 9:28 (يُغْنِيكُمُ), verb only",
@@ -1431,6 +1520,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
@@ -1454,13 +1544,14 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 48:11 (ضَرًّا), harm only by His will",
           "Qur'an 6:17 (بِضُرٍّ)",
           "Jāmiʿ at-Tirmidhī 2516 (يَضُرُّوكَ)"
         ],
-        "notes": "The Qur'an affirms that harm and benefit happen only by Allah's will, and so does Tirmidhī 2516. Ibn al-Qayyim: never mention it alone, only as aḍ-Ḍārr an-Nāfiʿ, because the praise lies in the pair: He alone controls benefit and harm. Al-Khaṭṭābī also explains the two together. Islamweb fatwa 464491 states that no clear text of the Qur'an or authentic Sunnah establishes aḍ-Ḍārr as a Name. Translation: “The Distresser” is an unusual word and, shown alone on a flashcard, can mislead. Reviewer to decide the wording and whether the pair is always shown together."
+        "notes": "The Qur'an affirms that harm and benefit happen only by Allah's will, and so does Tirmidhī 2516. Ibn al-Qayyim: never mention it alone, only as aḍ-Ḍārr an-Nāfiʿ, because the praise lies in the pair: He alone controls benefit and harm. Al-Khaṭṭābī also explains the two together. Islamweb fatwa 464491 states that no clear text of the Qur'an or authentic Sunnah establishes aḍ-Ḍārr as a Name. Translation: “The Distresser” is an unusual word and, shown alone on a flashcard, can mislead. Reviewer to decide the wording and whether the pair is always shown together. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One in Whose Decree Is Harm” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -1480,12 +1571,13 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 48:11 (نَفْعًۢا)",
           "Jāmiʿ at-Tirmidhī 2516 (يَنْفَعُوكَ)"
         ],
-        "notes": "Same basis and pairing as aḍ-Ḍārr."
+        "notes": "Same basis and pairing as aḍ-Ḍārr. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Granter of Benefit” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
       }
     },
     {
@@ -1503,6 +1595,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "M-QH",
         "evidence": [
           "Qur'an 24:35 (نُورُ ٱلسَّمَٰوَٰتِ), construct form",
           "Ṣaḥīḥ al-Bukhārī 1120 (نُورُ السَّمَوَاتِ)"
@@ -1520,6 +1613,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "Q",
         "evidence": ["Qur'an 22:54 (لَهَادِ)", "Qur'an 25:31 (هَادِيًا)"]
       }
     },
@@ -1533,6 +1627,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "M-Q",
         "evidence": [
           "Qur'an 2:117 (بَدِيعُ), construct form",
           "Qur'an 6:101 (بَدِيعُ), construct form"
@@ -1555,6 +1650,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 55:27 (وَيَبْقَىٰ), verb only"
@@ -1572,6 +1668,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "passed",
+        "evidenceCategory": "M-Q",
         "evidence": [
           "Qur'an 15:23 (ٱلْوَٰرِثُونَ)",
           "Qur'an 21:89 (خَيْرُ ٱلْوَٰرِثِينَ)"
@@ -1594,6 +1691,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Qur'an 11:87 (ٱلرَّشِيدُ), said of Shuʿayb, not Allah"
@@ -1616,6 +1714,7 @@
       "verificationStatus": "pending",
       "audit": {
         "result": "needs-review",
+        "evidenceCategory": "E",
         "evidence": [
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)",
           "Ṣaḥīḥ al-Bukhārī 7378 (أَصْبَرُ), the attribute"

@@ -72,11 +72,38 @@ export default function SourcesPage() {
       </Card>
 
       <div className="space-y-10">
-        <Block title="The list this app follows">
+        <Block id="list" title="The list this app follows">
           <p>
-            The app follows the widely known list of ninety-nine Names recorded
-            in {ENUMERATION_SOURCE.title}, in that order. Other lists exist;
-            this one was chosen because it is the one most learners encounter.
+            Authentic hadith in Ṣaḥīḥ al-Bukhārī and Ṣaḥīḥ Muslim teach that
+            Allah has ninety-nine Names and promise Paradise to whoever takes
+            account of them (aḥṣāhā). Those hadith establish the number and the
+            promise, but do not list the Names themselves.
+          </p>
+          <p>
+            The familiar numbered list comes through a separate, more debated
+            transmission ({ENUMERATION_SOURCE.title} and related routes). Hadith
+            scholars have long discussed whether every Name in it, and its exact
+            wording, goes back to the Prophet ﷺ himself or was compiled by a
+            later narrator. Know His Names follows the traditional enumeration
+            most learners already know — the order explained in
+            al-Khaṭṭābī&apos;s classical commentary <em>Shaʾn al-Duʿāʾ</em>,
+            which does not count &ldquo;Allah&rdquo; itself among the
+            ninety-nine and includes Al-Aḥad at No. 67.
+          </p>
+          <p>
+            This is a common, well-established choice, not a novel one — but it
+            means a handful of entries rest on that debated transmission rather
+            than on a Qur&apos;anic verse or another authentic hadith. Each
+            entry records its own evidence and any open question; see{" "}
+            <code className="text-[0.85em]">docs/content-review.md</code> in the
+            project repository for the full audit, or use the{" "}
+            <a
+              href="#corrections"
+              className="font-medium text-primary-soft-ink underline underline-offset-4"
+            >
+              Corrections
+            </a>{" "}
+            section below if you have a source-based suggestion.
           </p>
         </Block>
 
@@ -139,25 +166,36 @@ export default function SourcesPage() {
           </p>
         </Block>
 
-        <Block title="Corrections">
+        <Block id="corrections" title="Corrections / scholarly feedback">
           <p>
-            If you notice a mistake, please report it
-            {REPOSITORY_URL ? (
+            Scholars, Arabic specialists, students of knowledge and any learner
+            who spots a possible error are warmly invited to write in. Please
+            include the Name and a source or reference we can check — this
+            channel is for evidence-based corrections, not general theological
+            discussion.
+          </p>
+          <p>
+            <a
+              href="mailto:cntc.mak@gmail.com?subject=Know%20His%20Names%20%E2%80%94%20content%20correction"
+              className="font-medium text-primary-soft-ink underline underline-offset-4"
+            >
+              cntc.mak@gmail.com
+            </a>
+            {REPOSITORY_URL && (
               <>
                 {" "}
-                through the{" "}
+                — or open an issue on the{" "}
                 <a
                   href={REPOSITORY_URL}
                   className="font-medium text-primary-soft-ink underline underline-offset-4"
                 >
                   project&apos;s public repository
                 </a>
+                .
               </>
-            ) : (
-              " through the project's public repository"
             )}
-            . Every report is reviewed before any content changes.
           </p>
+          <p>Every report is reviewed before any content changes.</p>
         </Block>
 
         <Block id="privacy" title="Privacy">
