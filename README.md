@@ -8,7 +8,7 @@ Know His Names is a local-first learning companion. There is no account and no s
 
 `PLAN.md` is the product and architecture contract, and its top section tracks implementation progress. Read it before changing anything.
 
-> **Content status:** the religious content is a **draft (`0.2.0-draft`) awaiting scholarly review**. It has been audited against primary sources, but every Name is still marked `pending`, several need a qualified reviewer's decision, and there are no explanations or audio yet. Don't launch publicly until the review in [docs/content-review.md](docs/content-review.md) is complete.
+> **Content status:** the religious content (version `0.4.0`) has been audited against primary sources and has one review pass by the project owner — every Name is `reviewed`, with an explanation and, where relevant, a paired-Name note and an evidence label. None is `verified`: that needs an independent qualified scholar's review, which hasn't happened yet, and there is still no pronunciation audio. Don't launch publicly until the review in [docs/content-review.md](docs/content-review.md) is complete.
 
 ## Scholar review deployment
 
@@ -89,7 +89,7 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · ts-fsrs �
 - [x] Phase 7: Backup / restore
 - [x] Phase 8: PWA / offline
 - [x] Phase 9: UX polish
-- [ ] Phase 10: Religious content verification (needs a qualified human reviewer)
+- [ ] Phase 10: Religious content verification (reviewed by the project owner; still needs an independent qualified scholar and audio)
 - [ ] Phase 11: Production launch (ready to deploy; see docs/deployment.md)
 
 ## Privacy

@@ -59,3 +59,7 @@ desktop.ini
 
 # Local planning doc, not published
 /PLAN.md
+
+# Scholar-review working inputs (not public content; see docs/content-review.md)
+/docs/*.xlsx
+/docs/*.csv
