@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0-draft",
-  "updated": "2026-09-21",
+  "version": "0.4.0",
+  "updated": "2026-09-22",
   "names": [
     {
       "id": "ar-rahman",
@@ -9,12 +9,13 @@
       "transliteration": "Ar-Raḥmān",
       "shortMeaning": "The Most Compassionate",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:22 (ٱلرَّحْمَٰنُ)", "Qur'an 1:3 (ٱلرَّحْمَٰنِ)"]
-      }
+      },
+      "explanation": "Allah's compassion embraces His creation, and every blessing comes from His mercy."
     },
     {
       "id": "ar-rahim",
@@ -23,12 +24,13 @@
       "transliteration": "Ar-Raḥīm",
       "shortMeaning": "The Most Merciful",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:22 (ٱلرَّحِيمُ)", "Qur'an 1:3 (ٱلرَّحِيمِ)"]
-      }
+      },
+      "explanation": "Allah shows abundant mercy and grants forgiveness and care to His servants."
     },
     {
       "id": "al-malik",
@@ -37,12 +39,13 @@
       "transliteration": "Al-Malik",
       "shortMeaning": "The King",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمَلِكُ)", "Qur'an 20:114 (ٱلْمَلِكُ)"]
-      }
+      },
+      "explanation": "Allah rules over all creation with complete authority and perfect wisdom."
     },
     {
       "id": "al-quddus",
@@ -51,27 +54,29 @@
       "transliteration": "Al-Quddūs",
       "shortMeaning": "The Most Holy",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْقُدُّوسُ)", "Qur'an 62:1 (ٱلْقُدُّوسِ)"]
-      }
+      },
+      "explanation": "Allah is perfectly holy and free from every fault, weakness, and imperfection."
     },
     {
       "id": "as-salam",
       "order": 5,
       "arabic": "السَّلَامُ",
       "transliteration": "As-Salām",
-      "shortMeaning": "The Source of Peace",
+      "shortMeaning": "The Perfect, Giver of Peace",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "QH",
         "evidence": ["Qur'an 59:23 (ٱلسَّلَٰمُ)"],
         "notes": "Al-Khaṭṭābī explains as-Salām as the One free from every defect, or the One whose creation is safe from any injustice from Him; al-Ṭabarī on 59:23 gives the second meaning. “The Source of Peace” is a common but interpretive rendering. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Flawless, Giver of Peace” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah is free from every defect and grants peace and safety."
     },
     {
       "id": "al-mumin",
@@ -80,26 +85,28 @@
       "transliteration": "Al-Muʾmin",
       "shortMeaning": "The Granter of Security",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمُؤْمِنُ)"]
-      }
+      },
+      "explanation": "Allah grants security and confirms the truth of His promises."
     },
     {
       "id": "al-muhaymin",
       "order": 7,
       "arabic": "الْمُهَيْمِنُ",
       "transliteration": "Al-Muhaymin",
-      "shortMeaning": "The Guardian Over All",
+      "shortMeaning": "The Overseer and Guardian",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمُهَيْمِنُ)"]
-      }
+      },
+      "explanation": "Allah watches over all creation with complete knowledge and guardianship."
     },
     {
       "id": "al-aziz",
@@ -108,32 +115,34 @@
       "transliteration": "Al-ʿAzīz",
       "shortMeaning": "The Almighty",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْعَزِيزُ)"]
-      }
+      },
+      "explanation": "Allah has invincible might, and no one can overcome Him."
     },
     {
       "id": "al-jabbar",
       "order": 9,
       "arabic": "الْجَبَّارُ",
       "transliteration": "Al-Jabbār",
-      "shortMeaning": "The Compeller",
+      "shortMeaning": "The Supreme Compeller and Restorer",
       "sourceIds": [
         "tirmidhi-3507",
         "khattabi-shan-al-dua",
         "quran",
         "tafsir-al-tabari"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْجَبَّارُ)"],
         "notes": "Attested in 59:23. Classical explanations give several meanings: the One who compels His creation to what He wills (Qatāda, cited by al-Ṭabarī and Ibn Kathīr on 59:23); the One who sets right the affairs of His creation (al-Ṭabarī); the One who mends the broken and enriches the poor (al-Saʿdī); the One exalted beyond reach (al-Khaṭṭābī). In modern English “Compeller” can suggest coercion or tyranny and carries only the first meaning. Reviewer to decide whether to keep “The Compeller” or use a rendering that also carries the restoring sense. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Compeller and Restorer” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah's authority cannot be resisted, and He sets right the affairs of His creation."
     },
     {
       "id": "al-mutakabbir",
@@ -147,13 +156,14 @@
         "quran",
         "tafsir-al-tabari"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:23 (ٱلْمُتَكَبِّرُ)"],
         "notes": "“The Supreme in Greatness” deliberately avoids “The Proud”. Al-Khaṭṭābī: the tāʾ marks that greatness belongs to Him alone, not affected pride, which is blameworthy only in creatures. Qatāda (in al-Ṭabarī): exalted above every evil."
-      }
+      },
+      "explanation": "Allah alone possesses supreme greatness, far above every imperfection."
     },
     {
       "id": "al-khaliq",
@@ -162,12 +172,13 @@
       "transliteration": "Al-Khāliq",
       "shortMeaning": "The Creator",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْخَٰلِقُ)", "Qur'an 13:16 (خَٰلِقُ)"]
-      }
+      },
+      "explanation": "Allah brings everything into existence according to His knowledge and wisdom."
     },
     {
       "id": "al-bari",
@@ -176,12 +187,13 @@
       "transliteration": "Al-Bāriʾ",
       "shortMeaning": "The Maker",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْبَارِئُ)"]
-      }
+      },
+      "explanation": "Allah originates creation and brings His creatures into being."
     },
     {
       "id": "al-musawwir",
@@ -190,12 +202,13 @@
       "transliteration": "Al-Muṣawwir",
       "shortMeaning": "The Fashioner",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْمُصَوِّرُ)"]
-      }
+      },
+      "explanation": "Allah gives each created thing its particular form and features."
     },
     {
       "id": "al-ghaffar",
@@ -204,12 +217,13 @@
       "transliteration": "Al-Ghaffār",
       "shortMeaning": "The Repeatedly Forgiving",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 38:66 (ٱلْغَفَّٰرُ)", "Qur'an 39:5 (ٱلْغَفَّٰرُ)"]
-      }
+      },
+      "explanation": "Allah forgives sins repeatedly and abundantly for those who turn to Him."
     },
     {
       "id": "al-qahhar",
@@ -218,12 +232,13 @@
       "transliteration": "Al-Qahhār",
       "shortMeaning": "The Subduer",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:16 (ٱلْقَهَّٰرُ)", "Qur'an 40:16 (ٱلْقَهَّارِ)"]
-      }
+      },
+      "explanation": "All creation is subject to Allah's irresistible power and authority."
     },
     {
       "id": "al-wahhab",
@@ -232,12 +247,13 @@
       "transliteration": "Al-Wahhāb",
       "shortMeaning": "The Bestower",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 3:8 (ٱلْوَهَّابُ)", "Qur'an 38:35 (ٱلْوَهَّابُ)"]
-      }
+      },
+      "explanation": "Allah freely bestows gifts and blessings upon His creation."
     },
     {
       "id": "ar-razzaq",
@@ -251,7 +267,7 @@
         "quran",
         "tirmidhi-1314"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "QH",
@@ -259,22 +275,24 @@
           "Qur'an 51:58 (ٱلرَّزَّاقُ)",
           "Jāmiʿ at-Tirmidhī 1314 (الرَّزَّاقُ)"
         ]
-      }
+      },
+      "explanation": "Allah provides the sustenance on which every creature depends."
     },
     {
       "id": "al-fattah",
       "order": 18,
       "arabic": "الْفَتَّاحُ",
       "transliteration": "Al-Fattāḥ",
-      "shortMeaning": "The Opener",
+      "shortMeaning": "The Opener and Supreme Judge",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 34:26 (ٱلْفَتَّاحُ)"],
         "notes": "In 34:26 the Name follows “then He will judge between us in truth” (yaftaḥu baynanā bil-ḥaqq), so it also carries the meaning “the Judge”."
-      }
+      },
+      "explanation": "Allah opens the way to good and judges between His servants in truth."
     },
     {
       "id": "al-alim",
@@ -283,12 +301,13 @@
       "transliteration": "Al-ʿAlīm",
       "shortMeaning": "The All-Knowing",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:32 (ٱلْعَلِيمُ)"]
-      }
+      },
+      "explanation": "Allah knows everything, whether hidden or apparent, past, present, or future."
     },
     {
       "id": "al-qabid",
@@ -302,7 +321,7 @@
         "quran",
         "tirmidhi-1314"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "H",
@@ -311,7 +330,15 @@
           "Qur'an 2:245 (يَقْبِضُ), verb only"
         ],
         "notes": "Named with al-Bāsiṭ in an authentic hadith. Best mentioned as a pair."
-      }
+      },
+      "explanation": "Allah withholds and expands provision with wisdom; learn this Name together with Al-Bāsiṭ.",
+      "pairings": [
+        {
+          "withId": "al-basit",
+          "mode": "teaching",
+          "note": "Named together with Al-Bāsiṭ in an authentic hadith."
+        }
+      ]
     },
     {
       "id": "al-basit",
@@ -325,7 +352,7 @@
         "quran",
         "tirmidhi-1314"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "H",
@@ -334,7 +361,15 @@
           "Qur'an 2:245 (وَيَبْصُۜطُ), verb only"
         ],
         "notes": "Named with al-Qābiḍ in an authentic hadith. Best mentioned as a pair. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Expander” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah expands provision and grants abundance with wisdom; learn this Name together with Al-Qābiḍ.",
+      "pairings": [
+        {
+          "withId": "al-qabid",
+          "mode": "teaching",
+          "note": "Named together with Al-Qābiḍ in an authentic hadith."
+        }
+      ]
     },
     {
       "id": "al-khafid",
@@ -348,7 +383,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -357,7 +392,15 @@
           "Qur'an 56:3 (خَافِضَةٌ), describes the Hour, not Allah"
         ],
         "notes": "No verse or authentic hadith checked in this audit uses al-Khāfiḍ as a Name. Its place rests on the Tirmidhī list, which hadith scholars regard as a narrator's compilation (Ibn Ḥajar, Fatḥ al-Bārī 11:219). Al-Khaṭṭābī explains it together with ar-Rāfiʿ; if kept, present the two together. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Lowers” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah lowers and raises whom He wills with justice and wisdom; learn this traditional Name with Ar-Rāfiʿ.",
+      "pairings": [
+        {
+          "withId": "ar-rafi",
+          "mode": "teaching",
+          "note": "Al-Khaṭṭābī explains this Name together with Ar-Rāfiʿ."
+        }
+      ]
     },
     {
       "id": "ar-rafi",
@@ -371,7 +414,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -381,7 +424,15 @@
           "Qur'an 40:15 (رَفِيعُ), a different word"
         ],
         "notes": "Same basis as al-Khāfiḍ. In 3:55 Allah tells ʿĪsā “I will raise you to Myself”, a participle tied to that event; 40:15 uses rafīʿ (Exalted in degrees), a different word. Ibn Ḥajar notes that Ibn Ḥibbān's version of the same chain has ar-Rāfiʿ where others have al-Māniʿ. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Raises” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah raises rank and grants honor as He wills; learn this traditional Name with Al-Khāfiḍ.",
+      "pairings": [
+        {
+          "withId": "al-khafid",
+          "mode": "teaching",
+          "note": "Al-Khaṭṭābī explains this Name together with Al-Khāfiḍ."
+        }
+      ]
     },
     {
       "id": "al-muizz",
@@ -395,7 +446,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -404,14 +455,22 @@
           "Qur'an 3:26 (وَتُعِزُّ), verb only"
         ],
         "notes": "The Qur'an states the act (“You honour whom You will”) but does not use al-Muʿizz as a Name. Al-Khaṭṭābī explains al-Muʿizz and al-Mudhill together, like al-Qābiḍ and al-Bāsiṭ."
-      }
+      },
+      "explanation": "Allah grants honor and removes it according to His wisdom; learn this traditional Name with Al-Mudhill.",
+      "pairings": [
+        {
+          "withId": "al-mudhill",
+          "mode": "strong",
+          "note": "Best understood together with Al-Mudhill: Allah alone grants and removes honor."
+        }
+      ]
     },
     {
       "id": "al-mudhill",
       "order": 25,
       "arabic": "الْمُذِلُّ",
       "transliteration": "Al-Mudhill",
-      "shortMeaning": "The Giver of Dishonor",
+      "shortMeaning": "The One Who Brings Low / Removes Honor",
       "sourceIds": [
         "tirmidhi-3507",
         "khattabi-shan-al-dua",
@@ -419,7 +478,7 @@
         "fath-al-bari-6410",
         "ibn-al-qayyim-badai"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -428,7 +487,15 @@
           "Qur'an 3:26 (وَتُذِلُّ), verb only"
         ],
         "notes": "Same basis as al-Muʿizz (“You humble whom You will”). “The Giver of Dishonor” is accurate but reads harshly on its own. Classical explanations present it only with al-Muʿizz, and the fuller quotation of Ibn al-Qayyim's rule (Islamweb fatwa 464491) lists al-Muʿizz al-Mudhill among paired Names. Reviewer to decide how the pair is presented. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Humbles” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah brings low and grants honor with justice and wisdom; learn this traditional Name with Al-Muʿizz.",
+      "pairings": [
+        {
+          "withId": "al-muizz",
+          "mode": "strong",
+          "note": "Best understood together with Al-Muʿizz: Allah alone grants and removes honor."
+        }
+      ]
     },
     {
       "id": "as-sami",
@@ -437,12 +504,13 @@
       "transliteration": "As-Samīʿ",
       "shortMeaning": "The All-Hearing",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:11 (ٱلسَّمِيعُ)", "Qur'an 2:127 (ٱلسَّمِيعُ)"]
-      }
+      },
+      "explanation": "Allah hears every sound and every prayer; nothing escapes His hearing."
     },
     {
       "id": "al-basir",
@@ -451,12 +519,13 @@
       "transliteration": "Al-Baṣīr",
       "shortMeaning": "The All-Seeing",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:11 (ٱلْبَصِيرُ)", "Qur'an 17:1 (ٱلْبَصِيرُ)"]
-      }
+      },
+      "explanation": "Allah sees everything, including what is hidden from His creatures."
     },
     {
       "id": "al-hakam",
@@ -470,7 +539,7 @@
         "quran",
         "abudawud-4955"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "QH",
@@ -478,7 +547,8 @@
           "Sunan Abī Dāwūd 4955 (هُوَ الْحَكَمُ)",
           "Qur'an 6:114 (حَكَمًا)"
         ]
-      }
+      },
+      "explanation": "Allah judges with perfect justice, and His judgment is true."
     },
     {
       "id": "al-adl",
@@ -491,7 +561,7 @@
         "khattabi-shan-al-dua",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -499,7 +569,8 @@
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
         "notes": "Allah's perfect justice is not in question; the question is whether al-ʿAdl is a transmitted Name. No verse applies it to Allah (ʿadl occurs as “justice”), and Ibn Ḥajar notes that the Ibn Mājah version of the list has al-ʿĀdil instead."
-      }
+      },
+      "explanation": "Allah is perfectly just and never wrongs anyone."
     },
     {
       "id": "al-latif",
@@ -508,12 +579,13 @@
       "transliteration": "Al-Laṭīf",
       "shortMeaning": "The Subtly Kind",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 6:103 (ٱللَّطِيفُ)", "Qur'an 67:14 (ٱللَّطِيفُ)"]
-      }
+      },
+      "explanation": "Allah knows the finest details and cares for His servants in subtle ways."
     },
     {
       "id": "al-khabir",
@@ -522,12 +594,13 @@
       "transliteration": "Al-Khabīr",
       "shortMeaning": "The All-Aware",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 6:18 (ٱلْخَبِيرُ)", "Qur'an 67:14 (ٱلْخَبِيرُ)"]
-      }
+      },
+      "explanation": "Allah is fully aware of every reality, including hidden intentions and actions."
     },
     {
       "id": "al-halim",
@@ -536,12 +609,13 @@
       "transliteration": "Al-Ḥalīm",
       "shortMeaning": "The Forbearing",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:225 (حَلِيمٌ)", "Qur'an 64:17 (حَلِيمٌ)"]
-      }
+      },
+      "explanation": "Allah does not hasten punishment, giving His servants time to repent."
     },
     {
       "id": "al-azim",
@@ -550,12 +624,13 @@
       "transliteration": "Al-ʿAẓīm",
       "shortMeaning": "The Magnificent",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْعَظِيمُ)"]
-      }
+      },
+      "explanation": "Allah's greatness and majesty surpass all that His creatures can comprehend."
     },
     {
       "id": "al-ghafur",
@@ -564,12 +639,13 @@
       "transliteration": "Al-Ghafūr",
       "shortMeaning": "The Ever-Forgiving",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 10:107 (ٱلْغَفُورُ)", "Qur'an 85:14 (ٱلْغَفُورُ)"]
-      }
+      },
+      "explanation": "Allah's forgiveness is vast, and He forgives those who sincerely turn to Him."
     },
     {
       "id": "ash-shakur",
@@ -578,12 +654,13 @@
       "transliteration": "Ash-Shakūr",
       "shortMeaning": "The Most Appreciative",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 35:30 (شَكُورٌ)", "Qur'an 64:17 (شَكُورٌ)"]
-      }
+      },
+      "explanation": "Allah recognizes good deeds and rewards them generously, even when they are small."
     },
     {
       "id": "al-ali",
@@ -592,12 +669,13 @@
       "transliteration": "Al-ʿAliyy",
       "shortMeaning": "The Most High",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْعَلِىُّ)", "Qur'an 22:62 (ٱلْعَلِىُّ)"]
-      }
+      },
+      "explanation": "Allah is exalted above all creation in His greatness and perfection."
     },
     {
       "id": "al-kabir",
@@ -606,12 +684,13 @@
       "transliteration": "Al-Kabīr",
       "shortMeaning": "The Most Great",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:9 (ٱلْكَبِيرُ)", "Qur'an 22:62 (ٱلْكَبِيرُ)"]
-      }
+      },
+      "explanation": "Allah's greatness surpasses everything, and nothing compares with Him."
     },
     {
       "id": "al-hafiz",
@@ -620,42 +699,45 @@
       "transliteration": "Al-Ḥafīẓ",
       "shortMeaning": "The Preserver",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 11:57 (حَفِيظٌ)", "Qur'an 34:21 (حَفِيظٌ)"]
-      }
+      },
+      "explanation": "Allah preserves His creation and keeps account of all that His servants do."
     },
     {
       "id": "al-muqit",
       "order": 39,
       "arabic": "الْمُقِيتُ",
       "transliteration": "Al-Muqīt",
-      "shortMeaning": "The Nourisher",
+      "shortMeaning": "The Sustainer and Nourisher",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 4:85 (مُّقِيتًا)"],
         "notes": "Al-Khaṭṭābī: al-Muqīt is the All-Able (Ibn ʿAbbās on 4:85: “muqtadiran”), and also the Giver of sustenance. “The Nourisher” carries only the second meaning. Ibn Ḥajar reports al-Mughīth in place of al-Muqīt in one version. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Sustainer / All-Able Keeper” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah sustains His creatures, supplies their nourishment, and has power over all things."
     },
     {
       "id": "al-hasib",
       "order": 40,
       "arabic": "الْحَسِيبُ",
       "transliteration": "Al-Ḥasīb",
-      "shortMeaning": "The Reckoner",
+      "shortMeaning": "The Sufficient Reckoner",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 4:6 (حَسِيبًا)", "Qur'an 33:39 (حَسِيبًا)"],
         "notes": "Al-Khaṭṭābī first explains al-Ḥasīb as the One who suffices (from aḥsabanī, “he gave me enough”). “The Reckoner” is the other common meaning. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Suffices and Reckons” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah is sufficient for His servants and takes full account of their deeds."
     },
     {
       "id": "al-jalil",
@@ -669,7 +751,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -678,7 +760,8 @@
           "Qur'an 55:27 (ذُو ٱلْجَلَٰلِ), majesty as an attribute"
         ],
         "notes": "The Qur'an ascribes majesty to Allah (Dhū al-Jalāl) but does not use al-Jalīl as a Name. Ibn Ḥajar notes it is absent from the Ibn Mājah version."
-      }
+      },
+      "explanation": "Allah possesses perfect majesty and greatness, free from every imperfection."
     },
     {
       "id": "al-karim",
@@ -687,12 +770,13 @@
       "transliteration": "Al-Karīm",
       "shortMeaning": "The Most Generous",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 82:6 (ٱلْكَرِيمِ)", "Qur'an 27:40 (كَرِيمٌ)"]
-      }
+      },
+      "explanation": "Allah is abundantly generous, granting gifts beyond what His servants deserve."
     },
     {
       "id": "ar-raqib",
@@ -701,12 +785,13 @@
       "transliteration": "Ar-Raqīb",
       "shortMeaning": "The Watchful",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 5:117 (ٱلرَّقِيبَ)", "Qur'an 4:1 (رَقِيبًا)"]
-      }
+      },
+      "explanation": "Allah watches over every action and intention; nothing escapes His knowledge."
     },
     {
       "id": "al-mujib",
@@ -715,12 +800,13 @@
       "transliteration": "Al-Mujīb",
       "shortMeaning": "The Responsive",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 11:61 (مُّجِيبٌ)"]
-      }
+      },
+      "explanation": "Allah hears and responds to those who call upon Him."
     },
     {
       "id": "al-wasi",
@@ -729,12 +815,13 @@
       "transliteration": "Al-Wāsiʿ",
       "shortMeaning": "The All-Encompassing",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:115 (وَٰسِعٌ)", "Qur'an 2:268 (وَٰسِعٌ)"]
-      }
+      },
+      "explanation": "Allah's knowledge, mercy, and generosity are vast beyond measure."
     },
     {
       "id": "al-hakim",
@@ -743,12 +830,13 @@
       "transliteration": "Al-Ḥakīm",
       "shortMeaning": "The All-Wise",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 59:24 (ٱلْحَكِيمُ)", "Qur'an 2:32 (ٱلْحَكِيمُ)"]
-      }
+      },
+      "explanation": "Allah acts and judges with perfect wisdom in all things."
     },
     {
       "id": "al-wadud",
@@ -757,12 +845,13 @@
       "transliteration": "Al-Wadūd",
       "shortMeaning": "The Loving",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 85:14 (ٱلْوَدُودُ)", "Qur'an 11:90 (وَدُودٌ)"]
-      }
+      },
+      "explanation": "Allah loves His faithful servants and bestows His loving care upon them."
     },
     {
       "id": "al-majid",
@@ -771,12 +860,13 @@
       "transliteration": "Al-Majīd",
       "shortMeaning": "The All-Glorious",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 11:73 (مَّجِيدٌ)"]
-      }
+      },
+      "explanation": "Allah possesses perfect glory, nobility, and generosity."
     },
     {
       "id": "al-baith",
@@ -790,7 +880,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -799,7 +889,8 @@
           "Qur'an 22:7 (يَبْعَثُ), verb only"
         ],
         "notes": "The Qur'an states the act of resurrection, not the Name."
-      }
+      },
+      "explanation": "Allah will raise the dead and bring them to account."
     },
     {
       "id": "ash-shahid",
@@ -808,12 +899,13 @@
       "transliteration": "Ash-Shahīd",
       "shortMeaning": "The Witness",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 5:117 (شَهِيدٌ)", "Qur'an 22:17 (شَهِيدٌ)"]
-      }
+      },
+      "explanation": "Allah witnesses everything; no action or hidden matter escapes Him."
     },
     {
       "id": "al-haqq",
@@ -822,12 +914,13 @@
       "transliteration": "Al-Ḥaqq",
       "shortMeaning": "The Truth",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "QH",
         "evidence": ["Qur'an 22:6 (ٱلْحَقُّ)", "Qur'an 24:25 (ٱلْحَقُّ)"]
-      }
+      },
+      "explanation": "Allah is the ultimate truth, and His promises and words are true."
     },
     {
       "id": "al-wakil",
@@ -836,12 +929,13 @@
       "transliteration": "Al-Wakīl",
       "shortMeaning": "The Trustee",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 3:173 (ٱلْوَكِيلُ)", "Qur'an 6:102 (وَكِيلٌ)"]
-      }
+      },
+      "explanation": "Allah is sufficient for those who entrust their affairs to Him."
     },
     {
       "id": "al-qawi",
@@ -850,12 +944,13 @@
       "transliteration": "Al-Qawiyy",
       "shortMeaning": "The Strong",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:19 (ٱلْقَوِىُّ)", "Qur'an 11:66 (ٱلْقَوِىُّ)"]
-      }
+      },
+      "explanation": "Allah's strength is complete, and no weakness can affect Him."
     },
     {
       "id": "al-matin",
@@ -864,12 +959,13 @@
       "transliteration": "Al-Matīn",
       "shortMeaning": "The Firm",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 51:58 (ٱلْمَتِينُ)"]
-      }
+      },
+      "explanation": "Allah's strength is firm and unfailing, never diminished by effort."
     },
     {
       "id": "al-wali",
@@ -878,12 +974,13 @@
       "transliteration": "Al-Waliyy",
       "shortMeaning": "The Protecting Friend",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 42:9 (ٱلْوَلِىُّ)", "Qur'an 42:28 (ٱلْوَلِىُّ)"]
-      }
+      },
+      "explanation": "Allah protects and supports His believing servants with His care and guidance."
     },
     {
       "id": "al-hamid",
@@ -892,12 +989,13 @@
       "transliteration": "Al-Ḥamīd",
       "shortMeaning": "The Praiseworthy",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 22:64 (ٱلْحَمِيدُ)", "Qur'an 35:15 (ٱلْحَمِيدُ)"]
-      }
+      },
+      "explanation": "Allah deserves all praise for His perfection and every blessing He gives."
     },
     {
       "id": "al-muhsi",
@@ -911,7 +1009,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -921,7 +1019,8 @@
           "Qur'an 19:94 (أَحْصَىٰهُمْ), verb only"
         ],
         "notes": "The Qur'an states the act (“He has enumerated everything in number”), not the Name."
-      }
+      },
+      "explanation": "Allah knows and counts all things completely; nothing is overlooked or forgotten."
     },
     {
       "id": "al-mubdi",
@@ -935,7 +1034,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -944,7 +1043,15 @@
           "Qur'an 85:13 (يُبْدِئُ), verb only"
         ],
         "notes": "The Qur'an states the act together with its counterpart (85:13), not the Name. Best presented with al-Muʿīd."
-      }
+      },
+      "explanation": "Allah brings creation into being and restores it; learn this traditional Name with Al-Muʿīd.",
+      "pairings": [
+        {
+          "withId": "al-muid",
+          "mode": "teaching",
+          "note": "The Qur’an states the act together with its counterpart, Al-Muʿīd."
+        }
+      ]
     },
     {
       "id": "al-muid",
@@ -958,7 +1065,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -967,7 +1074,15 @@
           "Qur'an 85:13 (وَيُعِيدُ), verb only"
         ],
         "notes": "The Qur'an states the act together with its counterpart (85:13), not the Name. Best presented with al-Mubdiʾ."
-      }
+      },
+      "explanation": "Allah restores creation after its beginning; learn this traditional Name with Al-Mubdiʾ.",
+      "pairings": [
+        {
+          "withId": "al-mubdi",
+          "mode": "teaching",
+          "note": "The Qur’an states the act together with its counterpart, Al-Mubdiʾ."
+        }
+      ]
     },
     {
       "id": "al-muhyi",
@@ -976,7 +1091,7 @@
       "transliteration": "Al-Muḥyī",
       "shortMeaning": "The Giver of Life",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "M-Q",
@@ -985,7 +1100,15 @@
           "Qur'an 41:39 (لَمُحْىِ ٱلْمَوْتَىٰٓ), construct form"
         ],
         "notes": "Occurs in construct form: “the Giver of life to the dead”. Ibn Ḥajar reports that Ibn Ḥazm counted only Names that occur in absolute form, so not every scholar counts construct forms."
-      }
+      },
+      "explanation": "Allah gives life and revives the dead; learn this Name alongside Al-Mumīt.",
+      "pairings": [
+        {
+          "withId": "al-mumit",
+          "mode": "teaching",
+          "note": "Best learned alongside Al-Mumīt."
+        }
+      ]
     },
     {
       "id": "al-mumit",
@@ -999,7 +1122,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1009,7 +1132,15 @@
           "Qur'an 15:23 (وَنُمِيتُ), verb only"
         ],
         "notes": "Only the verb occurs, always with its counterpart “gives life”. Best presented with al-Muḥyī."
-      }
+      },
+      "explanation": "Allah appoints death as He gives life; learn this traditional Name with Al-Muḥyī.",
+      "pairings": [
+        {
+          "withId": "al-muhyi",
+          "mode": "teaching",
+          "note": "Only the verb occurs, always with its counterpart “gives life” (Al-Muḥyī)."
+        }
+      ]
     },
     {
       "id": "al-hayy",
@@ -1018,26 +1149,28 @@
       "transliteration": "Al-Ḥayy",
       "shortMeaning": "The Ever-Living",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْحَىُّ)", "Qur'an 40:65 (ٱلْحَىُّ)"]
-      }
+      },
+      "explanation": "Allah lives eternally with perfect life, untouched by sleep or death."
     },
     {
       "id": "al-qayyum",
       "order": 63,
       "arabic": "الْقَيُّومُ",
       "transliteration": "Al-Qayyūm",
-      "shortMeaning": "The Self-Subsisting",
+      "shortMeaning": "The Self-Subsisting Sustainer",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:255 (ٱلْقَيُّومُ)", "Qur'an 3:2 (ٱلْقَيُّومُ)"]
-      }
+      },
+      "explanation": "Allah depends on nothing, while all creation depends on Him for its existence and continuance."
     },
     {
       "id": "al-wajid",
@@ -1050,7 +1183,7 @@
         "khattabi-shan-al-dua",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1061,7 +1194,8 @@
           "shortMeaning: The Perceiver → The One Who Lacks Nothing"
         ],
         "notes": "Corrected meaning: “The Perceiver” is not supported by the classical explanation. Al-Khaṭṭābī: al-Wājid is the Rich who is never in need (wajd and jida mean wealth), and secondarily the One whom nothing He seeks can escape. The Name itself is list-based."
-      }
+      },
+      "explanation": "Allah lacks nothing and is never in need of His creation."
     },
     {
       "id": "al-maajid",
@@ -1074,7 +1208,7 @@
         "khattabi-shan-al-dua",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1082,7 +1216,8 @@
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
         "notes": "List-based. Al-Khaṭṭābī: the same root and meaning as al-Majīd (glory and abundance), perhaps repeated to pair with al-Wājid."
-      }
+      },
+      "explanation": "Allah is abundant in glory, nobility, and generosity."
     },
     {
       "id": "al-wahid",
@@ -1091,12 +1226,13 @@
       "transliteration": "Al-Wāḥid",
       "shortMeaning": "The Unique",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:16 (ٱلْوَٰحِدُ)", "Qur'an 14:48 (ٱلْوَٰحِدِ)"]
-      }
+      },
+      "explanation": "Allah is One, without partner in His divinity or rule."
     },
     {
       "id": "al-ahad",
@@ -1111,7 +1247,7 @@
         "tirmidhi-3475",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "QH",
@@ -1120,7 +1256,8 @@
           "Jāmiʿ at-Tirmidhī 3475 (الأَحَدُ الصَّمَدُ)"
         ],
         "notes": "The Name is firmly established; the open question is only its place in this enumeration. The sunnah.com text of Tirmidhī 3507 goes directly from al-Wāḥid to aṣ-Ṣamad, so that text reaches ninety-nine only by counting “Allah” as the first Name. Al-Khaṭṭābī's text of the same list includes al-Aḥad (his no. 68, counting “Allah” as no. 1), and Ibn Ḥajar reports al-Aḥad in Ibn Khuzayma's version in place of al-Mughnī. Reviewer to confirm which edition the app cites for its ninety-nine."
-      }
+      },
+      "explanation": "Allah is uniquely One, with no equal, partner, or comparable being."
     },
     {
       "id": "as-samad",
@@ -1134,7 +1271,7 @@
         "quran",
         "tirmidhi-3475"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "QH",
@@ -1142,7 +1279,8 @@
           "Qur'an 112:2 (ٱلصَّمَدُ)",
           "Jāmiʿ at-Tirmidhī 3475 (الصَّمَدُ)"
         ]
-      }
+      },
+      "explanation": "All creation turns to Allah in need, while He depends on no one."
     },
     {
       "id": "al-qadir",
@@ -1151,12 +1289,13 @@
       "transliteration": "Al-Qādir",
       "shortMeaning": "The All-Powerful",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 6:65 (ٱلْقَادِرُ)", "Qur'an 36:81 (بِقَٰدِرٍ)"]
-      }
+      },
+      "explanation": "Allah has complete ability to do all that He wills."
     },
     {
       "id": "al-muqtadir",
@@ -1170,7 +1309,7 @@
         "quran",
         "tafsir-al-tabari"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "corrected",
         "evidenceCategory": "Q",
@@ -1181,7 +1320,8 @@
         ],
         "corrections": ["shortMeaning: The Determiner → The Perfect in Power"],
         "notes": "“The Determiner” suggests divine decree (qadar) rather than power. Muqtadir means perfectly able: al-Ṭabarī on 54:42: “able to do what He wills, neither incapable nor weak”."
-      }
+      },
+      "explanation": "Allah's power is perfect and complete, and nothing can frustrate His will."
     },
     {
       "id": "al-muqaddim",
@@ -1190,13 +1330,21 @@
       "transliteration": "Al-Muqaddim",
       "shortMeaning": "The Expediter",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "bukhari-1120"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "H",
         "evidence": ["Ṣaḥīḥ al-Bukhārī 1120 (الْمُقَدِّمُ)"],
         "notes": "Named in the Prophet's supplication (also in Ṣaḥīḥ Muslim 771a). Best mentioned with al-Muʾakhkhir."
-      }
+      },
+      "explanation": "Allah brings forward whom and what He wills with wisdom; learn this Name with Al-Muʾakhkhir.",
+      "pairings": [
+        {
+          "withId": "al-muakhkhir",
+          "mode": "teaching",
+          "note": "Named in the Prophet’s supplication together with Al-Muʾakhkhir."
+        }
+      ]
     },
     {
       "id": "al-muakhkhir",
@@ -1205,13 +1353,21 @@
       "transliteration": "Al-Muʾakhkhir",
       "shortMeaning": "The Delayer",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "bukhari-1120"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "H",
         "evidence": ["Ṣaḥīḥ al-Bukhārī 1120 (الْمُؤَخِّرُ)"],
         "notes": "Named in the Prophet's supplication (also in Ṣaḥīḥ Muslim 771a). Best mentioned with al-Muqaddim."
-      }
+      },
+      "explanation": "Allah delays whom and what He wills with wisdom; learn this Name with Al-Muqaddim.",
+      "pairings": [
+        {
+          "withId": "al-muqaddim",
+          "mode": "teaching",
+          "note": "Named in the Prophet’s supplication together with Al-Muqaddim."
+        }
+      ]
     },
     {
       "id": "al-awwal",
@@ -1220,12 +1376,13 @@
       "transliteration": "Al-Awwal",
       "shortMeaning": "The First",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (ٱلْأَوَّلُ)"]
-      }
+      },
+      "explanation": "Allah has no beginning; nothing existed before Him."
     },
     {
       "id": "al-akhir",
@@ -1234,12 +1391,13 @@
       "transliteration": "Al-Ākhir",
       "shortMeaning": "The Last",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (وَٱلْـَٔاخِرُ)"]
-      }
+      },
+      "explanation": "Allah has no end; nothing remains beyond Him."
     },
     {
       "id": "az-zahir",
@@ -1248,12 +1406,13 @@
       "transliteration": "Aẓ-Ẓāhir",
       "shortMeaning": "The Manifest",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (وَٱلظَّٰهِرُ)"]
-      }
+      },
+      "explanation": "Allah is above all, and His signs make His greatness known."
     },
     {
       "id": "al-batin",
@@ -1262,26 +1421,27 @@
       "transliteration": "Al-Bāṭin",
       "shortMeaning": "The Hidden",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 57:3 (وَٱلْبَاطِنُ)"]
-      }
+      },
+      "explanation": "Allah is hidden from His creatures' sight, while nothing is hidden from His knowledge."
     },
     {
       "id": "al-waali",
       "order": 77,
       "arabic": "الْوَالِي",
       "transliteration": "Al-Wālī",
-      "shortMeaning": "The Patron",
+      "shortMeaning": "The One Who Governs All Affairs",
       "sourceIds": [
         "tirmidhi-3507",
         "khattabi-shan-al-dua",
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1290,7 +1450,8 @@
           "Qur'an 13:11 (وَالٍ), “they have no protector besides Him”"
         ],
         "notes": "13:11 implies the meaning but does not apply the Name to Allah directly. Ibn Ḥajar notes al-Mawlā in its place in Ibn Khuzayma's version. Al-Khaṭṭābī: the Owner and Governor of all things, who manages them as He wills. “The Patron” is loose; “The Governor of All Things” may be closer. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Sovereign Governor” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah governs all affairs with complete authority and wisdom."
     },
     {
       "id": "al-mutaali",
@@ -1299,13 +1460,14 @@
       "transliteration": "Al-Mutaʿālī",
       "shortMeaning": "The Supremely Exalted",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 13:9 (ٱلْمُتَعَالِ)"],
         "notes": "The Qur'an writes ٱلْمُتَعَالِ (without the final yāʾ); the hadith text has الْمُتَعَالِي. Both are correct."
-      }
+      },
+      "explanation": "Allah is supremely exalted above every limitation and imperfection."
     },
     {
       "id": "al-barr",
@@ -1314,12 +1476,13 @@
       "transliteration": "Al-Barr",
       "shortMeaning": "The Beneficent",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 52:28 (ٱلْبَرُّ)"]
-      }
+      },
+      "explanation": "Allah is abundantly good and kind to His servants."
     },
     {
       "id": "at-tawwab",
@@ -1328,19 +1491,20 @@
       "transliteration": "At-Tawwāb",
       "shortMeaning": "The Acceptor of Repentance",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:37 (ٱلتَّوَّابُ)", "Qur'an 9:118 (ٱلتَّوَّابُ)"]
-      }
+      },
+      "explanation": "Allah enables repentance and repeatedly accepts those who sincerely return to Him."
     },
     {
       "id": "al-muntaqim",
       "order": 81,
       "arabic": "الْمُنْتَقِمُ",
       "transliteration": "Al-Muntaqim",
-      "shortMeaning": "The Avenger",
+      "shortMeaning": "The Executor of Just Retribution",
       "sourceIds": [
         "tirmidhi-3507",
         "khattabi-shan-al-dua",
@@ -1348,7 +1512,7 @@
         "fath-al-bari-6410",
         "ibn-al-qayyim-badai"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1359,7 +1523,15 @@
           "Qur'an 43:55 (ٱنتَقَمْنَا), verb only"
         ],
         "notes": "The Qur'an speaks of Allah's retribution only in restricted forms: “Owner of Retribution” (3:4, 14:47, 39:37), “We will take retribution from the criminals” (32:22, 43:41, 44:16) and “We took retribution from them” (43:25, 43:55). Ibn al-Qayyim (Badāʾiʿ al-Fawāʾid): mention it only with its counterpart, al-ʿAfuww. Ibn ʿUthaymīn, commenting on that passage, adds that Ibn Taymiyya rejected naming Allah al-Muntaqim because it occurs only in restricted form. Translation: “The Avenger” can suggest personal vengeance; the Qur'anic sense is just retribution against wrongdoers. Reviewer to decide on inclusion and wording. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One Who Justly Requites” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah brings just retribution for wrongdoing and also pardons; learn this traditional Name with Al-ʿAfuww.",
+      "pairings": [
+        {
+          "withId": "al-afuw",
+          "mode": "strong",
+          "note": "Presented with Al-ʿAfuww: Allah’s just retribution alongside His pardon."
+        }
+      ]
     },
     {
       "id": "al-afuw",
@@ -1368,12 +1540,20 @@
       "transliteration": "Al-ʿAfuww",
       "shortMeaning": "The Pardoner",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 4:43 (عَفُوًّا)", "Qur'an 22:60 (لَعَفُوٌّ)"]
-      }
+      },
+      "explanation": "Allah pardons sins and removes their blame; His pardon should be remembered alongside His just retribution.",
+      "pairings": [
+        {
+          "withId": "al-muntaqim",
+          "mode": "strong",
+          "note": "A useful counterpart to Al-Muntaqim: Allah’s pardon alongside His just retribution."
+        }
+      ]
     },
     {
       "id": "ar-rauf",
@@ -1382,13 +1562,14 @@
       "transliteration": "Ar-Raʾūf",
       "shortMeaning": "The Most Kind",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 2:143 (لَرَءُوفٌ)", "Qur'an 24:20 (رَءُوفٌ)"],
         "notes": "The Qur'an and the hadith text write رَءُوف; the app uses the modern spelling الرَّؤُوف. Both are correct; the reviewer may prefer the Qur'anic spelling."
-      }
+      },
+      "explanation": "Allah shows deep compassion and tender kindness to His servants."
     },
     {
       "id": "malik-al-mulk",
@@ -1397,12 +1578,13 @@
       "transliteration": "Mālik al-Mulk",
       "shortMeaning": "The Owner of All Sovereignty",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 3:26 (مَٰلِكَ ٱلْمُلْكِ)"]
-      }
+      },
+      "explanation": "All sovereignty belongs to Allah; He grants and withdraws authority as He wills."
     },
     {
       "id": "dhul-jalali-wal-ikram",
@@ -1411,7 +1593,7 @@
       "transliteration": "Dhul-Jalāli wal-Ikrām",
       "shortMeaning": "Possessor of Majesty and Honor",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "corrected",
         "evidenceCategory": "QH",
@@ -1423,7 +1605,8 @@
           "shortMeaning: Lord of Majesty and Honor → Possessor of Majesty and Honor"
         ],
         "notes": "“Lord of” translates rabb, a different word. Dhū means “Possessor of”."
-      }
+      },
+      "explanation": "Allah possesses perfect majesty and honor and bestows generosity upon His creation."
     },
     {
       "id": "al-muqsit",
@@ -1437,7 +1620,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1447,7 +1630,8 @@
           "Qur'an 49:9 (ٱلْمُقْسِطِينَ), said of people"
         ],
         "notes": "The Qur'an describes Allah as upholding justice (3:18); al-muqsiṭīn in 49:9 are people whom Allah loves. The Name itself is list-based."
-      }
+      },
+      "explanation": "Allah upholds perfect justice and never wrongs His creatures."
     },
     {
       "id": "al-jami",
@@ -1456,7 +1640,7 @@
       "transliteration": "Al-Jāmiʿ",
       "shortMeaning": "The Gatherer",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "M-Q",
@@ -1465,7 +1649,8 @@
           "Qur'an 4:140 (جَامِعُ), construct form"
         ],
         "notes": "Occurs in construct form (“Gatherer of mankind”)."
-      }
+      },
+      "explanation": "Allah will gather all people for judgment on the Day of Resurrection."
     },
     {
       "id": "al-ghani",
@@ -1474,12 +1659,13 @@
       "transliteration": "Al-Ghaniyy",
       "shortMeaning": "The Self-Sufficient",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 35:15 (ٱلْغَنِىُّ)", "Qur'an 22:64 (ٱلْغَنِىُّ)"]
-      }
+      },
+      "explanation": "Allah is completely free of need, while every creature depends on Him."
     },
     {
       "id": "al-mughni",
@@ -1493,7 +1679,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1503,7 +1689,8 @@
           "Qur'an 53:48 (أَغْنَىٰ), verb only"
         ],
         "notes": "Only the verb occurs. Ibn Ḥajar reports al-Aḥad in its place in Ibn Khuzayma's version."
-      }
+      },
+      "explanation": "Allah grants sufficiency and enriches whom He wills from His bounty."
     },
     {
       "id": "al-mani",
@@ -1517,7 +1704,7 @@
         "fath-al-bari-6410",
         "ibn-al-qayyim-badai"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1525,14 +1712,22 @@
           "Jāmiʿ at-Tirmidhī 3507 (list only; not applied to Allah as a Name in the Qur'an)"
         ],
         "notes": "Ibn al-Qayyim: mention it only with its counterpart al-Muʿṭī (the Giver), which is not in this list. Al-Khaṭṭābī gives two meanings: the One who protects His allies, and the One who withholds from those who do not deserve. Ibn Ḥajar notes ar-Rāfiʿ in its place in Ibn Ḥibbān's version."
-      }
+      },
+      "explanation": "Allah gives and withholds with wisdom; learn this traditional Name with Al-Muʿṭī, the Giver.",
+      "pairings": [
+        {
+          "withLabel": "Al-Muʿṭī (the Giver)",
+          "mode": "companion",
+          "note": "Ibn al-Qayyim: mention Al-Māniʿ only with its counterpart, Al-Muʿṭī (the Giver), which is not part of this enumeration."
+        }
+      ]
     },
     {
       "id": "ad-darr",
       "order": 91,
       "arabic": "الضَّارُّ",
       "transliteration": "Aḍ-Ḍārr",
-      "shortMeaning": "The Distresser",
+      "shortMeaning": "The One in Whose Decree Harm Occurs / Controller of Harm",
       "sourceIds": [
         "tirmidhi-3507",
         "khattabi-shan-al-dua",
@@ -1541,7 +1736,7 @@
         "ibn-al-qayyim-badai",
         "tirmidhi-2516"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1552,14 +1747,22 @@
           "Jāmiʿ at-Tirmidhī 2516 (يَضُرُّوكَ)"
         ],
         "notes": "The Qur'an affirms that harm and benefit happen only by Allah's will, and so does Tirmidhī 2516. Ibn al-Qayyim: never mention it alone, only as aḍ-Ḍārr an-Nāfiʿ, because the praise lies in the pair: He alone controls benefit and harm. Al-Khaṭṭābī also explains the two together. Islamweb fatwa 464491 states that no clear text of the Qur'an or authentic Sunnah establishes aḍ-Ḍārr as a Name. Translation: “The Distresser” is an unusual word and, shown alone on a flashcard, can mislead. Reviewer to decide the wording and whether the pair is always shown together. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The One in Whose Decree Is Harm” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Harm and benefit are under Allah's decree and wisdom; learn this traditional Name together with An-Nāfiʿ.",
+      "pairings": [
+        {
+          "withId": "an-nafi",
+          "mode": "strong",
+          "note": "Never presented alone: harm and benefit are both under Allah’s decree, together with An-Nāfiʿ."
+        }
+      ]
     },
     {
       "id": "an-nafi",
       "order": 92,
       "arabic": "النَّافِعُ",
       "transliteration": "An-Nāfiʿ",
-      "shortMeaning": "The Benefactor",
+      "shortMeaning": "The Bestower of Benefit",
       "sourceIds": [
         "tirmidhi-3507",
         "khattabi-shan-al-dua",
@@ -1568,7 +1771,7 @@
         "ibn-al-qayyim-badai",
         "tirmidhi-2516"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1578,7 +1781,15 @@
           "Jāmiʿ at-Tirmidhī 2516 (يَنْفَعُوكَ)"
         ],
         "notes": "Same basis and pairing as aḍ-Ḍārr. Further audit (2026-09-21): a closer reading of al-Khaṭṭābī suggests “The Granter of Benefit” as a fuller rendering of this Name; not applied to shortMeaning, since the choice among faithful renderings remains an interpretive decision for the qualified reviewer (see docs/content-review.md)."
-      }
+      },
+      "explanation": "Allah grants benefit, and harm is also under His decree; learn this traditional Name together with Aḍ-Ḍārr.",
+      "pairings": [
+        {
+          "withId": "ad-darr",
+          "mode": "strong",
+          "note": "Never presented alone: harm and benefit are both under Allah’s decree, together with Aḍ-Ḍārr."
+        }
+      ]
     },
     {
       "id": "an-nur",
@@ -1592,7 +1803,7 @@
         "quran",
         "bukhari-1120"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "M-QH",
@@ -1601,7 +1812,8 @@
           "Ṣaḥīḥ al-Bukhārī 1120 (نُورُ السَّمَوَاتِ)"
         ],
         "notes": "Occurs in construct form (“the Light of the heavens and the earth”)."
-      }
+      },
+      "explanation": "Allah is the Light of the heavens and the earth, as the Qurʾān describes Him."
     },
     {
       "id": "al-hadi",
@@ -1610,12 +1822,13 @@
       "transliteration": "Al-Hādī",
       "shortMeaning": "The Guide",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "Q",
         "evidence": ["Qur'an 22:54 (لَهَادِ)", "Qur'an 25:31 (هَادِيًا)"]
-      }
+      },
+      "explanation": "Allah guides His servants to truth and the right way."
     },
     {
       "id": "al-badi",
@@ -1624,7 +1837,7 @@
       "transliteration": "Al-Badīʿ",
       "shortMeaning": "The Incomparable Originator",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "M-Q",
@@ -1633,7 +1846,8 @@
           "Qur'an 6:101 (بَدِيعُ), construct form"
         ],
         "notes": "Occurs in construct form (“Originator of the heavens and the earth”). Ibn Ḥajar reports that Ibn Ḥazm did not count construct forms."
-      }
+      },
+      "explanation": "Allah originated the heavens and the earth without a prior model."
     },
     {
       "id": "al-baqi",
@@ -1647,7 +1861,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1656,7 +1870,8 @@
           "Qur'an 55:27 (وَيَبْقَىٰ), verb only"
         ],
         "notes": "Only the verb occurs (“the Face of your Lord remains”). Ibn Ḥajar cites this as the reason Ibn Ḥazm excluded al-Bāqī."
-      }
+      },
+      "explanation": "Allah remains forever and is never subject to passing away."
     },
     {
       "id": "al-warith",
@@ -1665,7 +1880,7 @@
       "transliteration": "Al-Wārith",
       "shortMeaning": "The Inheritor of All",
       "sourceIds": ["tirmidhi-3507", "khattabi-shan-al-dua", "quran"],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "passed",
         "evidenceCategory": "M-Q",
@@ -1674,7 +1889,8 @@
           "Qur'an 21:89 (خَيْرُ ٱلْوَٰرِثِينَ)"
         ],
         "notes": "Occurs in plural and construct forms."
-      }
+      },
+      "explanation": "Everything ultimately returns to Allah, who remains when His creatures pass away."
     },
     {
       "id": "ar-rashid",
@@ -1688,7 +1904,7 @@
         "quran",
         "fath-al-bari-6410"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1697,7 +1913,8 @@
           "Qur'an 11:87 (ٱلرَّشِيدُ), said of Shuʿayb, not Allah"
         ],
         "notes": "In 11:87 his people say ar-rashīd of Shuʿayb; no verse applies it to Allah. Al-Khaṭṭābī: the One who guides creation to what benefits them, and whose management is always right."
-      }
+      },
+      "explanation": "Allah guides to what is right and governs His creation with wisdom."
     },
     {
       "id": "as-sabur",
@@ -1711,7 +1928,7 @@
         "fath-al-bari-6410",
         "bukhari-7378"
       ],
-      "verificationStatus": "pending",
+      "verificationStatus": "reviewed",
       "audit": {
         "result": "needs-review",
         "evidenceCategory": "E",
@@ -1720,7 +1937,8 @@
           "Ṣaḥīḥ al-Bukhārī 7378 (أَصْبَرُ), the attribute"
         ],
         "notes": "The attribute is established in an authentic hadith, but the Name aṣ-Ṣabūr is not in the Qur'an. Islamweb fatwa 464491 notes scholarly disagreement over it as a Name. Al-Khaṭṭābī: the One who does not hasten to punish the disobedient but gives them respite."
-      }
+      },
+      "explanation": "Allah bears His creatures' wrongdoing without hastening punishment, allowing time for repentance."
     }
   ]
 }

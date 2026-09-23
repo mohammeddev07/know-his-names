@@ -84,6 +84,18 @@ export function validateContent(
     }
   });
 
+  const nameIds = new Set(list.map((n) => n.id));
+  list.forEach((name, index) => {
+    for (const pairing of name.pairings ?? []) {
+      if (pairing.withId && !nameIds.has(pairing.withId)) {
+        issues.push({
+          path: `names.${index}.pairings`,
+          message: `"${name.id}" pairs with unknown Name "${pairing.withId}"`,
+        });
+      }
+    }
+  });
+
   return issues;
 }
 

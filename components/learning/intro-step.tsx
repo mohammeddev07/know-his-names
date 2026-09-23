@@ -8,6 +8,7 @@ import { cn } from "@/lib/cn";
 import { Explanation } from "./explanation";
 import { NameDisplay } from "./name-display";
 import { Ornament } from "./ornament";
+import { PairingNote } from "./pairing-note";
 import {
   SessionFrame,
   sessionCardClass,
@@ -55,6 +56,7 @@ export function IntroStep({ name, frame, busy, onContinue }: IntroStepProps) {
         </p>
         <div className="mt-6">
           <Explanation text={name.explanation} />
+          <PairingNote name={name} centered />
         </div>
       </article>
     </SessionFrame>

@@ -39,6 +39,7 @@ export default function SourcesPage() {
   const tally = { pending: 0, reviewed: 0, verified: 0 };
   for (const name of NAMES) tally[name.verificationStatus] += 1;
   const allVerified = tally.verified === NAMES.length;
+  const anyPending = tally.pending > 0;
 
   return (
     <Page>
@@ -64,9 +65,9 @@ export default function SourcesPage() {
         </dl>
         {!allVerified && (
           <p className="mt-4 text-sm leading-relaxed text-ink-2">
-            The Arabic, transliterations and English meanings are awaiting
-            scholarly review. Explanations and pronunciation audio will only be
-            added once they have been reviewed.
+            {anyPending
+              ? "The Arabic, transliterations and English meanings are awaiting scholarly review. Explanations and pronunciation audio will only be added once they have been reviewed."
+              : "Every entry has been through one review pass; pronunciation audio is still pending. A second, independent review is needed before content counts as verified."}
           </p>
         )}
       </Card>
@@ -84,11 +85,17 @@ export default function SourcesPage() {
             transmission ({ENUMERATION_SOURCE.title} and related routes). Hadith
             scholars have long discussed whether every Name in it, and its exact
             wording, goes back to the Prophet ﷺ himself or was compiled by a
-            later narrator. Know His Names follows the traditional enumeration
-            most learners already know — the order explained in
-            al-Khaṭṭābī&apos;s classical commentary <em>Shaʾn al-Duʿāʾ</em>,
-            which does not count &ldquo;Allah&rdquo; itself among the
-            ninety-nine and includes Al-Aḥad at No. 67.
+            later narrator, and different narrations and editions of that
+            transmission disagree with each other on as many as 23 Names. Know
+            His Names does not present its list as a verbatim transcription of
+            any single narration. It follows a documented
+            <strong> classical traditional recension</strong> — the order
+            explained in al-Khaṭṭābī&apos;s classical commentary{" "}
+            <em>Shaʾn al-Duʿāʾ</em>, which does not count &ldquo;Allah&rdquo;
+            itself among the ninety-nine and includes Al-Aḥad at No. 67 (a Name
+            that is independently and firmly established in the Qur&apos;an and
+            authentic hadith; only its place in this count is a matter of which
+            edition is followed).
           </p>
           <p>
             This is a common, well-established choice, not a novel one — but it
@@ -123,6 +130,36 @@ export default function SourcesPage() {
             recall. No single English phrase can hold the full meaning of a
             Name, so treat each one as a doorway to further study rather than a
             complete definition.
+          </p>
+          <p>
+            Some Names have no independent Qur&apos;anic or authentic-hadith
+            attestation for their exact standalone wording — only for the
+            traditional enumeration, or for a related verb, construct form or
+            attribute. Those entries carry an evidence note on their Name page
+            saying so plainly, rather than presenting every entry as equally
+            certain.
+          </p>
+        </Block>
+
+        <Block title="Paired Names">
+          <p>
+            Classical commentators, especially Ibn al-Qayyim, teach that several
+            Names should not be presented in isolation because their praise lies
+            in the pair: Aḍ-Ḍārr with An-Nāfiʿ, Al-Muʿizz with Al-Mudhill, and
+            Al-Muntaqim with Al-ʿAfuww. Know His Names keeps each Name as its
+            own numbered card — FSRS schedules and reviews them independently —
+            but shows the paired Name and a short contextual note wherever the
+            Name itself appears, so neither is ever read alone.
+          </p>
+          <p>
+            Al-Māniʿ&apos;s classical counterpart, Al-Muʿṭī (the Giver), is not
+            part of this ninety-nine-Name enumeration. It appears only as an
+            explanatory companion next to Al-Māniʿ and is not a numbered card of
+            its own. A few other complementary pairs (Al-Qābiḍ and Al-Bāsiṭ,
+            Al-Khāfiḍ and Ar-Rāfiʿ, Al-Mubdiʾ and Al-Muʿīd, Al-Muḥyī and
+            Al-Mumīt, Al-Muqaddim and Al-Muʾakhkhir) are linked the same way for
+            teaching, without the stronger &ldquo;never alone&rdquo;
+            requirement.
           </p>
         </Block>
 

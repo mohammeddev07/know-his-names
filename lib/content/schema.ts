@@ -55,25 +55,51 @@ export const contentAuditSchema = z.strictObject({
   notes: text.optional(),
 });
 
-export const divineNameSchema = z.strictObject({
-  id: slug,
-  order: z.number().int().min(1),
-  arabic: text.regex(/[؀-ۿ]/, "must contain Arabic script"),
-  transliteration: text,
-  shortMeaning: text,
-  explanation: text.optional(),
-  /** Local, reviewed recordings only, e.g. /audio/ar-rahman.mp3 */
-  audioUrl: z
-    .string()
-    .regex(
-      /^\/audio\/[a-z-]+\.(?:mp3|m4a|ogg|opus)$/,
-      "must be a local /audio/ file",
-    )
-    .optional(),
-  sourceIds: z.array(slug).min(1, "needs at least one source"),
-  verificationStatus: verificationStatusSchema,
-  audit: contentAuditSchema.optional(),
+/**
+ * How a Name should be taught/presented alongside another Name (or, for
+ * "companion", alongside a related Name outside this 99-set):
+ *  - strong      the pair should not be shown in isolation (Ibn al-Qayyim's
+ *                rule for pairs like aḍ-Ḍārr/an-Nāfiʿ)
+ *  - teaching    a non-disruptive complementary link (e.g. al-Qābiḍ/al-Bāsiṭ)
+ *  - companion   an explanatory companion that is not itself one of the 99
+ *                (e.g. al-Māniʿ's companion al-Muʿṭī)
+ */
+export const pairingModeSchema = z.enum(["strong", "teaching", "companion"]);
+
+export const pairingSchema = z.strictObject({
+  /** id of the paired Name, when it is one of the 99. */
+  withId: slug.optional(),
+  /** Display label for a companion outside the 99, e.g. "Al-Muʿṭī (the Giver)". */
+  withLabel: text.optional(),
+  mode: pairingModeSchema,
+  note: text,
 });
+
+export const divineNameSchema = z
+  .strictObject({
+    id: slug,
+    order: z.number().int().min(1),
+    arabic: text.regex(/[؀-ۿ]/, "must contain Arabic script"),
+    transliteration: text,
+    shortMeaning: text,
+    explanation: text.optional(),
+    /** Local, reviewed recordings only, e.g. /audio/ar-rahman.mp3 */
+    audioUrl: z
+      .string()
+      .regex(
+        /^\/audio\/[a-z-]+\.(?:mp3|m4a|ogg|opus)$/,
+        "must be a local /audio/ file",
+      )
+      .optional(),
+    sourceIds: z.array(slug).min(1, "needs at least one source"),
+    verificationStatus: verificationStatusSchema,
+    audit: contentAuditSchema.optional(),
+    pairings: z.array(pairingSchema).min(1).optional(),
+  })
+  .refine(
+    (name) => (name.pairings ?? []).every((p) => p.withId || p.withLabel),
+    { message: "each pairing needs withId or withLabel" },
+  );
 
 export const namesFileSchema = z.strictObject({
   version: text,
@@ -99,5 +125,6 @@ export const sourcesFileSchema = z.strictObject({
 });
 
 export type VerificationStatus = z.infer<typeof verificationStatusSchema>;
+export type EvidenceCategory = z.infer<typeof evidenceCategorySchema>;
 export type DivineName = z.infer<typeof divineNameSchema>;
 export type ContentSource = z.infer<typeof contentSourceSchema>;

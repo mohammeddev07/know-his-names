@@ -29,9 +29,7 @@ describe("learning card (IntroStep)", () => {
       name.transliteration,
     );
     expect(screen.getByText(name.shortMeaning)).toBeVisible();
-    expect(
-      screen.getByText(/explanation will be added once it has been reviewed/),
-    ).toBeVisible();
+    expect(screen.getByText(name.explanation!)).toBeVisible();
     expect(
       screen.getByRole("progressbar", { name: "Learning progress" }),
     ).toBeInTheDocument();

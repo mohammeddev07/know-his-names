@@ -5,8 +5,10 @@ import { notFound } from "next/navigation";
 import { Explanation } from "@/components/learning/explanation";
 import { NameDisplay } from "@/components/learning/name-display";
 import { Ornament } from "@/components/learning/ornament";
+import { PairingNote } from "@/components/learning/pairing-note";
 import { NameProgressPanel } from "@/components/names/name-progress-panel";
 import { Card, Page, Section } from "@/components/ui/page";
+import { evidenceNote } from "@/lib/content/evidence";
 import {
   getAdjacentNames,
   getNameById,
@@ -77,9 +79,15 @@ export default async function NamePage({ params }: PageProps<"/names/[id]">) {
 
         <Section title="Explanation">
           <Explanation text={name.explanation} />
+          <PairingNote name={name} />
         </Section>
 
         <Section title="Sources">
+          {evidenceNote(name.audit?.evidenceCategory) && (
+            <p className="mb-4 text-sm leading-relaxed text-ink-2">
+              {evidenceNote(name.audit?.evidenceCategory)}
+            </p>
+          )}
           <ul className="space-y-3">
             {sources.map((source) => (
               <li
