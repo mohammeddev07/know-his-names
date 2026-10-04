@@ -1,5 +1,10 @@
 import * as z from "zod/mini";
-import { NEW_NAMES_PER_DAY_OPTIONS } from "@/lib/learning/types";
+import {
+  CARD_TYPES,
+  NAME_ANSWER_STYLES,
+  NEW_NAMES_PER_DAY_OPTIONS,
+  REVIEW_MODES,
+} from "@/lib/learning/types";
 
 /**
  * Runtime shapes of persisted and imported records. Everything read from
@@ -27,7 +32,7 @@ export const scheduleStateSchema = z.object({
 export const cardStateSchema = z.object({
   id,
   nameId: id,
-  cardType: z.literal("meaning"),
+  cardType: z.enum(CARD_TYPES),
   introducedAt: isoDate,
   schedule: scheduleStateSchema,
 });
@@ -45,4 +50,7 @@ export const preferencesSchema = z.object({
   newNamesPerDay: z.union(NEW_NAMES_PER_DAY_OPTIONS.map((n) => z.literal(n))),
   theme: z.enum(["system", "light", "dark"]),
   showTransliteration: z.boolean(),
+  // Added after v1: older stored and imported preferences lack these.
+  reviewMode: z._default(z.enum(REVIEW_MODES), "meaning"),
+  nameAnswerStyle: z._default(z.enum(NAME_ANSWER_STYLES), "choice"),
 });

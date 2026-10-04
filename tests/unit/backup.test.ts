@@ -196,6 +196,31 @@ describe("backup restoration", () => {
     });
   });
 
+  it("imports a backup made before name cards and mode preferences existed", () => {
+    const text = backupText((b) => {
+      const prefs = b.data.preferences as Record<string, unknown>;
+      delete prefs.reviewMode;
+      delete prefs.nameAnswerStyle;
+    });
+    const { preferences, cards } = parseBackup(text).snapshot;
+    expect(preferences.reviewMode).toBe("meaning");
+    expect(preferences.nameAnswerStyle).toBe("choice");
+    expect(cards.every((card) => card.cardType === "meaning")).toBe(true);
+  });
+
+  it("round-trips a name card", () => {
+    const text = backupText((b) => {
+      const meaning = b.data.cards[1];
+      b.data.cards.push({
+        ...meaning,
+        id: "ar-rahim:name",
+        cardType: "name",
+      });
+    });
+    const { cards } = parseBackup(text).snapshot;
+    expect(cards.map((c) => c.id)).toContain("ar-rahim:name");
+  });
+
   it("can undo an import", async () => {
     await repo.savePreferences({ ...DEFAULT_PREFERENCES, theme: "dark" });
     await repo.replaceAll(parseBackup(backupText()).snapshot);

@@ -1,4 +1,4 @@
-import type { CardState } from "@/lib/learning/types";
+import type { CardState, CardType } from "@/lib/learning/types";
 
 export type ReviewRating = "again" | "hard" | "good" | "easy";
 
@@ -41,8 +41,8 @@ export type RatingPreview = Record<ReviewRating, Date>;
 /** Application-owned scheduling contract. UI code never calls FSRS directly. */
 export interface ReviewScheduler {
   getDueCards(now: Date): Promise<CardState[]>;
-  /** Creates (or returns) the card for a Name the learner has just met. */
-  introduce(nameId: string, now: Date): Promise<CardState>;
+  /** Creates (or returns) a card of the given type for a Name the learner is practising. */
+  introduce(nameId: string, now: Date, cardType?: CardType): Promise<CardState>;
   recordReview(
     cardId: string,
     rating: ReviewRating,

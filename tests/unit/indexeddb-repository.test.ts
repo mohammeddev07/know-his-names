@@ -136,6 +136,8 @@ describe("IndexedDbProgressRepository", () => {
       newNamesPerDay: 5,
       theme: "dark",
       showTransliteration: false,
+      reviewMode: "mixed",
+      nameAnswerStyle: "reveal",
     } as const;
     await repo.savePreferences(saved);
     expect(
@@ -162,6 +164,21 @@ describe("IndexedDbProgressRepository", () => {
     ]);
     expect(await repo.getCardState("broken:meaning")).toBeNull();
     expect(console.warn).toHaveBeenCalled();
+  });
+
+  it("reads stored preferences missing the new fields as defaults", async () => {
+    await repo.getPreferences(); // creates the database and its stores
+    await rawPut(dbName, "meta", {
+      key: "preferences",
+      value: { newNamesPerDay: 5, theme: "dark", showTransliteration: false },
+    });
+    expect(await repo.getPreferences()).toEqual({
+      newNamesPerDay: 5,
+      theme: "dark",
+      showTransliteration: false,
+      reviewMode: "meaning",
+      nameAnswerStyle: "choice",
+    });
   });
 
   it("falls back to defaults when stored preferences are corrupt", async () => {

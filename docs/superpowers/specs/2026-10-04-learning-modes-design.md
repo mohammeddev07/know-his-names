@@ -61,7 +61,7 @@ imports lacking them fall back to defaults.
 - Name-card prompt: the meaning is shown; the learner answers by
   - **choice** (default): 4 options, the correct Name plus 3 distractors; or
   - **reveal**: reveal the Name, then rate Again/Hard/Good/Easy (today's flow).
-  The learner switches between them via `nameAnswerStyle`.
+    The learner switches between them via `nameAnswerStyle`.
 - Choice rating: wrong → Again, right → Good. No Hard/Easy in this style.
 - Distractors: first the Name's existing `pairings` partners (`withId`) that
   the learner has already met, then other Names they have met, nearest by
