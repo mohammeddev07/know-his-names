@@ -13,8 +13,8 @@ import {
   currentStep,
   isSessionComplete,
   remainingNewToday,
-  selectDueNameIds,
   selectNewNames,
+  selectReviewSteps,
   sessionLength,
   shouldRepeatInSession,
   startReviewSession,
@@ -36,10 +36,22 @@ function planSession(
 ): SessionState {
   if (requestedId) {
     return startReviewSession(
-      progress.cards.has(requestedId) ? [requestedId] : [],
+      progress.cards.has(requestedId)
+        ? [{ nameId: requestedId, cardType: "meaning" }]
+        : [],
     );
   }
-  return startReviewSession(selectDueNameIds(progress.cards, now));
+  return startReviewSession(planSteps(progress, now));
+}
+
+function planSteps(progress: ProgressContextValue, now: Date) {
+  return selectReviewSteps(
+    progress.cards,
+    progress.nameCards,
+    progress.preferences.reviewMode,
+    progress.preferences,
+    now,
+  );
 }
 
 export function ReviewSession() {
@@ -86,7 +98,7 @@ export function ReviewSession() {
 
   if (isSessionComplete(active)) {
     if (!session) return <NothingToReview requestedId={requestedId} />;
-    const moreDue = selectDueNameIds(progress.cards, now).length;
+    const moreDue = planSteps(progress, now).length;
     return (
       <SessionSummary
         session={active}

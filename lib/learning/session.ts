@@ -2,7 +2,7 @@ import type { DivineName } from "@/lib/content/names";
 import type { ReviewRating } from "@/lib/srs/types";
 import { countIntroducedOn, getDueCards, type CardsByName } from "./progress";
 import { localDayKey } from "./dates";
-import type { UserPreferences } from "./types";
+import type { CardType, ReviewMode, UserPreferences } from "./types";
 
 /**
  * Pure learning-session logic. Components render a SessionState and call
@@ -10,7 +10,14 @@ import type { UserPreferences } from "./types";
  */
 
 export type SessionStep =
-  { kind: "introduce"; nameId: string } | { kind: "recall"; nameId: string };
+  | { kind: "introduce"; nameId: string }
+  | { kind: "recall"; nameId: string; cardType: CardType };
+
+/** One card to review: which Name, and which direction of it. */
+export interface ReviewTarget {
+  nameId: string;
+  cardType: CardType;
+}
 
 export type SessionMode = "learn" | "review";
 
@@ -68,10 +75,20 @@ export function startLearnSession(nameIds: readonly string[]): SessionState {
   const queue: SessionStep[] = [];
   nameIds.forEach((nameId, i) => {
     queue.push({ kind: "introduce", nameId });
-    if (i > 0) queue.push({ kind: "recall", nameId: nameIds[i - 1] });
+    if (i > 0) {
+      queue.push({
+        kind: "recall",
+        nameId: nameIds[i - 1],
+        cardType: "meaning",
+      });
+    }
   });
   if (nameIds.length > 0) {
-    queue.push({ kind: "recall", nameId: nameIds[nameIds.length - 1] });
+    queue.push({
+      kind: "recall",
+      nameId: nameIds[nameIds.length - 1],
+      cardType: "meaning",
+    });
   }
   return {
     mode: "learn",
@@ -83,10 +100,16 @@ export function startLearnSession(nameIds: readonly string[]): SessionState {
   };
 }
 
-export function startReviewSession(nameIds: readonly string[]): SessionState {
+export function startReviewSession(
+  targets: readonly ReviewTarget[],
+): SessionState {
   return {
     mode: "review",
-    queue: nameIds.map((nameId) => ({ kind: "recall", nameId })),
+    queue: targets.map(({ nameId, cardType }) => ({
+      kind: "recall",
+      nameId,
+      cardType,
+    })),
     completed: 0,
     introduced: [],
     recalled: [],
@@ -94,15 +117,45 @@ export function startReviewSession(nameIds: readonly string[]): SessionState {
   };
 }
 
-/** Name ids for a review session: due cards, most overdue first. */
-export function selectDueNameIds(
+/** How many new name cards the daily limit still allows today. */
+export function remainingNewNameCardsToday(
+  nameCards: CardsByName,
+  preferences: UserPreferences,
+  now: Date,
+): number {
+  const startedToday = countIntroducedOn(nameCards.values(), localDayKey(now));
+  return Math.max(0, preferences.newNamesPerDay - startedToday);
+}
+
+/**
+ * Cards for a review session in the chosen mode. Due cards come first, most
+ * overdue first. In "name" and "mixed" modes, introduced Names that have no
+ * name card yet follow as seeds (the card is created when first answered),
+ * limited by the daily new-card allowance.
+ */
+export function selectReviewSteps(
   cards: CardsByName,
+  nameCards: CardsByName,
+  mode: ReviewMode,
+  preferences: UserPreferences,
   now: Date,
   limit = REVIEW_SESSION_LIMIT,
-): string[] {
-  return getDueCards(cards.values(), now)
-    .slice(0, limit)
-    .map((card) => card.nameId);
+): ReviewTarget[] {
+  const pool = [
+    ...(mode === "name" ? [] : cards.values()),
+    ...(mode === "meaning" ? [] : nameCards.values()),
+  ];
+  const due: ReviewTarget[] = getDueCards(pool, now).map((card) => ({
+    nameId: card.nameId,
+    cardType: card.cardType,
+  }));
+  if (mode === "meaning") return due.slice(0, limit);
+
+  const seeds = [...cards.keys()]
+    .filter((nameId) => !nameCards.has(nameId))
+    .slice(0, remainingNewNameCardsToday(nameCards, preferences, now))
+    .map((nameId): ReviewTarget => ({ nameId, cardType: "name" }));
+  return [...due, ...seeds].slice(0, limit);
 }
 
 export function currentStep(state: SessionState): SessionStep | undefined {
