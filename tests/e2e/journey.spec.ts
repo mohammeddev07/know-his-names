@@ -124,6 +124,45 @@ test("a new learner learns, reviews, keeps progress, and restores it from a back
   await expect(introduced(page, 3)).toBeVisible();
 });
 
+test("practises the Name in Name mode and keeps it after a reload", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/learn");
+  await completeSession(page);
+
+  // Switches the review to Name mode and answers one question by choice.
+  await page.goto("/review");
+  await page
+    .locator("label")
+    .filter({ hasText: /^Name$/ })
+    .click();
+  await expect(page.getByText("Which Name is this?")).toBeVisible();
+  await page
+    .getByRole("group", { name: "Choose the Name" })
+    .getByRole("button")
+    .first()
+    .click();
+  await page.getByRole("button", { name: "Continue", exact: true }).click();
+  // The answer is saved before the session moves on; wait for that.
+  await expect(page.getByRole("progressbar")).toHaveAttribute(
+    "aria-valuenow",
+    "1",
+  );
+
+  // The mode and the answer survive a reload.
+  await page.reload();
+  await expect(page.getByRole("radio", { name: "Name" })).toBeChecked();
+  await expect(page.getByText("Which Name is this?")).toBeVisible();
+
+  const backupPath = testInfo.outputPath("backup.json");
+  await exportBackup(page, backupPath);
+  const { data } = JSON.parse(fs.readFileSync(backupPath, "utf8"));
+  const kinds = data.cards.map((card: { cardType: string }) => card.cardType);
+  expect(kinds.filter((kind: string) => kind === "meaning")).toHaveLength(3);
+  expect(kinds.filter((kind: string) => kind === "name")).toHaveLength(1);
+  expect(data.preferences.reviewMode).toBe("name");
+});
+
 test("a damaged backup is rejected without changing progress", async ({
   page,
 }) => {

@@ -32,6 +32,7 @@ recorded.
 
 - **Learn** a few new Names a day (1, 2, 3, 5 or 7; default 3). Each Name shows its Arabic, transliteration and meaning, then comes straight back for recall.
 - **Review** with active recall: try to remember, reveal, then rate **Again, Hard, Good or Easy**. FSRS decides when each Name returns, so hard Names come back sooner and well-known ones later.
+- **Practise the Name itself**: switch Review between **Meaning** (see the Name, recall what it means), **Name** (see the meaning, recall the Name) and **Mixed**. In Name practice, choose from a few Names you've already met, or recall it and rate yourself; pick the style in Settings. Each direction is scheduled separately.
 - **Explore** all 99 Names, with search by name, meaning, Arabic or number, and filters by learning status.
 - **Progress**: a mosaic of the 99 Names, status counts, recent consistency (no streaks to lose) and upcoming reviews.
 - **Backup**: export and import a versioned JSON file. Imports are validated, confirmed first, and can be undone.
