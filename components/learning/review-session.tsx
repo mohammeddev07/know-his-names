@@ -7,7 +7,7 @@ import { useNow } from "@/hooks/use-now";
 import { useProgress, type ProgressContextValue } from "@/hooks/use-progress";
 import { getNameById, NAMES } from "@/lib/content/names";
 import { formatDue } from "@/lib/learning/dates";
-import { nextDueDate } from "@/lib/learning/progress";
+import { getDueCards, nextDueDate } from "@/lib/learning/progress";
 import {
   completeRecall,
   currentStep,
@@ -205,7 +205,17 @@ function NothingToReview({ requestedId }: { requestedId: string | null }) {
     );
   }
 
-  const nextDue = nextDueDate(progress.cards.values());
+  // Only the cards this mode schedules count towards "next review". In Name
+  // mode, meaning reviews may still be waiting, so say so rather than "now".
+  const { reviewMode } = progress.preferences;
+  const nextDue = nextDueDate([
+    ...(reviewMode === "name" ? [] : progress.cards.values()),
+    ...(reviewMode === "meaning" ? [] : progress.nameCards.values()),
+  ]);
+  const meaningWaiting =
+    reviewMode === "name"
+      ? getDueCards(progress.cards.values(), now).length
+      : 0;
   const newAvailable = selectNewNames(
     NAMES,
     progress.cards,
@@ -228,9 +238,11 @@ function NothingToReview({ requestedId }: { requestedId: string | null }) {
       }
     >
       <p>
-        {nextDue
-          ? `Your next review is ${formatDue(nextDue, now)}. Reviews wait for you, so there's no need to rush.`
-          : "Once you learn a Name, it will come back here for review."}
+        {meaningWaiting > 0
+          ? `${meaningWaiting} meaning ${meaningWaiting === 1 ? "review is" : "reviews are"} waiting. Switch to Meaning or Mixed to do ${meaningWaiting === 1 ? "it" : "them"}.`
+          : nextDue
+            ? `Your next review is ${formatDue(nextDue, now)}. Reviews wait for you, so there's no need to rush.`
+            : "Once you learn a Name, it will come back here for review."}
       </p>
       <div className="mt-6 text-left">
         <ModePicker

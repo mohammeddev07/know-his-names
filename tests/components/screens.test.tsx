@@ -183,6 +183,33 @@ describe("review modes", () => {
     expect(screen.getByRole("radio", { name: "Name" })).toBeChecked();
   });
 
+  it("says when meaning reviews are waiting while in name mode, instead of 'next review is now'", () => {
+    const dueMeaning = [reviewCard("ar-rahman"), reviewCard("ar-rahim")];
+    const laterNames = ["ar-rahman", "ar-rahim", "al-malik"].map((id) => ({
+      ...reviewCard(id),
+      id: `${id}:name`,
+      cardType: "name" as const,
+      introducedAt: new Date().toISOString(),
+      schedule: {
+        ...reviewCard(id).schedule,
+        due: new Date(Date.now() + 86_400_000).toISOString(),
+      },
+    }));
+    renderWithProgress(
+      <ReviewSession />,
+      mockProgress({
+        cards: cardsByName(...dueMeaning),
+        nameCards: cardsByName(...laterNames),
+        preferences: nameMode,
+      }),
+    );
+    expect(
+      screen.getByRole("heading", { name: "Nothing to review right now" }),
+    ).toBeVisible();
+    expect(screen.getByText(/2 meaning reviews are waiting/)).toBeVisible();
+    expect(screen.queryByText(/next review is now/i)).not.toBeInTheDocument();
+  });
+
   it("lets the learner pick a mode before answering", async () => {
     const value = mockProgress({
       cards: cardsByName(reviewCard("ar-rahman")),

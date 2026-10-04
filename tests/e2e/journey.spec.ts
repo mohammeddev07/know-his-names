@@ -137,6 +137,8 @@ test("practises the Name in Name mode and keeps it after a reload", async ({
     .filter({ hasText: /^Name$/ })
     .click();
   await expect(page.getByText("Which Name is this?")).toBeVisible();
+  // Keyboard focus stays on the chosen mode after the screen is rebuilt.
+  await expect(page.getByRole("radio", { name: "Name" })).toBeFocused();
   await page
     .getByRole("group", { name: "Choose the Name" })
     .getByRole("button")

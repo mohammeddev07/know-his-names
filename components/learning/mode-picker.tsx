@@ -18,12 +18,26 @@ interface ModePickerProps {
 /** Chooses what a review practises: the meaning, the Name, or both. */
 export function ModePicker({ value, onChange, disabled }: ModePickerProps) {
   return (
-    <SegmentedControl
-      legend="Practise"
-      options={REVIEW_MODE_OPTIONS}
-      value={value}
-      onChange={onChange}
-      disabled={disabled}
-    />
+    <div data-mode-picker>
+      <SegmentedControl
+        legend="Practise"
+        options={REVIEW_MODE_OPTIONS}
+        value={value}
+        onChange={(mode) => {
+          onChange(mode);
+          // Changing the mode re-plans the session and rebuilds the screen,
+          // including this picker. Put focus back on the chosen mode once the
+          // new screen is in place, so arrow keys and screen readers carry on.
+          requestAnimationFrame(() =>
+            document
+              .querySelector<HTMLInputElement>(
+                "[data-mode-picker] input:checked",
+              )
+              ?.focus(),
+          );
+        }}
+        disabled={disabled}
+      />
+    </div>
   );
 }
