@@ -16,6 +16,7 @@ export function mockProgress(
   return {
     status: "ready",
     cards: new Map(),
+    nameCards: new Map(),
     preferences: DEFAULT_PREFERENCES,
     reviewsToday: 0,
     lastActivityAt: null,
