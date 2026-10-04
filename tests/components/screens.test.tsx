@@ -1,16 +1,30 @@
 import { screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { ExploreView } from "@/components/explore/explore-view";
 import { HomeView } from "@/components/home/home-view";
 import { LearnSession } from "@/components/learning/learn-session";
 import { ReviewSession } from "@/components/learning/review-session";
+import { DEFAULT_PREFERENCES } from "@/lib/learning/types";
 import {
   cardsByName,
   mockProgress,
   renderWithProgress,
   reviewCard,
 } from "./test-utils";
+
+/** Cards that are learned but not due, so only name-card seeds are queued. */
+const settledCards = () =>
+  ["ar-rahman", "ar-rahim", "al-malik"].map((id) => {
+    const card = reviewCard(id);
+    return {
+      ...card,
+      schedule: {
+        ...card.schedule,
+        due: new Date(Date.now() + 86_400_000).toISOString(),
+      },
+    };
+  });
 
 describe("home", () => {
   it("gives a first-time learner one obvious way to begin", () => {
@@ -138,5 +152,47 @@ describe("session empty states", () => {
     renderWithProgress(<LearnSession />);
     expect(screen.getByText("New Name")).toBeVisible();
     expect(screen.getByRole("button", { name: "Continue" })).toBeVisible();
+  });
+});
+
+describe("review modes", () => {
+  const nameMode = { ...DEFAULT_PREFERENCES, reviewMode: "name" as const };
+
+  it("asks for the Name in name mode", () => {
+    renderWithProgress(
+      <ReviewSession />,
+      mockProgress({
+        cards: cardsByName(...settledCards()),
+        preferences: nameMode,
+      }),
+    );
+    expect(screen.getByText("Which Name is this?")).toBeVisible();
+    expect(
+      screen.getByRole("group", { name: "Choose the Name" }),
+    ).toBeVisible();
+  });
+
+  it("shows the nothing-to-review message, with a way to switch mode, when no Names are learned", () => {
+    renderWithProgress(
+      <ReviewSession />,
+      mockProgress({ preferences: nameMode }),
+    );
+    expect(
+      screen.getByRole("heading", { name: "Nothing to review right now" }),
+    ).toBeVisible();
+    expect(screen.getByRole("radio", { name: "Name" })).toBeChecked();
+  });
+
+  it("lets the learner pick a mode before answering", async () => {
+    const value = mockProgress({
+      cards: cardsByName(reviewCard("ar-rahman")),
+      updatePreferences: vi.fn(async () => {}),
+    });
+    renderWithProgress(<ReviewSession />, value);
+    expect(screen.getByRole("radio", { name: "Meaning" })).toBeChecked();
+    await userEvent.click(screen.getByRole("radio", { name: "Mixed" }));
+    expect(value.updatePreferences).toHaveBeenCalledWith({
+      reviewMode: "mixed",
+    });
   });
 });

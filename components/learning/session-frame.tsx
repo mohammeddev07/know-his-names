@@ -10,6 +10,8 @@ export interface SessionFrameProps {
   total: number;
   status?: string;
   error?: string | null;
+  /** Optional controls shown above the card, e.g. the practice-mode picker. */
+  controls?: ReactNode;
   children: ReactNode;
   footer?: ReactNode;
 }
@@ -24,6 +26,7 @@ export function SessionFrame({
   total,
   status,
   error,
+  controls,
   children,
   footer,
 }: SessionFrameProps) {
@@ -58,6 +61,9 @@ export function SessionFrame({
       >
         {error ?? status}
       </p>
+      {controls && (
+        <div className="mx-auto w-full max-w-sm pt-1">{controls}</div>
+      )}
       <div className="flex flex-1 flex-col md:justify-center">
         <div className="flex flex-1 flex-col justify-center py-4 md:flex-none">
           {children}

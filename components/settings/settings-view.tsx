@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Card, Page, PageHeader, Section } from "@/components/ui/page";
+import { REVIEW_MODE_OPTIONS } from "@/components/learning/mode-picker";
 import { SegmentedControl } from "@/components/ui/segmented-control";
 import { Switch } from "@/components/ui/switch";
 import { useProgress } from "@/hooks/use-progress";
@@ -67,6 +68,35 @@ export function SettingsView() {
             <p className="mt-2 text-sm text-ink-2">
               Small daily steps help each Name settle. Three a day is a good
               start.
+            </p>
+          </div>
+          <div>
+            <SegmentedControl
+              legend="Review mode"
+              options={REVIEW_MODE_OPTIONS}
+              value={preferences.reviewMode}
+              onChange={(reviewMode) => save({ reviewMode })}
+              disabled={disabled}
+            />
+            <p className="mt-2 text-sm text-ink-2">
+              Meaning: see the Name, recall what it means. Name: see the
+              meaning, recall the Name. Mixed: both.
+            </p>
+          </div>
+          <div>
+            <SegmentedControl
+              legend="Answers in Name practice"
+              options={[
+                { value: "choice", label: "Choose" },
+                { value: "reveal", label: "Reveal" },
+              ]}
+              value={preferences.nameAnswerStyle}
+              onChange={(nameAnswerStyle) => save({ nameAnswerStyle })}
+              disabled={disabled}
+            />
+            <p className="mt-2 text-sm text-ink-2">
+              Choose from a few Names, or recall it yourself and say how well
+              you remembered.
             </p>
           </div>
           <Switch

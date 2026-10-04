@@ -183,7 +183,13 @@ export function ProgressProvider({
       cardType: CardType = "meaning",
     ): Promise<ReviewResult> => {
       const key = mapKey(cardType);
-      const card = state[key].get(nameId);
+      // A name card is created by its first answer; scheduler.introduce is
+      // idempotent, so this is safe if it already exists.
+      const card =
+        state[key].get(nameId) ??
+        (cardType === "name"
+          ? await scheduler.introduce(nameId, new Date(), cardType)
+          : undefined);
       if (!card) throw new Error(`No ${cardType} card for ${nameId}`);
       const result = await scheduler.recordReview(card.id, rating, new Date());
       setState((prev) => ({

@@ -55,6 +55,24 @@ describe("ProgressProvider name cards", () => {
     expect(result.current.nameCards.size).toBe(0);
   });
 
+  it("creates the name card on its first review", async () => {
+    const { result } = setup();
+    await waitFor(() => expect(result.current.status).toBe("ready"));
+
+    await act(async () => {
+      await result.current.review("ar-rahman", "good", "name");
+    });
+    expect((await repo.getCardState("ar-rahman:name"))?.schedule.reps).toBe(1);
+    expect(result.current.nameCards.has("ar-rahman")).toBe(true);
+    expect(result.current.cards.size).toBe(0);
+  });
+
+  it("still refuses to review a meaning card that doesn't exist", async () => {
+    const { result } = setup();
+    await waitFor(() => expect(result.current.status).toBe("ready"));
+    await expect(result.current.review("ar-rahman", "good")).rejects.toThrow();
+  });
+
   it("introduces and reviews the name card type without touching meaning cards", async () => {
     const { result } = setup();
     await waitFor(() => expect(result.current.status).toBe("ready"));
