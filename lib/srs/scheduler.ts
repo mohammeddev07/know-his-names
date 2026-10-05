@@ -4,6 +4,7 @@ import { getDueCards } from "@/lib/learning/progress";
 import {
   cardIdFor,
   type CardState,
+  type CardType,
   type ReviewEvent,
 } from "@/lib/learning/types";
 import type { ProgressRepository } from "@/lib/storage/progress-repository";
@@ -27,10 +28,16 @@ export class FsrsReviewScheduler implements ReviewScheduler {
     return getDueCards(await this.repository.getAllCardStates(), now);
   }
 
-  async introduce(nameId: string, now: Date): Promise<CardState> {
-    const existing = await this.repository.getCardState(cardIdFor(nameId));
+  async introduce(
+    nameId: string,
+    now: Date,
+    cardType: CardType = "meaning",
+  ): Promise<CardState> {
+    const existing = await this.repository.getCardState(
+      cardIdFor(nameId, cardType),
+    );
     if (existing) return existing;
-    const card = createCard(nameId, createSchedule(now), now);
+    const card = createCard(nameId, createSchedule(now), now, cardType);
     await this.repository.saveCardState(card);
     return card;
   }

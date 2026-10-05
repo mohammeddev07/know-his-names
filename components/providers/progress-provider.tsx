@@ -18,6 +18,7 @@ import { startOfLocalDay } from "@/lib/learning/dates";
 import {
   DEFAULT_PREFERENCES,
   type CardState,
+  type CardType,
   type UserPreferences,
 } from "@/lib/learning/types";
 import { FsrsReviewScheduler } from "@/lib/srs/scheduler";
@@ -34,10 +35,14 @@ const SYNC_CHANNEL = "khn-progress";
 interface State {
   status: ProgressStatus;
   cards: Map<string, CardState>;
+  nameCards: Map<string, CardState>;
   preferences: UserPreferences;
   reviewsToday: number;
   lastActivityAt: string | null;
 }
+
+const mapKey = (cardType: CardType) =>
+  cardType === "name" ? "nameCards" : "cards";
 
 function latestActivity(cards: Iterable<CardState>): string | null {
   let latest: string | null = null;
@@ -49,13 +54,18 @@ function latestActivity(cards: Iterable<CardState>): string | null {
   return latest;
 }
 
-/** Cards for Names missing from the current content stay stored but are not shown. */
-function byName(cards: CardState[]): Map<string, CardState> {
-  return new Map(
-    cards
-      .filter((card) => getNameById(card.nameId))
-      .map((card) => [card.nameId, card]),
-  );
+/**
+ * Cards by Name, one map per card type. Cards for Names missing from the
+ * current content stay stored but are not shown.
+ */
+function splitByType(cards: CardState[]) {
+  const meaning = new Map<string, CardState>();
+  const name = new Map<string, CardState>();
+  for (const card of cards) {
+    if (!getNameById(card.nameId)) continue;
+    (card.cardType === "name" ? name : meaning).set(card.nameId, card);
+  }
+  return { cards: meaning, nameCards: name };
 }
 
 async function readState(repo: ProgressRepository): Promise<State> {
@@ -66,7 +76,7 @@ async function readState(repo: ProgressRepository): Promise<State> {
   ]);
   return {
     status: "ready",
-    cards: byName(cards),
+    ...splitByType(cards),
     preferences,
     reviewsToday: today.length,
     lastActivityAt: latestActivity(cards),
@@ -97,6 +107,7 @@ export function ProgressProvider({
   const [state, setState] = useState<State>(() => ({
     status: "loading",
     cards: new Map(),
+    nameCards: new Map(),
     preferences: { ...DEFAULT_PREFERENCES, theme: readStoredThemeSafely() },
     reviewsToday: 0,
     lastActivityAt: null,
@@ -151,11 +162,12 @@ export function ProgressProvider({
   }, [repo, notifyOtherTabs]);
 
   const introduce = useCallback(
-    async (nameId: string) => {
-      const card = await scheduler.introduce(nameId, new Date());
+    async (nameId: string, cardType: CardType = "meaning") => {
+      const card = await scheduler.introduce(nameId, new Date(), cardType);
+      const key = mapKey(cardType);
       setState((prev) => ({
         ...prev,
-        cards: new Map(prev.cards).set(nameId, card),
+        [key]: new Map(prev[key]).set(nameId, card),
         lastActivityAt: card.introducedAt,
       }));
       notifyOtherTabs();
@@ -165,13 +177,24 @@ export function ProgressProvider({
   );
 
   const review = useCallback(
-    async (nameId: string, rating: ReviewRating): Promise<ReviewResult> => {
-      const card = state.cards.get(nameId);
-      if (!card) throw new Error(`No card for ${nameId}`);
+    async (
+      nameId: string,
+      rating: ReviewRating,
+      cardType: CardType = "meaning",
+    ): Promise<ReviewResult> => {
+      const key = mapKey(cardType);
+      // A name card is created by its first answer; scheduler.introduce is
+      // idempotent, so this is safe if it already exists.
+      const card =
+        state[key].get(nameId) ??
+        (cardType === "name"
+          ? await scheduler.introduce(nameId, new Date(), cardType)
+          : undefined);
+      if (!card) throw new Error(`No ${cardType} card for ${nameId}`);
       const result = await scheduler.recordReview(card.id, rating, new Date());
       setState((prev) => ({
         ...prev,
-        cards: new Map(prev.cards).set(nameId, {
+        [key]: new Map(prev[key]).set(nameId, {
           ...card,
           schedule: result.next,
         }),
@@ -181,12 +204,12 @@ export function ProgressProvider({
       notifyOtherTabs();
       return result;
     },
-    [scheduler, state.cards, notifyOtherTabs],
+    [scheduler, state, notifyOtherTabs],
   );
 
   const preview = useCallback(
-    (nameId: string) => {
-      const card = state.cards.get(nameId);
+    (nameId: string, cardType: CardType = "meaning") => {
+      const card = state[mapKey(cardType)].get(nameId);
       if (!card) return null;
       try {
         return scheduler.preview(card, new Date());
@@ -194,7 +217,7 @@ export function ProgressProvider({
         return null;
       }
     },
-    [scheduler, state.cards],
+    [scheduler, state],
   );
 
   const updatePreferences = useCallback(

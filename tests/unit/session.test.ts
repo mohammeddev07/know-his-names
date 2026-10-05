@@ -7,10 +7,11 @@ import {
   currentStep,
   isSessionComplete,
   LEARN_AHEAD_MS,
+  remainingNewNameCardsToday,
   remainingNewToday,
   REVIEW_SESSION_LIMIT,
-  selectDueNameIds,
   selectNewNames,
+  selectReviewSteps,
   sessionLength,
   shouldRepeatInSession,
   startLearnSession,
@@ -45,8 +46,23 @@ function card(
   return createCard(nameId, schedule({ due: due.toISOString() }), introducedAt);
 }
 
+function nameCard(
+  nameId: string,
+  { introducedAt = now, due = now }: { introducedAt?: Date; due?: Date } = {},
+): CardState {
+  return createCard(
+    nameId,
+    schedule({ due: due.toISOString() }),
+    introducedAt,
+    "name",
+  );
+}
+
 const cardsOf = (...cards: CardState[]) =>
   new Map(cards.map((c) => [c.nameId, c]));
+
+const meaning = (nameId: string) => ({ nameId, cardType: "meaning" as const });
+const nameTarget = (nameId: string) => ({ nameId, cardType: "name" as const });
 
 describe("createCard", () => {
   it("creates a stable meaning card for a Name", () => {
@@ -136,7 +152,11 @@ describe("learning sessions", () => {
     let session = startLearnSession(["a", "b"]);
     session = completeIntroduction(session);
     session = completeIntroduction(session);
-    expect(currentStep(session)).toEqual({ kind: "recall", nameId: "a" });
+    expect(currentStep(session)).toEqual({
+      kind: "recall",
+      nameId: "a",
+      cardType: "meaning",
+    });
     session = completeRecall(session, "good", false);
     session = completeRecall(session, "easy", false);
     expect(isSessionComplete(session)).toBe(true);
@@ -149,14 +169,14 @@ describe("learning sessions", () => {
   it("ignores an action that doesn't match the current step", () => {
     const session = startLearnSession(["a"]);
     expect(completeRecall(session, "good", false)).toBe(session);
-    const recall = startReviewSession(["a"]);
+    const recall = startReviewSession([meaning("a")]);
     expect(completeIntroduction(recall)).toBe(recall);
   });
 });
 
 describe("review sessions", () => {
   it("repeats a forgotten Name at the end of the session", () => {
-    let session = startReviewSession(["a", "b"]);
+    let session = startReviewSession([meaning("a"), meaning("b")]);
     session = completeRecall(session, "again", true);
     expect(session.queue.map((s) => s.nameId)).toEqual(["b", "a"]);
     expect(sessionLength(session)).toBe(3);
@@ -173,14 +193,113 @@ describe("review sessions", () => {
       card("recent", { due: minutes(-5) }),
       card("oldest", { due: minutes(-600) }),
     );
-    expect(selectDueNameIds(cards, now)).toEqual(["oldest", "recent"]);
+    expect(
+      selectReviewSteps(cards, new Map(), "meaning", DEFAULT_PREFERENCES, now),
+    ).toEqual([meaning("oldest"), meaning("recent")]);
 
     const many = cardsOf(
       ...Array.from({ length: 30 }, (_, i) =>
         card(`n${i}`, { due: minutes(-i) }),
       ),
     );
-    expect(selectDueNameIds(many, now)).toHaveLength(REVIEW_SESSION_LIMIT);
+    expect(
+      selectReviewSteps(many, new Map(), "meaning", DEFAULT_PREFERENCES, now),
+    ).toHaveLength(REVIEW_SESSION_LIMIT);
+  });
+
+  it("keeps the card type when a Name is repeated", () => {
+    let session = startReviewSession([nameTarget("a")]);
+    session = completeRecall(session, "again", true);
+    expect(session.queue).toEqual([
+      { kind: "recall", nameId: "a", cardType: "name" },
+    ]);
+  });
+});
+
+describe("review steps by mode", () => {
+  const later = minutes(120);
+
+  it("ignores name cards in meaning mode", () => {
+    const cards = cardsOf(card("a", { due: minutes(-5) }));
+    const nameCards = cardsOf(nameCard("b", { due: minutes(-10) }));
+    expect(
+      selectReviewSteps(cards, nameCards, "meaning", DEFAULT_PREFERENCES, now),
+    ).toEqual([meaning("a")]);
+  });
+
+  it("returns due name cards, most overdue first, in name mode", () => {
+    const cards = cardsOf(card("a", { due: later }), card("b", { due: later }));
+    const nameCards = cardsOf(
+      nameCard("a", { due: minutes(-5) }),
+      nameCard("b", { due: minutes(-50) }),
+    );
+    expect(
+      selectReviewSteps(cards, nameCards, "name", DEFAULT_PREFERENCES, now),
+    ).toEqual([nameTarget("b"), nameTarget("a")]);
+  });
+
+  it("seeds introduced Names without a name card, up to the daily limit", () => {
+    const cards = cardsOf(
+      ...["a", "b", "c", "d", "e"].map((id) => card(id, { due: later })),
+    );
+    expect(
+      selectReviewSteps(cards, new Map(), "name", DEFAULT_PREFERENCES, now),
+    ).toEqual([nameTarget("a"), nameTarget("b"), nameTarget("c")]);
+  });
+
+  it("does not seed Names that already have a name card or were never introduced", () => {
+    const cards = cardsOf(card("a", { due: later }), card("b", { due: later }));
+    const nameCards = cardsOf(nameCard("a", { due: later }));
+    expect(
+      selectReviewSteps(cards, nameCards, "name", DEFAULT_PREFERENCES, now),
+    ).toEqual([nameTarget("b")]);
+    expect(
+      selectReviewSteps(new Map(), new Map(), "name", DEFAULT_PREFERENCES, now),
+    ).toEqual([]);
+  });
+
+  it("interleaves both card types by due time in mixed mode, seeds last", () => {
+    const cards = cardsOf(
+      card("a", { due: minutes(-10) }),
+      card("b", { due: later }),
+    );
+    const nameCards = cardsOf(nameCard("a", { due: minutes(-30) }));
+    expect(
+      selectReviewSteps(cards, nameCards, "mixed", DEFAULT_PREFERENCES, now),
+    ).toEqual([nameTarget("a"), meaning("a"), nameTarget("b")]);
+  });
+
+  it("respects the session cap in mixed mode", () => {
+    const cards = cardsOf(
+      ...Array.from({ length: 15 }, (_, i) =>
+        card(`m${i}`, { due: minutes(-i) }),
+      ),
+    );
+    const nameCards = cardsOf(
+      ...Array.from({ length: 15 }, (_, i) =>
+        nameCard(`m${i}`, { due: minutes(-i) }),
+      ),
+    );
+    expect(
+      selectReviewSteps(cards, nameCards, "mixed", DEFAULT_PREFERENCES, now),
+    ).toHaveLength(REVIEW_SESSION_LIMIT);
+  });
+});
+
+describe("daily new name-card limit", () => {
+  it("subtracts name cards introduced today, never below zero", () => {
+    const yesterday = new Date(2026, 8, 12, 20, 0);
+    const nameCards = cardsOf(
+      nameCard("a", { introducedAt: yesterday }),
+      nameCard("b", { introducedAt: now }),
+    );
+    expect(
+      remainingNewNameCardsToday(nameCards, DEFAULT_PREFERENCES, now),
+    ).toBe(2);
+    const used = cardsOf(
+      ...["a", "b", "c", "d"].map((id) => nameCard(id, { introducedAt: now })),
+    );
+    expect(remainingNewNameCardsToday(used, DEFAULT_PREFERENCES, now)).toBe(0);
   });
 });
 

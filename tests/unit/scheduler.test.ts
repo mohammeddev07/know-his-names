@@ -25,6 +25,19 @@ describe("FsrsReviewScheduler", () => {
     expect(await repo.getAllCardStates()).toHaveLength(1);
   });
 
+  it("introduces separate meaning and name cards for one Name", async () => {
+    const meaning = await scheduler.introduce("ar-rahman", start);
+    const name = await scheduler.introduce("ar-rahman", start, "name");
+    expect(meaning.id).toBe("ar-rahman:meaning");
+    expect(name.id).toBe("ar-rahman:name");
+    expect(name.cardType).toBe("name");
+    expect(await repo.getAllCardStates()).toHaveLength(2);
+
+    const again = await scheduler.introduce("ar-rahman", minutes(5), "name");
+    expect(again.introducedAt).toBe(start.toISOString());
+    expect(await repo.getAllCardStates()).toHaveLength(2);
+  });
+
   it("records each of the four ratings as persisted, append-only events", async () => {
     for (const [i, rating] of REVIEW_RATINGS.entries()) {
       const nameId = `name-${rating}`;

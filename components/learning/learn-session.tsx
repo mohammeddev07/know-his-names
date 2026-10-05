@@ -39,7 +39,7 @@ function planSession(
 ): SessionState {
   if (requestedId && getNameById(requestedId)) {
     return progress.cards.has(requestedId)
-      ? startReviewSession([requestedId])
+      ? startReviewSession([{ nameId: requestedId, cardType: "meaning" }])
       : startLearnSession([requestedId]);
   }
   const limit = more

@@ -38,8 +38,16 @@ Content (content/, lib/content/)       validated JSON, never hard-coded in UI
   same IndexedDB transaction as the card state they produce.
 - Everything read from storage or a backup file is validated
   (`lib/storage/records.ts`). Bad records are skipped and never trusted.
-- Card ids (`<nameId>:meaning`) and review event ids are stable, so V2 can
+- Card ids (`<nameId>:<cardType>`) and review event ids are stable, so V2 can
   attach local history to an account without migration.
+- Each Name can have two independently scheduled cards: `meaning` (Name →
+  meaning) and `name` (meaning → Name). `useProgress()` exposes them as
+  `cards` (meaning) and `nameCards`. The `name` card is created by its first
+  answer. Status, the mosaic and "due now" counts reflect `meaning` cards only.
+- The review mode (`meaning`, `name` or `mixed`) and the Name answer style
+  (`choice` or `reveal`) are preferences. Multiple-choice distractors come
+  from a Name's `pairings`, then the nearest Names by order, and only from
+  Names the learner has met (`lib/learning/choices.ts`).
 
 ## Data
 

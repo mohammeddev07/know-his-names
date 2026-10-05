@@ -60,6 +60,9 @@ desktop.ini
 # Local planning doc, not published
 /PLAN.md
 
+# Implementation plans are working notes, not published
+/docs/superpowers/plans/
+
 # Scholar-review working inputs (not public content; see docs/content-review.md)
 /docs/*.xlsx
 /docs/*.csv
